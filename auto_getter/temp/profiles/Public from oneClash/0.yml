@@ -47,31 +47,19 @@ tun:
     - 1.0.0.1
 
 proxies:
-  - name: 🇳🇱_NL_荷兰->🇺🇸_US_美国
+  - name: 🇺🇸_US_美国_1
     type: vmess
-    server: 45.136.245.177
-    port: 25032
-    uuid: aff739f3-e277-4be1-a8c2-1b6b9462971a
+    server: 192.200.160.211
+    port: 8880
+    uuid: 7a384b65-fcc9-32b1-bff4-d2494705b7b1
     cipher: auto
     network: ws
     ws-opts:
-      path: /
-    alterId: 0
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-    type: vmess
-    server: v24.heduian.link
-    port: 30824
-    sni: ""
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    cipher: auto
-    network: ws
-    skip-cert-verify: true
-    ws-opts:
-      path: /oooo
+      path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
       headers:
-        host: v24.heduian.link
-    alterId: 2
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+        host: TG.WangCai2.s4.db-link02.top
+    alterId: 0
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国
     type: vmess
     server: v29.heduian.link
     port: 30829
@@ -83,71 +71,187 @@ proxies:
     ws-opts:
       path: /oooo
       headers:
-        host: ocbc.com
+        host: v29.heduian.link
     alterId: 2
-  - name: 🇸🇰_SK_斯洛伐克->🇺🇸_US_美国
+  - name: 🇸🇪_SE_瑞典
     type: ss
-    server: 156.146.40.194
+    server: 192.71.166.100
     port: 989
     cipher: aes-256-cfb
     password: f8f7aCzcPKbsF8p3
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - name: 🇿🇦_ZA_南非_1
     type: vmess
-    server: v33.heduian.link
-    port: 30833
+    server: 102.177.176.210
+    port: 8880
     sni: ""
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    uuid: d9369b77-531e-31f4-a2a2-2273db2825a2
     cipher: auto
     network: ws
     ws-opts:
-      path: /oooo
+      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
-        host: v33.heduian.link
-    alterId: 2
-  - name: 🇩🇪_DE_德国
-    type: ss
-    server: 46.183.184.60
-    port: 989
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
-    type: ss
-    server: usa022.tmdns-sing.top
-    port: 13892
-    cipher: aes-128-gcm
-    password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
-  - name: 🇲🇩_MD_摩尔多瓦
-    type: ss
-    server: 185.153.197.5
-    port: 989
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
+        host: TG.WangCai2.s4.db-link02.top
+    alterId: 0
+  - name: 🇧🇬_BG_保加利亚->🇺🇸_US_美国
+    type: vmess
+    server: 185.176.26.215
+    port: 8880
+    sni: ""
+    uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+      headers:
+        host: TG.WangCai2.s4.db-link02.top
+    alterId: 0
+  - name: 🇺🇸_US_美国_2
+    type: vmess
+    server: www.speedtest.net
+    port: 80
+    sni: ""
+    uuid: 3d76ac40-80c4-11f0-b432-205c6d5f5d78
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /b87r3d9e
+      headers:
+        host: zula.ir.eu-2.hihu.net
+    alterId: 0
+  - name: 🇪🇸_ES_西班牙->🇺🇸_US_美国
+    type: vmess
+    server: s3.ipyar.org
+    port: 32020
+    sni: ""
+    uuid: 78b4fb57-39d7-4e9d-dd38-c9a38322bcb2
+    cipher: auto
+    network: tcp
+    fingerprint: ""
+    alterId: 0
+  - name: 🇧🇷_BR_巴西
+    type: vmess
+    server: 185.159.247.220
+    port: 8880
+    uuid: 470c6d0a-7ee5-3e9d-8f49-1c4e485fafc9
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+      headers:
+        host: TG.WangCai2.s4.db-link02.top
+    alterId: 0
+  - name: 🇺🇸_US_美国_3
+    type: vmess
+    server: 216.24.57.214
+    port: 8880
+    uuid: d1b75cc3-e618-37c4-9c55-ff11b4ed493b
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+      headers:
+        host: TG.WangCai2.s4.db-link02.top
+    alterId: 0
+  - name: 🇿🇦_ZA_南非_2
+    type: vmess
+    server: 102.177.176.209
+    port: 8880
+    sni: ""
+    uuid: 6f96494c-bdaf-3091-bf7b-29cfe92882b6
+    cipher: auto
+    network: ws
+    skip-cert-verify: true
+    ws-opts:
+      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        host: TG.WangCai2.s4.db-link02.top
+    alterId: 0
+  - name: 🇱🇹_LT_立陶宛->🇺🇸_US_美国
+    type: vmess
+    server: 185.148.104.215
+    port: 8880
+    uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+      headers:
+        host: TG.WangCai2.s4.db-link02.top
+    alterId: 0
+  - name: 🇺🇸_US_美国_4
+    type: vmess
+    server: 216.205.52.215
+    port: 8880
+    uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+      headers:
+        host: TG.WangCai2.s4.db-link02.top
+    alterId: 0
+  - name: 🇸🇮_SI_斯洛文尼亚->🇺🇸_US_美国
+    type: vmess
+    server: 92.53.191.209
+    port: 8880
+    uuid: 6f96494c-bdaf-3091-bf7b-29cfe92882b6
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+      headers:
+        host: TG.WangCai2.s4.db-link02.top
+    alterId: 0
+  - name: 🇷🇴_RO_罗马尼亚->🇺🇸_US_美国
+    type: vmess
+    server: 213.182.199.220
+    port: 8880
+    uuid: 470c6d0a-7ee5-3e9d-8f49-1c4e485fafc9
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+      headers:
+        host: TG.WangCai2.s4.db-link02.top
+    alterId: 0
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇳🇱_NL_荷兰->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇸🇰_SK_斯洛伐克->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇩🇪_DE_德国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-      - 🇲🇩_MD_摩尔多瓦
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇸🇪_SE_瑞典
+      - 🇿🇦_ZA_南非_1
+      - 🇧🇬_BG_保加利亚->🇺🇸_US_美国
+      - 🇺🇸_US_美国_2
+      - 🇪🇸_ES_西班牙->🇺🇸_US_美国
+      - 🇧🇷_BR_巴西
+      - 🇺🇸_US_美国_3
+      - 🇿🇦_ZA_南非_2
+      - 🇱🇹_LT_立陶宛->🇺🇸_US_美国
+      - 🇺🇸_US_美国_4
+      - 🇸🇮_SI_斯洛文尼亚->🇺🇸_US_美国
+      - 🇷🇴_RO_罗马尼亚->🇺🇸_US_美国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     proxies:
-      - 🇳🇱_NL_荷兰->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇸🇰_SK_斯洛伐克->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇩🇪_DE_德国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-      - 🇲🇩_MD_摩尔多瓦
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇸🇪_SE_瑞典
+      - 🇿🇦_ZA_南非_1
+      - 🇧🇬_BG_保加利亚->🇺🇸_US_美国
+      - 🇺🇸_US_美国_2
+      - 🇪🇸_ES_西班牙->🇺🇸_US_美国
+      - 🇧🇷_BR_巴西
+      - 🇺🇸_US_美国_3
+      - 🇿🇦_ZA_南非_2
+      - 🇱🇹_LT_立陶宛->🇺🇸_US_美国
+      - 🇺🇸_US_美国_4
+      - 🇸🇮_SI_斯洛文尼亚->🇺🇸_US_美国
+      - 🇷🇴_RO_罗马尼亚->🇺🇸_US_美国
     interval: 300
     tolerance: 5000
   - name: 🎯 全球直连
@@ -167,14 +271,20 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇳🇱_NL_荷兰->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇸🇰_SK_斯洛伐克->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇩🇪_DE_德国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-      - 🇲🇩_MD_摩尔多瓦
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇸🇪_SE_瑞典
+      - 🇿🇦_ZA_南非_1
+      - 🇧🇬_BG_保加利亚->🇺🇸_US_美国
+      - 🇺🇸_US_美国_2
+      - 🇪🇸_ES_西班牙->🇺🇸_US_美国
+      - 🇧🇷_BR_巴西
+      - 🇺🇸_US_美国_3
+      - 🇿🇦_ZA_南非_2
+      - 🇱🇹_LT_立陶宛->🇺🇸_US_美国
+      - 🇺🇸_US_美国_4
+      - 🇸🇮_SI_斯洛文尼亚->🇺🇸_US_美国
+      - 🇷🇴_RO_罗马尼亚->🇺🇸_US_美国
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
