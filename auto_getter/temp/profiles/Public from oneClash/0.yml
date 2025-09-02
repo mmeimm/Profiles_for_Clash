@@ -47,22 +47,91 @@ tun:
     - 1.0.0.1
 
 proxies:
-  - name: 🇿🇦_ZA_南非_1
+  - name: 🇩🇰_DK_丹麦->🇺🇸_US_美国_1
     type: vmess
-    server: 102.177.176.210
-    port: 8880
-    uuid: d9369b77-531e-31f4-a2a2-2273db2825a2
+    server: csgo.com
+    port: 80
+    uuid: 457f64d5-cc68-4911-82ee-636ebb568a46
     cipher: auto
     network: ws
     ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: /profile/telegram@ssrsub
       headers:
-        host: TG.WangCai2.s4.db-link02.top
+        host: cdn-node-oss-99.paofu.de
     alterId: 0
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  - name: 🇷🇺_RU_俄罗斯_1
+    type: ss
+    server: 185.231.233.112
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+  - name: 🇩🇰_DK_丹麦->🇺🇸_US_美国_2
     type: vmess
-    server: v29.heduian.link
-    port: 30829
+    server: fastcup.net
+    port: 80
+    uuid: 457f64d5-cc68-4911-82ee-636ebb568a46
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /profile/telegram@ssrsub
+      headers:
+        host: cdn-node-oss-99.paofu.de
+    alterId: 0
+  - name: 🇩🇰_DK_丹麦->🇺🇸_US_美国_3
+    type: vmess
+    server: pubg.ac
+    port: 80
+    uuid: 457f64d5-cc68-4911-82ee-636ebb568a46
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /profile/telegram@ssrsub
+      headers:
+        host: cdn-node-oss-99.paofu.de
+    alterId: 0
+  - name: 🇨🇳_CN_中国_1
+    type: vmess
+    server: 103.13.19.254
+    port: 50414
+    sni: ""
+    uuid: aacec49a-c6eb-43a0-b14a-e3b4302e5f1a
+    cipher: auto
+    network: tcp
+    alterId: 0
+  - name: 🇩🇰_DK_丹麦->🇺🇸_US_美国_4
+    type: trojan
+    server: csgo.com
+    port: 8443
+    udp: true
+    sni: cdn-node-oss-99.paofu.de
+    password: 457f64d5-cc68-4911-82ee-636ebb568a46
+    network: ws
+    ws-opts:
+      path: /profile/telegram@ssrsub
+      headers:
+        host: cdn-node-oss-99.paofu.de
+  - name: 🇳🇱_NL_荷兰
+    type: ss
+    server: 185.242.247.249
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: Sur5Ny74npD3
+  - name: 🇩🇰_DK_丹麦->🇺🇸_US_美国_5
+    type: trojan
+    server: pubg.ac
+    port: 8443
+    udp: true
+    sni: cdn-node-oss-99.paofu.de
+    password: 457f64d5-cc68-4911-82ee-636ebb568a46
+    network: ws
+    ws-opts:
+      path: /profile/telegram@ssrsub
+      headers:
+        host: cdn-node-oss-99.paofu.de
+  - name: 🇨🇳_CN_中国_2
+    type: vmess
+    server: v5.heduian.link
+    port: 30805
     sni: ""
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     cipher: auto
@@ -71,121 +140,66 @@ proxies:
     ws-opts:
       path: /oooo
       headers:
-        host: ocbc.com
+        host: v5.heduian.link
     alterId: 2
-  - name: 🇩🇰_DK_丹麦->🇺🇸_US_美国_1
-    type: vmess
-    server: csgo.com
-    port: 80
-    uuid: 62e4250a-fe02-40cc-ad32-c847389956cd
-    cipher: auto
-    network: ws
-    ws-opts:
-      path: /profile/telegram@ssrsub
-      headers:
-        host: cdn-node-oss-99.paofu.de
-    alterId: 0
-  - name: 🇺🇸_US_美国_1
-    type: vmess
-    server: 160.79.105.215
-    port: 8880
-    uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788
-    cipher: auto
-    network: ws
-    ws-opts:
-      path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-      headers:
-        host: TG.WangCai2.s4.db-link02.top
-    alterId: 0
-  - name: 🇺🇸_US_美国_2
-    type: vmess
-    server: 192.200.160.211
-    port: 8880
-    sni: ""
-    uuid: 7a384b65-fcc9-32b1-bff4-d2494705b7b1
-    cipher: auto
-    network: ws
-    skip-cert-verify: true
-    ws-opts:
-      path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-      headers:
-        host: TG.WangCai2.s4.db-link02.top
-    alterId: 0
-  - name: 🇱🇹_LT_立陶宛
-    type: vmess
-    server: 185.148.105.220
-    port: 8880
-    uuid: 470c6d0a-7ee5-3e9d-8f49-1c4e485fafc9
-    cipher: auto
-    network: ws
-    ws-opts:
-      path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-      headers:
-        host: TG.WangCai2.s4.db-link02.top
-    alterId: 0
-  - name: 🇩🇰_DK_丹麦->🇺🇸_US_美国_2
-    type: vmess
-    server: fastcup.net
-    port: 80
-    uuid: 62e4250a-fe02-40cc-ad32-c847389956cd
-    cipher: auto
-    network: ws
-    ws-opts:
-      path: /profile/telegram@ssrsub
-      headers:
-        host: cdn-node-oss-99.paofu.de
-    alterId: 0
-  - name: 🇿🇦_ZA_南非_2
-    type: vmess
-    server: 102.177.176.209
-    port: 8880
-    sni: ""
-    uuid: 6f96494c-bdaf-3091-bf7b-29cfe92882b6
-    cipher: auto
-    network: ws
-    ws-opts:
-      path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        host: TG.WangCai2.s4.db-link02.top
-    alterId: 0
-  - name: 🇺🇸_US_美国_3
+  - name: 🇷🇺_RU_俄罗斯_2
+    type: ss
+    server: 83.217.9.101
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: NbQNqngaIwS7
+  - name: 🇩🇰_DK_丹麦->🇺🇸_US_美国_6
     type: trojan
-    server: gerxyz.bm04.xyz
-    port: 2053
+    server: fastcup.net
+    port: 8443
     udp: true
-    sni: gerxyz.bm04.xyz
-    password: 94cf288d-f764-4ce9-a547-a7228144f056
-    network: grpc
-    grpc-opts:
-      grpc-service-name: qwrqwtuotoiadsfhgjkzxnbcmakgkajhged=2048
+    sni: cdn-node-oss-99.paofu.de
+    password: 457f64d5-cc68-4911-82ee-636ebb568a46
+    network: ws
+    ws-opts:
+      path: /profile/telegram@ssrsub
+      headers:
+        host: cdn-node-oss-99.paofu.de
+  - name: 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+    type: ss
+    server: 185.153.197.5
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇿🇦_ZA_南非_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
       - 🇩🇰_DK_丹麦->🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇱🇹_LT_立陶宛
+      - 🇷🇺_RU_俄罗斯_1
       - 🇩🇰_DK_丹麦->🇺🇸_US_美国_2
-      - 🇿🇦_ZA_南非_2
-      - 🇺🇸_US_美国_3
+      - 🇩🇰_DK_丹麦->🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国_1
+      - 🇩🇰_DK_丹麦->🇺🇸_US_美国_4
+      - 🇳🇱_NL_荷兰
+      - 🇩🇰_DK_丹麦->🇺🇸_US_美国_5
+      - 🇨🇳_CN_中国_2
+      - 🇷🇺_RU_俄罗斯_2
+      - 🇩🇰_DK_丹麦->🇺🇸_US_美国_6
+      - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     proxies:
-      - 🇿🇦_ZA_南非_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
       - 🇩🇰_DK_丹麦->🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇱🇹_LT_立陶宛
+      - 🇷🇺_RU_俄罗斯_1
       - 🇩🇰_DK_丹麦->🇺🇸_US_美国_2
-      - 🇿🇦_ZA_南非_2
-      - 🇺🇸_US_美国_3
+      - 🇩🇰_DK_丹麦->🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国_1
+      - 🇩🇰_DK_丹麦->🇺🇸_US_美国_4
+      - 🇳🇱_NL_荷兰
+      - 🇩🇰_DK_丹麦->🇺🇸_US_美国_5
+      - 🇨🇳_CN_中国_2
+      - 🇷🇺_RU_俄罗斯_2
+      - 🇩🇰_DK_丹麦->🇺🇸_US_美国_6
+      - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
     interval: 300
     tolerance: 5000
   - name: 🎯 全球直连
@@ -205,15 +219,18 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇿🇦_ZA_南非_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
       - 🇩🇰_DK_丹麦->🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇱🇹_LT_立陶宛
+      - 🇷🇺_RU_俄罗斯_1
       - 🇩🇰_DK_丹麦->🇺🇸_US_美国_2
-      - 🇿🇦_ZA_南非_2
-      - 🇺🇸_US_美国_3
+      - 🇩🇰_DK_丹麦->🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国_1
+      - 🇩🇰_DK_丹麦->🇺🇸_US_美国_4
+      - 🇳🇱_NL_荷兰
+      - 🇩🇰_DK_丹麦->🇺🇸_US_美国_5
+      - 🇨🇳_CN_中国_2
+      - 🇷🇺_RU_俄罗斯_2
+      - 🇩🇰_DK_丹麦->🇺🇸_US_美国_6
+      - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
