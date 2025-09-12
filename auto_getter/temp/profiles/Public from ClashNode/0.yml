@@ -1,6 +1,6 @@
 # 创建者：v2rayse.com 自动创建
-# 创建时间：2025-09-08 08:00:00
-# 节点类型：ss, vmess
+# 创建时间：2025-09-11 08:00:00
+# 节点类型：
 ---
 mixed-port: 7890
 allow-lan: false
@@ -47,120 +47,40 @@ tun:
   - "8.8.4.4"
   - "1.1.1.1"
   - "1.0.0.1"
-proxies:
-- name: "🇲🇩_MD_摩尔多瓦"
-  type: "ss"
-  server: "185.153.197.5"
-  port: 989
-  cipher: "aes-256-cfb"
-  password: "f8f7aCzcPKbsF8p3"
-- name: "🇲🇩_MD_摩尔多瓦_1"
-  type: "ss"
-  server: "91.132.94.200"
-  port: 989
-  cipher: "aes-256-cfb"
-  password: "f8f7aCzcPKbsF8p3"
-- name: "🇨🇳_CN_中国"
-  type: "vmess"
-  server: "v29.heduian.link"
-  port: 30829
-  sni: ""
-  uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
-  cipher: "auto"
-  network: "ws"
-  ws-opts:
-    path: "/oooo"
-    headers:
-      host: "ocbc.com"
-  alterId: 2
-- name: "🇨🇳_CN_中国->🇺🇸_US_美国"
-  type: "vmess"
-  server: "v35.heduian.link"
-  port: 30835
-  sni: ""
-  uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
-  cipher: "auto"
-  network: "ws"
-  skip-cert-verify: true
-  ws-opts:
-    path: "/oooo"
-    headers:
-      host: "v35.heduian.link"
-  alterId: 2
-- name: "🇳🇱_NL_荷兰->🇺🇸_US_美国"
-  type: "vmess"
-  server: "45.144.174.211"
-  port: 22107
-  uuid: "ca840767-e6c3-4149-bcf1-c5c61e450bcc"
-  cipher: "auto"
-  network: "ws"
-  skip-cert-verify: true
-  ws-opts:
-    path: "/"
-  alterId: 0
+proxies: []
 proxy-groups:
 - name: "🚀 节点选择"
   type: "select"
   proxies:
   - "♻️ 自动选择"
   - "DIRECT"
-  - "🇲🇩_MD_摩尔多瓦"
-  - "🇲🇩_MD_摩尔多瓦_1"
-  - "🇨🇳_CN_中国"
-  - "🇨🇳_CN_中国->🇺🇸_US_美国"
-  - "🇳🇱_NL_荷兰->🇺🇸_US_美国"
 - name: "♻️ 自动选择"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 300
   tolerance: 50
-  proxies:
-  - "🇲🇩_MD_摩尔多瓦"
-  - "🇲🇩_MD_摩尔多瓦_1"
-  - "🇨🇳_CN_中国"
-  - "🇨🇳_CN_中国->🇺🇸_US_美国"
-  - "🇳🇱_NL_荷兰->🇺🇸_US_美国"
+  proxies: []
 - name: "🌍 国外媒体"
   type: "select"
   proxies:
   - "🚀 节点选择"
   - "♻️ 自动选择"
   - "🎯 全球直连"
-  - "🇲🇩_MD_摩尔多瓦"
-  - "🇲🇩_MD_摩尔多瓦_1"
-  - "🇨🇳_CN_中国"
-  - "🇨🇳_CN_中国->🇺🇸_US_美国"
-  - "🇳🇱_NL_荷兰->🇺🇸_US_美国"
 - name: "📲 电报信息"
   type: "select"
   proxies:
   - "🚀 节点选择"
   - "🎯 全球直连"
-  - "🇲🇩_MD_摩尔多瓦"
-  - "🇲🇩_MD_摩尔多瓦_1"
-  - "🇨🇳_CN_中国"
-  - "🇨🇳_CN_中国->🇺🇸_US_美国"
-  - "🇳🇱_NL_荷兰->🇺🇸_US_美国"
 - name: "Ⓜ️ 微软服务"
   type: "select"
   proxies:
   - "🎯 全球直连"
   - "🚀 节点选择"
-  - "🇲🇩_MD_摩尔多瓦"
-  - "🇲🇩_MD_摩尔多瓦_1"
-  - "🇨🇳_CN_中国"
-  - "🇨🇳_CN_中国->🇺🇸_US_美国"
-  - "🇳🇱_NL_荷兰->🇺🇸_US_美国"
 - name: "🍎 苹果服务"
   type: "select"
   proxies:
   - "🚀 节点选择"
   - "🎯 全球直连"
-  - "🇲🇩_MD_摩尔多瓦"
-  - "🇲🇩_MD_摩尔多瓦_1"
-  - "🇨🇳_CN_中国"
-  - "🇨🇳_CN_中国->🇺🇸_US_美国"
-  - "🇳🇱_NL_荷兰->🇺🇸_US_美国"
 - name: "🎯 全球直连"
   type: "select"
   proxies:
@@ -183,11 +103,6 @@ proxy-groups:
   - "🚀 节点选择"
   - "🎯 全球直连"
   - "♻️ 自动选择"
-  - "🇲🇩_MD_摩尔多瓦"
-  - "🇲🇩_MD_摩尔多瓦_1"
-  - "🇨🇳_CN_中国"
-  - "🇨🇳_CN_中国->🇺🇸_US_美国"
-  - "🇳🇱_NL_荷兰->🇺🇸_US_美国"
 rule-providers:
   Apple:
     type: "http"
