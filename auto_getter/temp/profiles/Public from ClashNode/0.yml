@@ -1,6 +1,6 @@
 # 创建者：v2rayse.com 自动创建
-# 创建时间：2025-09-25 08:00:00
-# 节点类型：ssr, ss
+# 创建时间：2025-09-29 08:00:00
+# 节点类型：vmess
 ---
 mixed-port: 7890
 allow-lan: false
@@ -48,113 +48,73 @@ tun:
   - "1.1.1.1"
   - "1.0.0.1"
 proxies:
-- name: "🇬🇧_GB_英国"
-  type: "ssr"
-  server: "62.100.205.48"
-  port: 989
-  cipher: "aes-256-cfb"
-  password: "f8f7aCzcPKbsF8p3"
-  obfs: "plain"
-  protocol: "origin"
-- name: "🇬🇧_GB_英国_1"
-  type: "ss"
-  server: "62.100.205.48"
-  port: 989
-  cipher: "aes-256-cfb"
-  password: "f8f7aCzcPKbsF8p3"
-- name: "🇮🇳_IN_印度"
-  type: "ss"
-  server: "134.209.147.198"
-  port: 989
-  cipher: "aes-256-cfb"
-  password: "f8f7aCzcPKbsF8p3"
-- name: "🇬🇧_GB_英国->🇨🇳_CN_中国"
-  type: "ss"
-  server: "51.15.17.169"
-  port: 989
-  cipher: "aes-256-cfb"
-  password: "f8f7aCzcPKbsF8p3"
-- name: "🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知"
-  type: "ss"
-  server: "156.146.40.194"
-  port: 989
-  cipher: "aes-256-cfb"
-  password: "f8f7aCzcPKbsF8p3"
-- name: "🇮🇸_IS_冰岛"
-  type: "ss"
-  server: "37.235.49.168"
-  port: 989
-  cipher: "aes-256-cfb"
-  password: "f8f7aCzcPKbsF8p3"
+- name: "🇨🇳_CN_中国->🇺🇸_US_美国"
+  type: "vmess"
+  server: "v29.heduian.link"
+  port: 30829
+  uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+  cipher: "auto"
+  network: "ws"
+  ws-opts:
+    path: "/oooo"
+    headers:
+      host: "v29.heduian.link"
+  alterId: 2
+- name: "🇺🇸_US_美国"
+  type: "vmess"
+  server: "216.132.112.116"
+  port: 30475
+  sni: ""
+  uuid: "defa10be-f618-4b64-c815-049d2eacbd3f"
+  cipher: "auto"
+  network: "tcp"
+  fingerprint: ""
+  alterId: 0
 proxy-groups:
 - name: "🚀 节点选择"
   type: "select"
   proxies:
   - "♻️ 自动选择"
   - "DIRECT"
-  - "🇬🇧_GB_英国"
-  - "🇬🇧_GB_英国_1"
-  - "🇮🇳_IN_印度"
-  - "🇬🇧_GB_英国->🇨🇳_CN_中国"
-  - "🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知"
-  - "🇮🇸_IS_冰岛"
+  - "🇨🇳_CN_中国->🇺🇸_US_美国"
+  - "🇺🇸_US_美国"
 - name: "♻️ 自动选择"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 300
   tolerance: 50
   proxies:
-  - "🇬🇧_GB_英国"
-  - "🇬🇧_GB_英国_1"
-  - "🇮🇳_IN_印度"
-  - "🇬🇧_GB_英国->🇨🇳_CN_中国"
-  - "🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知"
-  - "🇮🇸_IS_冰岛"
+  - "🇨🇳_CN_中国->🇺🇸_US_美国"
+  - "🇺🇸_US_美国"
 - name: "🌍 国外媒体"
   type: "select"
   proxies:
   - "🚀 节点选择"
   - "♻️ 自动选择"
   - "🎯 全球直连"
-  - "🇬🇧_GB_英国"
-  - "🇬🇧_GB_英国_1"
-  - "🇮🇳_IN_印度"
-  - "🇬🇧_GB_英国->🇨🇳_CN_中国"
-  - "🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知"
-  - "🇮🇸_IS_冰岛"
+  - "🇨🇳_CN_中国->🇺🇸_US_美国"
+  - "🇺🇸_US_美国"
 - name: "📲 电报信息"
   type: "select"
   proxies:
   - "🚀 节点选择"
   - "🎯 全球直连"
-  - "🇬🇧_GB_英国"
-  - "🇬🇧_GB_英国_1"
-  - "🇮🇳_IN_印度"
-  - "🇬🇧_GB_英国->🇨🇳_CN_中国"
-  - "🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知"
-  - "🇮🇸_IS_冰岛"
+  - "🇨🇳_CN_中国->🇺🇸_US_美国"
+  - "🇺🇸_US_美国"
 - name: "Ⓜ️ 微软服务"
   type: "select"
   proxies:
   - "🎯 全球直连"
   - "🚀 节点选择"
-  - "🇬🇧_GB_英国"
-  - "🇬🇧_GB_英国_1"
-  - "🇮🇳_IN_印度"
-  - "🇬🇧_GB_英国->🇨🇳_CN_中国"
-  - "🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知"
-  - "🇮🇸_IS_冰岛"
+  - "🇨🇳_CN_中国->🇺🇸_US_美国"
+  - "🇺🇸_US_美国"
 - name: "🍎 苹果服务"
   type: "select"
   proxies:
   - "🚀 节点选择"
   - "🎯 全球直连"
-  - "🇬🇧_GB_英国"
-  - "🇬🇧_GB_英国_1"
-  - "🇮🇳_IN_印度"
-  - "🇬🇧_GB_英国->🇨🇳_CN_中国"
-  - "🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知"
-  - "🇮🇸_IS_冰岛"
+  - "🇨🇳_CN_中国->🇺🇸_US_美国"
+  - "🇺🇸_US_美国"
 - name: "🎯 全球直连"
   type: "select"
   proxies:
@@ -177,12 +137,8 @@ proxy-groups:
   - "🚀 节点选择"
   - "🎯 全球直连"
   - "♻️ 自动选择"
-  - "🇬🇧_GB_英国"
-  - "🇬🇧_GB_英国_1"
-  - "🇮🇳_IN_印度"
-  - "🇬🇧_GB_英国->🇨🇳_CN_中国"
-  - "🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知"
-  - "🇮🇸_IS_冰岛"
+  - "🇨🇳_CN_中国->🇺🇸_US_美国"
+  - "🇺🇸_US_美国"
 rule-providers:
   Apple:
     type: "http"
