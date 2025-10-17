@@ -5,343 +5,197 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国_1, server: 36.139.201.35, port: 10002, type: vmess, uuid: 8d717e5a-dab5-4b99-af4f-ea29ef8eebed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
-  - {name: 🇫🇷 法国_1, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国_2, server: digitalocean.com, port: 8443, type: vmess, uuid: 621514d0-46de-47ea-9063-21eaea0999c7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: bpca2.catimecsgo.xyz, network: ws, ws-opts: {path: /hkz7hea3xiaco2j/ca1, headers: {Host: bpca2.catimecsgo.xyz}}}
-  - {name: 🇺🇸 美国_3, server: 141.193.213.60, port: 8443, type: vmess, uuid: 621514d0-46de-47ea-9063-21eaea0999c7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: bpca2.catimecsgo.xyz, network: ws, ws-opts: {path: /hkz7hea3xiaco2j/ca1, headers: {Host: bpca2.catimecsgo.xyz}}}
-  - {name: 🇺🇸 美国_4, server: 141.193.213.135, port: 8443, type: vmess, uuid: 621514d0-46de-47ea-9063-21eaea0999c7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: bpca2.catimecsgo.xyz, network: ws, ws-opts: {path: /hkz7hea3xiaco2j/ca1, headers: {Host: bpca2.catimecsgo.xyz}}}
-  - {name: 🇺🇸 美国_5, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国_6, server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: v8.heduian.link, network: ws, ws-opts: {path: /oooo, headers: {Host: v8.heduian.link}}}
-  - {name: 🇺🇸 美国_7, server: digitalocean.com, port: 443, type: vmess, uuid: 621514d0-46de-47ea-9063-21eaea0999c7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: iicduazc1nh3jt0t.sgtimecsgo.xyz, network: ws, ws-opts: {path: /bpjc/sg1, headers: {Host: iicduazc1nh3jt0t.sgtimecsgo.xyz}}}
-  - {name: 🇺🇸 美国_8, server: 141.193.213.107, port: 443, type: vmess, uuid: 621514d0-46de-47ea-9063-21eaea0999c7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: iicduazc1nh3jt0t.sgtimecsgo.xyz, network: ws, ws-opts: {path: /bpjc/sg1, headers: {Host: iicduazc1nh3jt0t.sgtimecsgo.xyz}}}
-  - {name: 🇺🇸 美国_9, server: 141.193.213.199, port: 443, type: vmess, uuid: 621514d0-46de-47ea-9063-21eaea0999c7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: b3ho27p7k3fyzbym.uktimecsgo.xyz, network: ws, ws-opts: {path: /bpjc/uk1, headers: {Host: b3ho27p7k3fyzbym.uktimecsgo.xyz}}}
-  - {name: 🇨🇦 加拿大, server: 74.48.194.7, port: 27691, type: vmess, uuid: 56520f0d-2bbc-4b8b-f438-82e151d66f96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
-  - {name: 🇺🇸 美国_10, server: 2001:bc8:32d7:30b::201, port: 40011, type: vmess, uuid: bd7c5633-70df-4d6d-b104-a3e9580498f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: www.bing.com, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: www.bing.com}}}
-  - {name: 🇫🇷 法国_2, server: 2001:bc8:32d7:30b::201, port: 40011, type: vmess, uuid: bd7c5633-70df-4d6d-b104-a3e9580498f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: www.bing.com, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: www.bing.com}}}
-  - {name: 🇺🇸 美国_11, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9tqhMdIrTkgQ46PvhyAtMH}
-  - {name: 🇺🇸 美国_12, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: RFK38Cg7APneSB5cWDcpbm}
-  - {name: 🇺🇸 美国_13, server: pupas-shirting-unsung.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: p78naCf2EfOlRSLTX0wFVx}
-  - {name: 🇺🇸 美国_14, server: pupas-shirting-unsung.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: p78naCf2EfOlRSLTX0wFVx}
-  - {name: 🇺🇸 美国_15, server: 155.46.213.32, port: 2096, type: vless, uuid: b65f4df7-f6af-42b2-877a-cef33f21675e, tls: true, skip-cert-verify: true, servername: kejiland.freewarp.eu.org, network: ws, ws-opts: {path: /snippets, headers: {Host: kejiland.freewarp.eu.org}}}
-  - {name: 🇺🇸 美国_16, server: 89.116.180.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇯🇵 日本_1, server: 103.245.228.32, port: 2096, type: vless, uuid: b65f4df7-f6af-42b2-877a-cef33f21675e, tls: true, skip-cert-verify: true, servername: kejiland.freewarp.eu.org, network: ws, ws-opts: {path: /snippets, headers: {Host: kejiland.freewarp.eu.org}}}
-  - {name: 🇬🇧 英国_1, server: 141.11.203.32, port: 2096, type: vless, uuid: b65f4df7-f6af-42b2-877a-cef33f21675e, tls: true, skip-cert-verify: true, servername: kejiland.freewarp.eu.org, network: ws, ws-opts: {path: /snippets, headers: {Host: kejiland.freewarp.eu.org}}}
-  - {name: 🇺🇸 美国_17, server: 185.162.231.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇩🇪 德国_1, server: 5.10.214.44, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: kejiland.freewarp.eu.org, network: ws, ws-opts: {path: /snippets, headers: {Host: kejiland.freewarp.eu.org}}}
-  - {name: 🇺🇸 美国_18, server: 185.159.247.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇯🇵 日本_2, server: 103.245.229.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_19, server: 198.202.211.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇫🇷 法国_3, server: 141.11.202.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_20, server: 194.53.53.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_21, server: 155.46.167.43, port: 2096, type: vless, uuid: 01997b9d-a1f7-e188-981a-c665b723cfef, tls: true, skip-cert-verify: true, servername: kejiland.freewarp.eu.org, network: ws, ws-opts: {path: /snippets, headers: {Host: kejiland.freewarp.eu.org}}}
-  - {name: 🇺🇸 美国_22, server: 155.46.167.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_23, server: 193.227.99.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_24, server: 216.24.57.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_25, server: 154.194.0.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_26, server: 195.85.23.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_27, server: 192.169.220.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_28, server: 192.169.221.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_29, server: 160.153.1.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_30, server: 154.197.64.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_31, server: 135.84.76.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_32, server: nrtcfdns.zone.id, port: 443, type: vless, uuid: dea991b4-696f-4e9e-9761-1e1b31bb02de, tls: true, skip-cert-verify: true, servername: 2.294294.xyz, network: ws, ws-opts: {path: /snippets, headers: {Host: 2.294294.xyz}}}
-  - {name: 🇯🇵 日本_3, server: 103.116.7.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_33, server: 190.93.245.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_34, server: 92.53.191.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_35, server: 104.129.166.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_36, server: xn--ktff-jt6hr36l.tencentapp.cn, port: 443, type: vless, uuid: dea991b4-696f-4e9e-9761-1e1b31bb02de, tls: true, skip-cert-verify: true, servername: 2.294294.xyz, network: ws, ws-opts: {path: /snippets, headers: {Host: 2.294294.xyz}}}
-  - {name: 🇺🇸 美国_37, server: www.shopify.com, port: 443, type: vless, uuid: dea991b4-696f-4e9e-9761-1e1b31bb02de, tls: true, skip-cert-verify: true, servername: 2.294294.xyz, network: ws, ws-opts: {path: /snippets, headers: {Host: 2.294294.xyz}}}
-  - {name: 🇺🇸 美国_38, server: cdn.2020111.xyz, port: 443, type: vless, uuid: dea991b4-696f-4e9e-9761-1e1b31bb02de, tls: true, skip-cert-verify: true, servername: 2.294294.xyz, network: ws, ws-opts: {path: /snippets, headers: {Host: 2.294294.xyz}}}
-  - {name: 🇺🇸 美国_39, server: cf.877774.xyz, port: 443, type: vless, uuid: dea991b4-696f-4e9e-9761-1e1b31bb02de, tls: true, skip-cert-verify: true, servername: 2.294294.xyz, network: ws, ws-opts: {path: /snippets, headers: {Host: 2.294294.xyz}}}
-  - {name: 🇫🇷 法国_4, server: 141.11.203.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇦🇺 澳洲, server: 192.65.217.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_40, server: 198.71.191.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_41, server: 198.12.144.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_42, server: 198.12.145.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_43, server: 198.71.190.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇬🇧 英国_2, server: 109.176.239.32, port: 2096, type: vless, uuid: b65f4df7-f6af-42b2-877a-cef33f21675e, tls: true, skip-cert-verify: true, servername: kejiland.freewarp.eu.org, network: ws, ws-opts: {path: /snippets, headers: {Host: kejiland.freewarp.eu.org}}}
-  - {name: 🇺🇸 美国_44, server: 199.181.197.32, port: 2096, type: vless, uuid: b65f4df7-f6af-42b2-877a-cef33f21675e, tls: true, skip-cert-verify: true, servername: kejiland.freewarp.eu.org, network: ws, ws-opts: {path: /snippets, headers: {Host: kejiland.freewarp.eu.org}}}
-  - {name: 🇺🇸 美国_45, server: 92.53.188.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇬🇧 英国_3, server: 185.156.19.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇩🇪 德国_2, server: 5.175.141.43, port: 2096, type: vless, uuid: 01997b9d-a1f7-e188-981a-c665b723cfef, tls: true, skip-cert-verify: true, servername: kejiland.freewarp.eu.org, network: ws, ws-opts: {path: /snippets, headers: {Host: kejiland.freewarp.eu.org}}}
-  - {name: 🇺🇸 美国_1 2, server: 36.139.201.35, port: 10002, type: vmess, uuid: 8d717e5a-dab5-4b99-af4f-ea29ef8eebed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
-  - {name: 🇫🇷 法国_1 2, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国_2 2, server: digitalocean.com, port: 8443, type: vmess, uuid: 621514d0-46de-47ea-9063-21eaea0999c7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: bpca2.catimecsgo.xyz, network: ws, ws-opts: {path: /hkz7hea3xiaco2j/ca1, headers: {Host: bpca2.catimecsgo.xyz}}}
-  - {name: 🇺🇸 美国_3 2, server: 141.193.213.60, port: 8443, type: vmess, uuid: 621514d0-46de-47ea-9063-21eaea0999c7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: bpca2.catimecsgo.xyz, network: ws, ws-opts: {path: /hkz7hea3xiaco2j/ca1, headers: {Host: bpca2.catimecsgo.xyz}}}
-  - {name: 🇺🇸 美国_4 2, server: 141.193.213.135, port: 8443, type: vmess, uuid: 621514d0-46de-47ea-9063-21eaea0999c7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: bpca2.catimecsgo.xyz, network: ws, ws-opts: {path: /hkz7hea3xiaco2j/ca1, headers: {Host: bpca2.catimecsgo.xyz}}}
-  - {name: 🇺🇸 美国_5 2, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国_6 2, server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: v8.heduian.link, network: ws, ws-opts: {path: /oooo, headers: {Host: v8.heduian.link}}}
-  - {name: 🇺🇸 美国_7 2, server: digitalocean.com, port: 443, type: vmess, uuid: 621514d0-46de-47ea-9063-21eaea0999c7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: iicduazc1nh3jt0t.sgtimecsgo.xyz, network: ws, ws-opts: {path: /bpjc/sg1, headers: {Host: iicduazc1nh3jt0t.sgtimecsgo.xyz}}}
-  - {name: 🇺🇸 美国_8 2, server: 141.193.213.107, port: 443, type: vmess, uuid: 621514d0-46de-47ea-9063-21eaea0999c7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: iicduazc1nh3jt0t.sgtimecsgo.xyz, network: ws, ws-opts: {path: /bpjc/sg1, headers: {Host: iicduazc1nh3jt0t.sgtimecsgo.xyz}}}
-  - {name: 🇺🇸 美国_9 2, server: 141.193.213.199, port: 443, type: vmess, uuid: 621514d0-46de-47ea-9063-21eaea0999c7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: b3ho27p7k3fyzbym.uktimecsgo.xyz, network: ws, ws-opts: {path: /bpjc/uk1, headers: {Host: b3ho27p7k3fyzbym.uktimecsgo.xyz}}}
-  - {name: 🇨🇦 加拿大 2, server: 74.48.194.7, port: 27691, type: vmess, uuid: 56520f0d-2bbc-4b8b-f438-82e151d66f96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
-  - {name: 🇺🇸 美国_10 2, server: 2001:bc8:32d7:30b::201, port: 40011, type: vmess, uuid: bd7c5633-70df-4d6d-b104-a3e9580498f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: www.bing.com, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: www.bing.com}}}
-  - {name: 🇫🇷 法国_2 2, server: 2001:bc8:32d7:30b::201, port: 40011, type: vmess, uuid: bd7c5633-70df-4d6d-b104-a3e9580498f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: www.bing.com, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: www.bing.com}}}
-  - {name: 🇺🇸 美国_11 2, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9tqhMdIrTkgQ46PvhyAtMH}
-  - {name: 🇺🇸 美国_12 2, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: RFK38Cg7APneSB5cWDcpbm}
-  - {name: 🇺🇸 美国_13 2, server: pupas-shirting-unsung.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: p78naCf2EfOlRSLTX0wFVx}
-  - {name: 🇺🇸 美国_14 2, server: pupas-shirting-unsung.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: p78naCf2EfOlRSLTX0wFVx}
-  - {name: 🇺🇸 美国_15 2, server: 155.46.213.32, port: 2096, type: vless, uuid: b65f4df7-f6af-42b2-877a-cef33f21675e, tls: true, skip-cert-verify: true, servername: kejiland.freewarp.eu.org, network: ws, ws-opts: {path: /snippets, headers: {Host: kejiland.freewarp.eu.org}}}
-  - {name: 🇺🇸 美国_16 2, server: 89.116.180.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇯🇵 日本_1 2, server: 103.245.228.32, port: 2096, type: vless, uuid: b65f4df7-f6af-42b2-877a-cef33f21675e, tls: true, skip-cert-verify: true, servername: kejiland.freewarp.eu.org, network: ws, ws-opts: {path: /snippets, headers: {Host: kejiland.freewarp.eu.org}}}
-  - {name: 🇬🇧 英国_1 2, server: 141.11.203.32, port: 2096, type: vless, uuid: b65f4df7-f6af-42b2-877a-cef33f21675e, tls: true, skip-cert-verify: true, servername: kejiland.freewarp.eu.org, network: ws, ws-opts: {path: /snippets, headers: {Host: kejiland.freewarp.eu.org}}}
-  - {name: 🇺🇸 美国_17 2, server: 185.162.231.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇩🇪 德国_1 2, server: 5.10.214.44, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: kejiland.freewarp.eu.org, network: ws, ws-opts: {path: /snippets, headers: {Host: kejiland.freewarp.eu.org}}}
-  - {name: 🇺🇸 美国_18 2, server: 185.159.247.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇯🇵 日本_2 2, server: 103.245.229.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_19 2, server: 198.202.211.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇫🇷 法国_3 2, server: 141.11.202.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_20 2, server: 194.53.53.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_21 2, server: 155.46.167.43, port: 2096, type: vless, uuid: 01997b9d-a1f7-e188-981a-c665b723cfef, tls: true, skip-cert-verify: true, servername: kejiland.freewarp.eu.org, network: ws, ws-opts: {path: /snippets, headers: {Host: kejiland.freewarp.eu.org}}}
-  - {name: 🇺🇸 美国_22 2, server: 155.46.167.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_23 2, server: 193.227.99.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_24 2, server: 216.24.57.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_25 2, server: 154.194.0.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_26 2, server: 195.85.23.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_27 2, server: 192.169.220.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_28 2, server: 192.169.221.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_29 2, server: 160.153.1.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_30 2, server: 154.197.64.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_31 2, server: 135.84.76.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_32 2, server: nrtcfdns.zone.id, port: 443, type: vless, uuid: dea991b4-696f-4e9e-9761-1e1b31bb02de, tls: true, skip-cert-verify: true, servername: 2.294294.xyz, network: ws, ws-opts: {path: /snippets, headers: {Host: 2.294294.xyz}}}
-  - {name: 🇯🇵 日本_3 2, server: 103.116.7.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_33 2, server: 190.93.245.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_34 2, server: 92.53.191.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_35 2, server: 104.129.166.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_36 2, server: xn--ktff-jt6hr36l.tencentapp.cn, port: 443, type: vless, uuid: dea991b4-696f-4e9e-9761-1e1b31bb02de, tls: true, skip-cert-verify: true, servername: 2.294294.xyz, network: ws, ws-opts: {path: /snippets, headers: {Host: 2.294294.xyz}}}
-  - {name: 🇺🇸 美国_37 2, server: www.shopify.com, port: 443, type: vless, uuid: dea991b4-696f-4e9e-9761-1e1b31bb02de, tls: true, skip-cert-verify: true, servername: 2.294294.xyz, network: ws, ws-opts: {path: /snippets, headers: {Host: 2.294294.xyz}}}
-  - {name: 🇺🇸 美国_38 2, server: cdn.2020111.xyz, port: 443, type: vless, uuid: dea991b4-696f-4e9e-9761-1e1b31bb02de, tls: true, skip-cert-verify: true, servername: 2.294294.xyz, network: ws, ws-opts: {path: /snippets, headers: {Host: 2.294294.xyz}}}
-  - {name: 🇺🇸 美国_39 2, server: cf.877774.xyz, port: 443, type: vless, uuid: dea991b4-696f-4e9e-9761-1e1b31bb02de, tls: true, skip-cert-verify: true, servername: 2.294294.xyz, network: ws, ws-opts: {path: /snippets, headers: {Host: 2.294294.xyz}}}
-  - {name: 🇫🇷 法国_4 2, server: 141.11.203.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇦🇺 澳洲 2, server: 192.65.217.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_40 2, server: 198.71.191.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_41 2, server: 198.12.144.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_42 2, server: 198.12.145.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇺🇸 美国_43 2, server: 198.71.190.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇬🇧 英国_2 2, server: 109.176.239.32, port: 2096, type: vless, uuid: b65f4df7-f6af-42b2-877a-cef33f21675e, tls: true, skip-cert-verify: true, servername: kejiland.freewarp.eu.org, network: ws, ws-opts: {path: /snippets, headers: {Host: kejiland.freewarp.eu.org}}}
-  - {name: 🇺🇸 美国_44 2, server: 199.181.197.32, port: 2096, type: vless, uuid: b65f4df7-f6af-42b2-877a-cef33f21675e, tls: true, skip-cert-verify: true, servername: kejiland.freewarp.eu.org, network: ws, ws-opts: {path: /snippets, headers: {Host: kejiland.freewarp.eu.org}}}
-  - {name: 🇺🇸 美国_45 2, server: 92.53.188.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇬🇧 英国_3 2, server: 185.156.19.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, skip-cert-verify: true, servername: vless.hubp.de, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: 🇩🇪 德国_2 2, server: 5.175.141.43, port: 2096, type: vless, uuid: 01997b9d-a1f7-e188-981a-c665b723cfef, tls: true, skip-cert-verify: true, servername: kejiland.freewarp.eu.org, network: ws, ws-opts: {path: /snippets, headers: {Host: kejiland.freewarp.eu.org}}}
-  - {name: 🇸🇬 新加坡_1, server: 92.112.22.117, port: 443, type: vless, uuid: 6337837a-2b47-4e0d-a695-75c5a4a8ad51, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: IE_1|⬇️5.3MB/s, server: 141.227.162.18, port: 59995, type: vless, uuid: 7467739e-fe86-43a4-93ae-1669886e80d5, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: AT_1|⬇️1.7MB/s_1, server: at.pixvpn.app, port: 8443, type: vless, uuid: 8c9a7ef4-b692-41ee-90ca-669b04990ac5, tls: true, skip-cert-verify: true, servername: jd.com, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: grpc-jd}, udp: true}
-  - {name: DE_8|⬇️6.3MB/s_1, server: de.monkeyisland.life, port: 8443, type: vless, uuid: fd71044e-127b-429c-9f4a-bd2432e473be, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: www.stackoverflow.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FI_1|⬇️4.9MB/s, server: 178.20.215.2, port: 443, type: vless, uuid: 192ea2c7-d7d0-6676-2929-b04a072b387d, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: speed.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: US_165|⬇️4.6MB/s_1, server: us.nitroo-tech.ru, port: 443, type: vless, uuid: f31f5fe0-0a42-436a-be94-437330801388, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: mirror.yandex.ru, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: TR_3|⬇️3.1MB/s, server: 62.133.63.138, port: 443, type: vless, uuid: 8377aac9-f3b3-42df-a5ea-9254f37e7b34, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: tr.eu-ffast.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇷🇺 俄罗斯_1, server: 92.112.22.117, port: 443, type: vless, uuid: 6337837a-2b47-4e0d-a695-75c5a4a8ad51, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: 🇮🇪 爱尔兰_1, server: 141.227.162.18, port: 59995, type: vless, uuid: 7467739e-fe86-43a4-93ae-1669886e80d5, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 🇫🇷 法国_1 3, server: 178.20.215.2, port: 443, type: vless, uuid: 192ea2c7-d7d0-6676-2929-b04a072b387d, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: speed.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇹🇷 土耳其_1, server: 62.133.63.138, port: 443, type: vless, uuid: 8377aac9-f3b3-42df-a5ea-9254f37e7b34, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: tr.eu-ffast.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇬🇧 英国_1 3, server: 141.227.162.18, port: 59995, type: vless, uuid: 7467739e-fe86-43a4-93ae-1669886e80d5, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 🇺🇸 美国_1 3, server: 104.21.9.137, port: 443, type: vless, uuid: e159a810-7d2c-4ce6-bc22-9727feb12fac, tls: true, skip-cert-verify: true, servername: ec51ebe7-9b61-2397-41bf-1f00f6163852.huangshang.site, network: ws, ws-opts: {path: /0SCvfqSaeeB74kgXZ}, udp: true}
-  - {name: 🇺🇸 美国_2 3, server: 183.240.179.88, port: 11443, type: vless, uuid: df245bf8-8253-4029-90d8-ef30cfac75f1, tls: false, skip-cert-verify: true, network: tcp, udp: true}
-  - {name: jp_1, server: 183.240.179.88, port: 11443, type: vless, uuid: df245bf8-8253-4029-90d8-ef30cfac75f1, tls: false, skip-cert-verify: true, network: tcp, udp: true}
-  - {name: 🇷🇺 RU, server: us.nitroo-tech.ru, port: 443, type: vless, uuid: f31f5fe0-0a42-436a-be94-437330801388, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: mirror.yandex.ru, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇯🇵 日本_1 3, server: 160.187.111.222, port: 443, type: vless, uuid: 3e7f67de-648e-4871-b51a-a225214d41ee, tls: false, skip-cert-verify: true, servername: images-na.ssl-images-amazon.com, network: tcp, udp: true}
-  - {name: 🇮🇷 伊朗_1, server: 94.182.137.12, port: 20532, type: vless, uuid: 8496c102-4094-4dd3-ad63-7bb7a35cbaee, tls: false, skip-cert-verify: true, network: tcp, udp: true}
-  - {name: 美國_1, server: 38.54.23.58, port: 443, type: vless, uuid: 6048472f-0993-4ae0-8203-960b9a0f4113, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: www.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: AT_1|⬇️1.7MB/s_2, server: at.pixvpn.app, port: 8443, type: vless, uuid: 8c9a7ef4-b692-41ee-90ca-669b04990ac5, tls: true, skip-cert-verify: true, servername: jd.com, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: grpc-jd}, udp: true}
-  - {name: jp_2, server: 183.240.179.88, port: 11443, type: vless, uuid: df245bf8-8253-4029-90d8-ef30cfac75f1, tls: false, skip-cert-verify: true, network: tcp, udp: true}
-  - {name: DE_8|⬇️6.3MB/s_2, server: de.monkeyisland.life, port: 8443, type: vless, uuid: fd71044e-127b-429c-9f4a-bd2432e473be, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: www.stackoverflow.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 奧地利_1, server: at.pixvpn.app, port: 8443, type: vless, uuid: 8c9a7ef4-b692-41ee-90ca-669b04990ac5, tls: true, skip-cert-verify: true, servername: jd.com, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: grpc-jd}, udp: true}
-  - {name: 奧地利_2, server: at.pixvpn.app, port: 8443, type: vless, uuid: 8c9a7ef4-b692-41ee-90ca-669b04990ac5, tls: true, skip-cert-verify: true, servername: jd.com, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: grpc-jd}, udp: true}
-  - {name: 美國_2, server: 155.254.35.78, port: 33811, type: vless, uuid: 3940e9ba-d0f6-4052-bd8e-f3c2a2a76599, tls: true, skip-cert-verify: true, servername: miro.com, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: miro.com}, udp: true}
-  - {name: 德國_1, server: de.srv.oplcdn.link, port: 8443, type: vless, uuid: a3185438-23cb-4fe3-95da-3e5f3fc43525, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: ign.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 法國_1, server: 178.20.215.2, port: 443, type: vless, uuid: 192ea2c7-d7d0-6676-2929-b04a072b387d, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: speed.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 美國_3, server: 159.89.16.218, port: 443, type: vless, uuid: 028ad849-cb35-4934-9a6a-79a7b480ab0f, tls: true, skip-cert-verify: true, servername: zula.ir, network: ws, ws-opts: {path: /ws}, udp: true}
-  - {name: 美國_4, server: 134.122.53.63, port: 443, type: vless, uuid: f59e2420-b706-4bee-bcdd-1c2162e5372a, tls: true, skip-cert-verify: true, servername: zula.ir, network: ws, ws-opts: {path: /ws}, udp: true}
-  - {name: 🇫🇷 法国_2 3, server: 178.20.215.2, port: 443, type: vless, uuid: 192ea2c7-d7d0-6676-2929-b04a072b387d, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: speed.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 美國_5, server: 138.197.16.108, port: 443, type: vless, uuid: 79b94a94-b2f5-4d45-820b-17afeeae65a6, tls: true, skip-cert-verify: true, servername: zula.ir, network: ws, ws-opts: {path: /ws}, udp: true}
-  - {name: US_165|⬇️4.6MB/s_2, server: us.nitroo-tech.ru, port: 443, type: vless, uuid: f31f5fe0-0a42-436a-be94-437330801388, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: mirror.yandex.ru, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 美國_6, server: 134.209.196.115, port: 443, type: vless, uuid: bed9958c-82a5-4c30-8616-723f7269c0b6, tls: true, skip-cert-verify: true, servername: zula.ir, network: ws, ws-opts: {path: /ws}, udp: true}
-  - {name: 法國_2, server: 51.178.253.133, port: 22808, type: vless, uuid: 713f6b9e-6200-405d-9ca8-77bc45be625b, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 🇫🇷 法国_3 3, server: 178.20.215.2, port: 443, type: vless, uuid: 192ea2c7-d7d0-6676-2929-b04a072b387d, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: speed.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 俄羅斯_1, server: 77.246.100.169, port: 8080, type: vless, uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37, tls: false, skip-cert-verify: true, servername: yandex.com, network: tcp, udp: true}
-  - {name: KR_1, server: 141.227.138.82, port: 18541, type: vless, uuid: 49ffd741-9736-40fb-9217-76a8fcfb3ffd, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: KR_2, server: 141.227.132.199, port: 42817, type: vless, uuid: f7df6c83-e527-4bb2-bae1-ea743edaffcd, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 🇰🇷 南韓_1, server: 141.227.134.240, port: 54983, type: vless, uuid: 6016845b-61d0-49c5-b20c-d61e860778d4, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 美國_7, server: 15.235.45.229, port: 40853, type: vless, uuid: b0ff01b1-04d3-4b01-8ba9-b1dc47416c07, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 🇷🇺 俄罗斯_2, server: 92.112.22.117, port: 443, type: vless, uuid: 6337837a-2b47-4e0d-a695-75c5a4a8ad51, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: 俄羅斯_2, server: 92.112.22.117, port: 443, type: vless, uuid: 6337837a-2b47-4e0d-a695-75c5a4a8ad51, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: 阿拉伯聯合大公國, server: ae01-vlr01.tcp-reset-club.net, port: 443, type: vless, uuid: c80bbc09-837d-495f-bebc-3e8ac5dede41, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: hls-svod.itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇸🇬 新加坡_2, server: 92.112.22.117, port: 443, type: vless, uuid: 6337837a-2b47-4e0d-a695-75c5a4a8ad51, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: 法國_3, server: 51.178.253.133, port: 22808, type: vless, uuid: 713f6b9e-6200-405d-9ca8-77bc45be625b, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 🇬🇧 英国_2 3, server: 141.227.162.18, port: 59995, type: vless, uuid: 7467739e-fe86-43a4-93ae-1669886e80d5, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 英國_1, server: 141.227.162.18, port: 59995, type: vless, uuid: 7467739e-fe86-43a4-93ae-1669886e80d5, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 🇮🇪 爱尔兰_2, server: 141.227.162.18, port: 59995, type: vless, uuid: 7467739e-fe86-43a4-93ae-1669886e80d5, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: KR_3, server: 141.227.162.18, port: 59995, type: vless, uuid: 7467739e-fe86-43a4-93ae-1669886e80d5, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 摩爾多瓦_1, server: 185.39.204.70, port: 443, type: vless, uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: nspk.ru, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇰🇷 南韓_2, server: 141.227.162.18, port: 59995, type: vless, uuid: 7467739e-fe86-43a4-93ae-1669886e80d5, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 🇺🇸 美国_3 3, server: 104.21.9.137, port: 443, type: vless, uuid: e159a810-7d2c-4ce6-bc22-9727feb12fac, tls: true, skip-cert-verify: true, servername: ec51ebe7-9b61-2397-41bf-1f00f6163852.huangshang.site, network: ws, ws-opts: {path: /0SCvfqSaeeB74kgXZ}, udp: true}
-  - {name: 美國_8, server: 38.180.26.205, port: 443, type: vless, uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: nspk.ru, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇹🇷 土耳其_2, server: 62.133.63.138, port: 443, type: vless, uuid: 8377aac9-f3b3-42df-a5ea-9254f37e7b34, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: tr.eu-ffast.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 芬蘭_1, server: fin7.ipstatic.info, port: 48600, type: vless, uuid: 35db9be8-2cd3-4085-9bb3-6b2472e05e7d, tls: false, skip-cert-verify: true, network: tcp, udp: true}
-  - {name: 俄羅斯_3, server: 195.66.25.21, port: 8080, type: vless, uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37, tls: false, skip-cert-verify: true, servername: yandex.com, network: tcp, udp: true}
-  - {name: 俄羅斯_4, server: 62.133.63.138, port: 443, type: vless, uuid: 8377aac9-f3b3-42df-a5ea-9254f37e7b34, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: tr.eu-ffast.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 摩爾多瓦_2, server: 77.83.245.220, port: 8080, type: vless, uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37, tls: false, skip-cert-verify: true, servername: yandex.com, network: tcp, udp: true}
-  - {name: 🇹🇷 土耳其_3, server: 62.133.63.138, port: 443, type: vless, uuid: 8377aac9-f3b3-42df-a5ea-9254f37e7b34, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: tr.eu-ffast.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 美國_9, server: join-raiv2mmr-telegram.koyeb.app, port: 443, type: vless, uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr, headers: {Host: join-raiv2mmr-telegram.koyeb.app}}, udp: true}
-  - {name: 美國_10, server: 167.172.177.180, port: 35722, type: vless, uuid: 33c2b39d-b53f-45cd-d5c9-d58df4756e95, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: 🇨🇳 中国_1, server: 89.44.242.222, port: 46822, type: vless, uuid: 44aded6c-a012-452b-8e13-04d5f15a659f, tls: false, skip-cert-verify: true, network: tcp, udp: true}
-  - {name: 🇨🇳 中国_2, server: 89.44.242.222, port: 29495, type: vless, uuid: 4a0e3cf3-4a10-4a38-bba4-b17b592a0d2b, tls: false, skip-cert-verify: true, network: tcp, udp: true}
-  - {name: 英國_2, server: miniproxy.net, port: 2096, type: vless, uuid: 5c19f5b4-ac8a-485c-b656-5fe46ee0d5cf, tls: true, skip-cert-verify: true, servername: hydra.miniproxy.sbs, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: hydra.miniproxy.sbs}, udp: true}
-  - {name: 德國_2, server: hybrid.arvancloud.online, port: 44443, type: vless, uuid: 53fff6cc-b4ec-43e8-ade5-e0c42972fc33, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: www.speedtest.net, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇮🇷 伊朗_2, server: mci.dl101movis.ir, port: 80, type: vless, uuid: 117ca567-3180-4d62-abcc-8fc0104c93ff, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: 🇮🇷 伊朗_3, server: 94.182.137.12, port: 20532, type: vless, uuid: 8496c102-4094-4dd3-ad63-7bb7a35cbaee, tls: false, skip-cert-verify: true, network: tcp, udp: true}
-  - {name: 中國_1, server: 183.240.179.88, port: 11443, type: vless, uuid: df245bf8-8253-4029-90d8-ef30cfac75f1, tls: false, skip-cert-verify: true, network: tcp, udp: true}
-  - {name: 🇰🇷 南韓_3, server: 141.227.138.82, port: 18541, type: vless, uuid: 49ffd741-9736-40fb-9217-76a8fcfb3ffd, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 中國_2, server: 183.240.179.88, port: 11443, type: vless, uuid: df245bf8-8253-4029-90d8-ef30cfac75f1, tls: false, skip-cert-verify: true, network: tcp, udp: true}
-  - {name: 阿聯酋, server: ae01-vlr01.tcp-reset-club.net, port: 443, type: vless, uuid: c80bbc09-837d-495f-bebc-3e8ac5dede41, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: hls-svod.itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 奧地利_3, server: at.pixvpn.app, port: 8443, type: vless, uuid: 8c9a7ef4-b692-41ee-90ca-669b04990ac5, tls: true, skip-cert-verify: true, servername: jd.com, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: grpc-jd}, udp: true}
-  - {name: 奧地利_4, server: at.pixvpn.app, port: 8443, type: vless, uuid: 8c9a7ef4-b692-41ee-90ca-669b04990ac5, tls: true, skip-cert-verify: true, servername: jd.com, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: grpc-jd}, udp: true}
-  - {name: 德國_3, server: de.srv.oplcdn.link, port: 8443, type: vless, uuid: a3185438-23cb-4fe3-95da-3e5f3fc43525, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: ign.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 德國_4, server: de.srv.oplcdn.link, port: 8443, type: vless, uuid: a3185438-23cb-4fe3-95da-3e5f3fc43525, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: ign.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 德國_5, server: 178.20.215.2, port: 443, type: vless, uuid: 192ea2c7-d7d0-6676-2929-b04a072b387d, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: speed.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 德國_6, server: hybrid.arvancloud.online, port: 44443, type: vless, uuid: 53fff6cc-b4ec-43e8-ade5-e0c42972fc33, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: www.speedtest.net, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇷🇺 俄罗斯_3, server: 92.112.22.117, port: 443, type: vless, uuid: 6337837a-2b47-4e0d-a695-75c5a4a8ad51, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: 俄羅斯_5, server: 77.246.100.169, port: 8080, type: vless, uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37, tls: false, skip-cert-verify: true, servername: yandex.com, network: tcp, udp: true}
-  - {name: 俄羅斯_6, server: 62.133.63.138, port: 443, type: vless, uuid: 8377aac9-f3b3-42df-a5ea-9254f37e7b34, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: tr.eu-ffast.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 俄羅斯_7, server: 195.66.25.21, port: 8080, type: vless, uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37, tls: false, skip-cert-verify: true, servername: yandex.com, network: tcp, udp: true}
-  - {name: 俄羅斯_8, server: 77.246.100.169, port: 8080, type: vless, uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37, tls: false, skip-cert-verify: true, servername: yandex.com, network: tcp, udp: true}
-  - {name: 俄羅斯_9, server: 195.66.25.21, port: 8080, type: vless, uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37, tls: false, skip-cert-verify: true, servername: yandex.com, network: tcp, udp: true}
-  - {name: 俄羅斯_10, server: 62.133.63.138, port: 443, type: vless, uuid: 8377aac9-f3b3-42df-a5ea-9254f37e7b34, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: tr.eu-ffast.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 俄羅斯_11, server: 92.112.22.117, port: 443, type: vless, uuid: 6337837a-2b47-4e0d-a695-75c5a4a8ad51, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: 🇫🇷 法国_4 3, server: 178.20.215.2, port: 443, type: vless, uuid: 192ea2c7-d7d0-6676-2929-b04a072b387d, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: speed.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 法國_4, server: 51.178.253.133, port: 22808, type: vless, uuid: 713f6b9e-6200-405d-9ca8-77bc45be625b, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 法國_5, server: 51.178.253.133, port: 22808, type: vless, uuid: 713f6b9e-6200-405d-9ca8-77bc45be625b, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 法國_6, server: 51.178.253.133, port: 22808, type: vless, uuid: 713f6b9e-6200-405d-9ca8-77bc45be625b, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 🇫🇮 芬兰, server: fin01-vlr01.tcp-reset-club.net, port: 443, type: vless, uuid: c80bbc09-837d-495f-bebc-3e8ac5dede41, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: hls-svod.itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 芬蘭_2, server: fin01-vlr01.tcp-reset-club.net, port: 443, type: vless, uuid: e9847818-c872-4456-9a02-e2348adf0564, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: hls-svod.itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 芬蘭_3, server: fin7.ipstatic.info, port: 48600, type: vless, uuid: 35db9be8-2cd3-4085-9bb3-6b2472e05e7d, tls: false, skip-cert-verify: true, network: tcp, udp: true}
-  - {name: 芬蘭_4, server: fin7.ipstatic.info, port: 48600, type: vless, uuid: 35db9be8-2cd3-4085-9bb3-6b2472e05e7d, tls: false, skip-cert-verify: true, network: tcp, udp: true}
-  - {name: 芬蘭_5, server: fin01-vlr01.tcp-reset-club.net, port: 443, type: vless, uuid: e9847818-c872-4456-9a02-e2348adf0564, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: hls-svod.itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 芬蘭_6, server: fin01-vlr01.tcp-reset-club.net, port: 443, type: vless, uuid: c80bbc09-837d-495f-bebc-3e8ac5dede41, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: hls-svod.itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇰🇷 韓國_1, server: 141.227.138.82, port: 18541, type: vless, uuid: 49ffd741-9736-40fb-9217-76a8fcfb3ffd, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 🇰🇷 韓國_2, server: 141.227.162.18, port: 59995, type: vless, uuid: 7467739e-fe86-43a4-93ae-1669886e80d5, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 🇰🇷 韓國_3, server: 141.227.138.82, port: 18541, type: vless, uuid: 49ffd741-9736-40fb-9217-76a8fcfb3ffd, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 🇰🇷 韓國_4, server: 141.227.134.240, port: 54983, type: vless, uuid: 6016845b-61d0-49c5-b20c-d61e860778d4, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 🇰🇷 韓國_5, server: 141.227.132.199, port: 42817, type: vless, uuid: f7df6c83-e527-4bb2-bae1-ea743edaffcd, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 荷蘭_1, server: us.nitroo-tech.ru, port: 443, type: vless, uuid: f31f5fe0-0a42-436a-be94-437330801388, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: mirror.yandex.ru, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 荷蘭_2, server: 91.108.240.150, port: 443, type: vless, uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: nspk.ru, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇱🇹 立陶宛, server: lva-0001-xr.packet-drop-society.net, port: 443, type: vless, uuid: fe27c0c7-6602-4b20-a8e4-d8eff275dbee, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: hls-svod.itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 美國_11, server: 134.122.53.63, port: 443, type: vless, uuid: f59e2420-b706-4bee-bcdd-1c2162e5372a, tls: true, skip-cert-verify: true, servername: zula.ir, network: ws, ws-opts: {path: /ws}, udp: true}
-  - {name: 美國_12, server: 134.209.196.115, port: 443, type: vless, uuid: bed9958c-82a5-4c30-8616-723f7269c0b6, tls: true, skip-cert-verify: true, servername: zula.ir, network: ws, ws-opts: {path: /ws}, udp: true}
-  - {name: 美國_13, server: 38.180.26.205, port: 443, type: vless, uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: nspk.ru, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 美國_14, server: 155.254.35.78, port: 33811, type: vless, uuid: 3940e9ba-d0f6-4052-bd8e-f3c2a2a76599, tls: true, skip-cert-verify: true, servername: miro.com, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: miro.com}, udp: true}
-  - {name: 美國_15, server: 167.172.177.180, port: 35722, type: vless, uuid: 33c2b39d-b53f-45cd-d5c9-d58df4756e95, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: 美國_16, server: 38.54.94.169, port: 443, type: vless, uuid: 4eb038b0-bacc-4c16-a179-a17b781dd2e2, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: www.ebay.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 美國_17, server: 141.227.162.18, port: 59995, type: vless, uuid: 7467739e-fe86-43a4-93ae-1669886e80d5, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 美國_18, server: 159.89.16.218, port: 443, type: vless, uuid: 028ad849-cb35-4934-9a6a-79a7b480ab0f, tls: true, skip-cert-verify: true, servername: zula.ir, network: ws, ws-opts: {path: /ws}, udp: true}
-  - {name: 美國_19, server: 138.197.16.108, port: 443, type: vless, uuid: 79b94a94-b2f5-4d45-820b-17afeeae65a6, tls: true, skip-cert-verify: true, servername: zula.ir, network: ws, ws-opts: {path: /ws}, udp: true}
-  - {name: 美國_20, server: 134.209.196.115, port: 443, type: vless, uuid: bed9958c-82a5-4c30-8616-723f7269c0b6, tls: true, skip-cert-verify: true, servername: zula.ir, network: ws, ws-opts: {path: /ws}, udp: true}
-  - {name: 美國_21, server: 134.122.53.63, port: 443, type: vless, uuid: f59e2420-b706-4bee-bcdd-1c2162e5372a, tls: true, skip-cert-verify: true, servername: zula.ir, network: ws, ws-opts: {path: /ws}, udp: true}
-  - {name: 美國_22, server: 38.180.26.205, port: 443, type: vless, uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: nspk.ru, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 美國_23, server: 155.254.35.78, port: 33811, type: vless, uuid: 3940e9ba-d0f6-4052-bd8e-f3c2a2a76599, tls: true, skip-cert-verify: true, servername: miro.com, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: miro.com}, udp: true}
-  - {name: 美國_24, server: 15.235.45.229, port: 40853, type: vless, uuid: b0ff01b1-04d3-4b01-8ba9-b1dc47416c07, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 美國_25, server: 38.54.23.58, port: 443, type: vless, uuid: 6048472f-0993-4ae0-8203-960b9a0f4113, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: www.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 美國_26, server: 212.18.104.19, port: 443, type: vless, uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: nspk.ru, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 美國_27, server: 167.172.177.180, port: 35722, type: vless, uuid: 33c2b39d-b53f-45cd-d5c9-d58df4756e95, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: 摩爾多瓦_3, server: 77.83.245.220, port: 8080, type: vless, uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37, tls: false, skip-cert-verify: true, servername: yandex.com, network: tcp, udp: true}
-  - {name: 摩爾多瓦_4, server: 185.39.204.70, port: 443, type: vless, uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: nspk.ru, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 摩爾多瓦_5, server: 77.83.245.220, port: 8080, type: vless, uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37, tls: false, skip-cert-verify: true, servername: yandex.com, network: tcp, udp: true}
-  - {name: 摩爾多瓦_6, server: 185.39.204.70, port: 443, type: vless, uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: nspk.ru, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇰🇷 南韓_4, server: 141.227.132.199, port: 42817, type: vless, uuid: f7df6c83-e527-4bb2-bae1-ea743edaffcd, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 🇰🇷 南韓_5, server: 141.227.138.82, port: 18541, type: vless, uuid: 49ffd741-9736-40fb-9217-76a8fcfb3ffd, tls: true, skip-cert-verify: true, servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON}, udp: true}
-  - {name: 🇯🇵 日本_2 3, server: 160.187.111.222, port: 443, type: vless, uuid: 3e7f67de-648e-4871-b51a-a225214d41ee, tls: false, skip-cert-verify: true, servername: images-na.ssl-images-amazon.com, network: tcp, udp: true}
-  - {name: 🇯🇵 日本_3 3, server: 160.187.111.222, port: 443, type: vless, uuid: 3e7f67de-648e-4871-b51a-a225214d41ee, tls: false, skip-cert-verify: true, servername: images-na.ssl-images-amazon.com, network: tcp, udp: true}
-  - {name: 烏克蘭_1, server: lva-0001-xr.packet-drop-society.net, port: 443, type: vless, uuid: fe27c0c7-6602-4b20-a8e4-d8eff275dbee, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: hls-svod.itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 烏克蘭_2, server: 94.131.13.14, port: 443, type: vless, uuid: fe27c0c7-6602-4b20-a8e4-d8eff275dbee, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: hls-svod.itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇮🇷 伊朗_4, server: opetacloud.ir, port: 80, type: vless, uuid: a40e2c15-6c4d-b5e6-3e9c-d2adad0ee1e6, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: opetacloud.ir}}, udp: true}
-  - {name: 🇮🇷 伊朗_5, server: 94.182.137.12, port: 20532, type: vless, uuid: 8496c102-4094-4dd3-ad63-7bb7a35cbaee, tls: false, skip-cert-verify: true, network: tcp, udp: true}
-  - {name: 🇮🇷 伊朗_6, server: 94.182.137.12, port: 20532, type: vless, uuid: 8496c102-4094-4dd3-ad63-7bb7a35cbaee, tls: false, skip-cert-verify: true, network: tcp, udp: true}
-  - {name: 🇮🇷 伊朗_7, server: mci.dl101movis.ir, port: 80, type: vless, uuid: 117ca567-3180-4d62-abcc-8fc0104c93ff, tls: false, skip-cert-verify: true, network: tcp}
-  - {name: 英國_3, server: miniproxy.net, port: 2096, type: vless, uuid: 5c19f5b4-ac8a-485c-b656-5fe46ee0d5cf, tls: true, skip-cert-verify: true, servername: hydra.miniproxy.sbs, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: hydra.miniproxy.sbs}, udp: true}
-  - {name: 英國_4, server: miniproxy.net, port: 2096, type: vless, uuid: 5c19f5b4-ac8a-485c-b656-5fe46ee0d5cf, tls: true, skip-cert-verify: true, servername: hydra.miniproxy.sbs, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: hydra.miniproxy.sbs}, udp: true}
-  - {name: 🇺🇸 美国_4 3, server: us.nitroo-tech.ru, port: 443, type: vless, uuid: f31f5fe0-0a42-436a-be94-437330801388, tls: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: mirror.yandex.ru, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国_5 3, server: 104.21.9.137, port: 443, type: vless, uuid: e159a810-7d2c-4ce6-bc22-9727feb12fac, tls: true, skip-cert-verify: true, servername: ec51ebe7-9b61-2397-41bf-1f00f6163852.huangshang.site, network: ws, ws-opts: {path: /0SCvfqSaeeB74kgXZ}, udp: true}
-  - {name: 🇺🇸 美国_6 3, server: 104.21.9.137, port: 443, type: vless, uuid: e159a810-7d2c-4ce6-bc22-9727feb12fac, tls: true, skip-cert-verify: true, servername: ec51ebe7-9b61-2397-41bf-1f00f6163852.huangshang.site, network: ws, ws-opts: {path: /0SCvfqSaeeB74kgXZ}, udp: true}
-  - {name: 🇺🇸 美国_7 3, server: 183.240.179.88, port: 11443, type: vless, uuid: df245bf8-8253-4029-90d8-ef30cfac75f1, tls: false, skip-cert-verify: true, network: tcp, udp: true}
-  - {name: 🇺🇸 美国_8 3, server: 183.240.179.88, port: 11443, type: vless, uuid: df245bf8-8253-4029-90d8-ef30cfac75f1, tls: false, skip-cert-verify: true, network: tcp, udp: true}
-  - {name: 🇺🇸 美国_9 3, server: 89.44.242.222, port: 29495, type: vless, uuid: 4a0e3cf3-4a10-4a38-bba4-b17b592a0d2b, tls: false, skip-cert-verify: true, network: tcp, udp: true}
-  - {name: 🇺🇸 美国_10 3, server: 89.44.242.222, port: 46822, type: vless, uuid: 44aded6c-a012-452b-8e13-04d5f15a659f, tls: false, skip-cert-verify: true, network: tcp, udp: true}
-  - {name: 🇲🇴 澳门_1, server: ip.sb, port: 443, type: vless, uuid: 774519ba-b543-4e8b-de2f-5b11b8a71455, tls: true, skip-cert-verify: true, servername: ylka.dpdns.org, network: ws, ws-opts: {path: /由零开始, headers: {Host: ip.sb}}, udp: true}
-  - {name: 🇲🇴 澳门_2, server: "[2606", port: 4700, type: vless, uuid: 774519ba-b543-4e8b-de2f-5b11b8a71455, tls: true, skip-cert-verify: true, servername: ylka.dpdns.org, network: ws, ws-opts: {path: /由零开始, headers: {Host: "[2606"}}, udp: true}
-  - {name: 🇲🇴 澳门_3, server: www.whatismyip.com, port: 443, type: vless, uuid: 774519ba-b543-4e8b-de2f-5b11b8a71455, tls: true, skip-cert-verify: true, servername: ylka.dpdns.org, network: ws, ws-opts: {path: /由零开始, headers: {Host: www.whatismyip.com}}, udp: true}
-  - {name: 🇲🇴 澳门_4, server: iplocation.io, port: 443, type: vless, uuid: 774519ba-b543-4e8b-de2f-5b11b8a71455, tls: true, skip-cert-verify: true, servername: ylka.dpdns.org, network: ws, ws-opts: {path: /由零开始, headers: {Host: iplocation.io}}, udp: true}
-  - {name: 🇲🇴 澳门_5, server: www.whoer.net, port: 443, type: vless, uuid: 774519ba-b543-4e8b-de2f-5b11b8a71455, tls: true, skip-cert-verify: true, servername: ylka.dpdns.org, network: ws, ws-opts: {path: /由零开始, headers: {Host: www.whoer.net}}, udp: true}
-  - {name: 🇲🇴 澳门_6, server: www.iplocation.net, port: 443, type: vless, uuid: 774519ba-b543-4e8b-de2f-5b11b8a71455, tls: true, skip-cert-verify: true, servername: ylka.dpdns.org, network: ws, ws-opts: {path: /由零开始, headers: {Host: www.iplocation.net}}, udp: true}
-  - {name: 🇺🇸 美国_11 3, server: 92.243.75.49, port: 2087, type: trojan, password: wb6368, sni: hsdgbuys.pages.dev, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hsdgbuys.pages.dev}}, udp: true}
-  - {name: 🇭🇰 香港_1, server: tuntro001.instconn.com, port: 443, type: trojan, password: ef269dbc-0486-451f-b94b-d0c354bc3f1c, sni: awshk.686911.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国_12 3, server: 36.156.102.84, port: 3271, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 美國_28, server: 38.180.106.124, port: 8443, type: trojan, password: installshield, sni: 38.180.106.124, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国_13 3, server: 92.243.75.49, port: 2087, type: trojan, password: wb6368, sni: hsdgbuys.pages.dev, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hsdgbuys.pages.dev}}, udp: true}
-  - {name: 美國_29, server: 38.180.106.124, port: 8443, type: trojan, password: installshield, skip-cert-verify: true, udp: true}
-  - {name: 中國_3, server: 36.156.102.84, port: 6752, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 中国_3, server: 36.156.102.84, port: 1572, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 美國_30, server: 38.180.106.124, port: 8443, type: trojan, password: installshield, skip-cert-verify: true, udp: true}
-  - {name: 美國_31, server: 38.180.106.124, port: 8443, type: trojan, password: installshield, sni: 38.180.106.124, skip-cert-verify: true, udp: true}
-  - {name: 美國_32, server: tuntro001.instconn.com, port: 443, type: trojan, password: ef269dbc-0486-451f-b94b-d0c354bc3f1c, sni: awshk.686911.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美國_33, server: 38.180.106.124, port: 8443, type: trojan, password: installshield, sni: 38.180.106.124, skip-cert-verify: true, udp: true}
-  - {name: 美國_34, server: 38.180.106.124, port: 8443, type: trojan, password: installshield, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本_4, server: bestcdn4.the-best-airport.top, port: 443, type: trojan, password: b9466f91-f093-4b5e-97af-f2b1e0b4c3d1, sni: tt-c4-cdn.the-best-airport.top, skip-cert-verify: true, network: ws, ws-opts: {path: /videomuaawe, headers: {Host: tt-c4-cdn.the-best-airport.top}}, udp: true}
-  - {name: 🇭🇰 香港_2, server: tuntro001.instconn.com, port: 443, type: trojan, password: ef269dbc-0486-451f-b94b-d0c354bc3f1c, sni: awshk.686911.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国_14 3, server: 36.156.102.84, port: 3271, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 6元高速机场：cczzuu.top, server: 34.245.185.129, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇭🇰 香港|@stairnode, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}}
-  - {name: 🇭🇰 香港2|@stairnode, server: 103.103.245.158, port: 443, type: ss, cipher: aes-256-gcm, password: ccf426f1fe78, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: newroot2v1.dsjsapp.com, path: /zksuapgx, tls: true, mux: true, skip-cert-verify: true}}
-  - {name: 🇭🇰 香港3|@stairnode, server: 43.247.135.17, port: 41522, type: vmess, uuid: ea897b9a-0894-4f17-ab5b-7e059678734d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
-  - {name: 🇭🇰 香港4|@stairnode, server: 126.66.52.118, port: 443, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.nintendogames.net, skip-cert-verify: true}
-  - {name: 🇭🇰 香港6|@stairnode, server: 58.152.53.162, port: 443, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: fe2.update.microsoft.com, skip-cert-verify: true}
-  - {name: 🇯🇵 日本2|@stairnode, server: 36.156.102.84, port: 1920, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.nintendogames.net, skip-cert-verify: true}
-  - {name: 🇯🇵 日本|@stairnode, server: v6.heduian.link, port: 30806, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}}
-  - {name: 🇯🇵 日本3|@stairnode, server: 36.156.102.84, port: 3160, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.nintendogames.net, skip-cert-verify: true}
-  - {name: 🇰🇷 韩国|@stairnode, server: 154.90.63.177, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇸🇬 新加坡|@stairnode, server: 36.156.102.84, port: 2173, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.nintendogames.net, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡2|@stairnode, server: 36.156.102.84, port: 5321, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.nintendogames.net, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡3|@stairnode, server: 5.44.249.43, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: (TG @stairnode)32cf132:178330}}
-  - {name: 🇺🇸 美国|@stairnode, server: 36.156.102.84, port: 24673, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: fe2.update.microsoft.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国2|@stairnode, server: 36.156.102.84, port: 2381, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: fe2.update.microsoft.com, skip-cert-verify: true}
-  - {name: 🇻🇳 越南|@stairnode, server: 103.186.154.27, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享), server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v8.heduian.link}}, udp: true}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 2, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9tqhMdIrTkgQ46PvhyAtMH, udp: true}
+  - {name: 🇭🇰 HK香港(mibei77.com 米贝节点分享), server: sg.fasthou.icu, port: 33115, type: ss, cipher: aes-128-gcm, password: 9bb2ff9d-65f0-45e0-a639-675136533ee4, udp: true}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 3, server: 172.67.160.44, port: 443, type: vmess, uuid: 086c655d-0c12-47dd-9d5a-2670089201ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ri9mOOVJuAimB74kgXZ, headers: {Host: 7c681e58-53be-8513-d3ea-bd425436e356.huangshang.site}}, udp: true}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 4, server: "2001:41d0:70e:c100::", port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: serkat.org}}, udp: true}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 5, server: 141.94.68.216, port: 2053, type: trojan, password: iwangjie, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK香港(mibei77.com 米贝节点分享) 2, server: 36.141.40.42, port: 13007, type: trojan, password: 3c77ad6b-9c9c-4aff-beff-0a16e2cdea15, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 6, server: 135.125.232.253, port: 2053, type: trojan, password: iwangjie, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 7, server: bestcdn1.868863.xyz, port: 443, type: vmess, uuid: c7389986-4a34-479a-988c-7169d57a3a92, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aejynik, headers: {Host: vv-a5-cdn.the-best-airport.top}}, udp: true}
+  - {name: 🇳🇱 NL荷兰(mibei77.com 米贝节点分享), server: 151.242.251.133, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, udp: true}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 8, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: RFK38Cg7APneSB5cWDcpbm, udp: true}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 9, server: 138.124.118.34, port: 443, type: trojan, password: iwangjie, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 10, server: bestcdn2.868863.xyz, port: 443, type: vmess, uuid: c7389986-4a34-479a-988c-7169d57a3a92, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aejynik, headers: {Host: vv-b5-cdn.the-best-airport.top}}, udp: true}
+  - {name: 🇭🇰 HK香港(mibei77.com 米贝节点分享) 3, server: entrance04.qqa678.cc, port: 47081, type: vmess, uuid: 8e94ed0e-3717-4c46-aa13-6757a89b392e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇫🇷 FR法国(mibei77.com 米贝节点分享), server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 2001:bc8:32d7:302::10}}, udp: true}
   - {name: 🇫🇷 FR法国(mibei77.com 米贝节点分享) 2, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 2001:bc8:32d7:302::10}}, udp: true}
-  - {name: 🇫🇷 FR法国(mibei77.com 米贝节点分享) 3, server: "2001:41d0:70e:c100::", port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: serkat.org}}, udp: true}
-  - {name: 🇳🇱 NL荷兰(mibei77.com 米贝节点分享), server: 178.208.78.170, port: 23822, type: ss, cipher: chacha20-ietf-poly1305, password: iOmcM1Ns6V0ATk7BFRD56V, udp: true}
-  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享), server: tuntro005.instconn.com, port: 443, type: trojan, password: ef269dbc-0486-451f-b94b-d0c354bc3f1c, sni: tuntro005.instconn.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 2, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: RFK38Cg7APneSB5cWDcpbm, udp: true}
-  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 3, server: bestcdn3.the-best-airport.top, port: 443, type: vmess, uuid: 27c291e8-0391-42d1-a79b-4e491e0d7502, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aejynik, headers: {Host: vv-a3-cdn.the-best-airport.top}}, udp: true}
-  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 4, server: 167.71.205.112, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: GjUtzQIjhyYSzhdN2ZMRft, udp: true}
-  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 5, server: pupas-shirting-unsung.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: p78naCf2EfOlRSLTX0wFVx, udp: true}
-  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 6, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
-  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 7, server: pupas-shirting-unsung.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: p78naCf2EfOlRSLTX0wFVx, udp: true}
-  - {name: 🇭🇰 HK香港(mibei77.com 米贝节点分享), server: 36.156.102.84, port: 2173, type: trojan, password: 253bc477d4e43c209f2d427272968280, skip-cert-verify: true, udp: true}
-  - {name: 🇱🇺 卢森堡(mibei77.com 米贝节点分享), server: bestcdn3.the-best-airport.top, port: 443, type: vmess, uuid: 27c291e8-0391-42d1-a79b-4e491e0d7502, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aejynik, headers: {Host: vv-a3-cdn.the-best-airport.top}}, udp: true}
-  - {name: 🇱🇺 卢森堡(mibei77.com 米贝节点分享) 2, server: oksl.cfapps.ap21.hana.ondemand.com, port: 443, type: vmess, uuid: cb94c83d-50cf-4a68-ba03-c6ed757df1f2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /laoluo, headers: {Host: oksl.cfapps.ap21.hana.ondemand.com}}, udp: true}
-  - {name: 🇭🇰 HK香港(mibei77.com 米贝节点分享) 2, server: tuntro001.instconn.com, port: 443, type: trojan, password: ef269dbc-0486-451f-b94b-d0c354bc3f1c, sni: tuntro001.instconn.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 8, server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v8.heduian.link}}, udp: true}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: 36.156.102.84, port: 6752, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.nintendogames.net, skip-cert-verify: true}
-  - {name: 🇲🇩 _MD_摩尔多瓦, server: 91.132.94.200, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国_1, server: 36.156.102.84, port: 24673, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: fe2.update.microsoft.com, skip-cert-verify: true}
-  - {name: 🇷🇺 _RU_俄罗斯, server: 185.231.233.112, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇳🇱 _NL_荷兰, server: 45.159.250.190, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=}
-  - {name: 🇸🇰 _SK_斯洛伐克->🏳️_unKnow_未知, server: 156.146.40.194, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇩🇪 _DE_德国, server: 46.183.184.60, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国_2, server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v8.heduian.link}}}
+  - {name: 🇫🇷 FR法国(mibei77.com 米贝节点分享) 3, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN", headers: {Host: 2001:bc8:32d7:302::10}}, udp: true}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 11, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
+  - {name: 🇭🇰 HK香港(mibei77.com 米贝节点分享) 4, server: entrance01.qqa678.cc, port: 47084, type: vmess, uuid: 8e94ed0e-3717-4c46-aa13-6757a89b392e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国_1, server: entrance04.qqa678.cc, port: 47084, type: vmess, uuid: a6560b60-5122-40d7-bcb6-650c98c88ea5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇺🇸 美国_2, server: entrance04.qqa678.cc, port: 47081, type: vmess, uuid: a6560b60-5122-40d7-bcb6-650c98c88ea5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇫🇷 法国_1, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇫🇷 法国_2, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 美国_3, server: 172.67.160.44, port: 443, type: vmess, uuid: 086c655d-0c12-47dd-9d5a-2670089201ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 7c681e58-53be-8513-d3ea-bd425436e356.huangshang.site, network: ws, ws-opts: {path: /ri9mOOVJuAimB74kgXZ, headers: {Host: 7c681e58-53be-8513-d3ea-bd425436e356.huangshang.site}}}
+  - {name: 🇺🇸 美国_4, server: entrance02.qqa678.cc, port: 47083, type: vmess, uuid: a6560b60-5122-40d7-bcb6-650c98c88ea5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇺🇸 美国_5, server: entrance01.qqa678.cc, port: 47084, type: vmess, uuid: 8e94ed0e-3717-4c46-aa13-6757a89b392e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇺🇸 美国_6, server: "2001:41d0:70e:c100::", port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: serkat.org, network: ws, ws-opts: {path: /linkvws, headers: {Host: serkat.org}}}
+  - {name: 🇺🇸 美国_7, server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: v8.heduian.link, network: ws, ws-opts: {path: /oooo, headers: {Host: v8.heduian.link}}}
+  - {name: 🇺🇸 美国_8, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: ocbc.com, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}}
+  - {name: 🇺🇸 美国_9, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9tqhMdIrTkgQ46PvhyAtMH}
+  - {name: 🇩🇪 德国_1, server: 45.87.175.155, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ}
+  - {name: 🇩🇪 德国_2, server: 45.87.175.174, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ}
+  - {name: 🇺🇸 美国_10, server: 151.242.251.152, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ}
+  - {name: 🇩🇪 德国_3, server: 45.87.175.197, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ}
+  - {name: 🇺🇸 美国_11, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: RFK38Cg7APneSB5cWDcpbm}
+  - {name: 🇺🇸 美国_12, server: arxfw2b78fi2q9hzylhn.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Nk9asglDzHzjktVzTkvhaA}
+  - {name: 🇺🇸 美国_13, server: medrd.vtpmng.top, port: 8443, type: vless, uuid: 8339a5e8-6141-41f1-9abc-bbf1a06ac5ae, tls: true, skip-cert-verify: true, servername: medrd.vtpmng.top, network: ws, ws-opts: {path: /, headers: {Host: medrd.vtpmng.top}}}
+  - {name: 🇺🇸 美国_14, server: fin7.ipstatic.info, port: 48600, type: vless, uuid: 35db9be8-2cd3-4085-9bb3-6b2472e05e7d, tls: false, skip-cert-verify: true, servername: Uewuy.divarcdn.com, network: tcp}
+  - {name: 🇺🇸 美国_15, server: time.is, port: 443, type: vless, uuid: d0298536-d670-4045-bbb1-ddd5ea68683e, tls: true, skip-cert-verify: true, servername: a.azadnet002.ddns-ip.net, network: ws, ws-opts: {path: /, headers: {Host: a.azadnet002.ddns-ip.net}}}
+  - {name: 🇺🇸 美国_16, server: all.tellmethetrue.shop, port: 443, type: vless, uuid: e4824193-4f54-453b-d037-88368e85ef0e, tls: true, alpn: [h2], skip-cert-verify: true, servername: pqh30v1.hiddendom.shop, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: /}}
+  - {name: 🇺🇸 美国_17, server: 172.67.160.44, port: 443, type: vless, uuid: 1ae6dcb3-8d05-4eee-b550-32904c88c312, tls: true, skip-cert-verify: true, servername: 8dbc269c-38ed-0d38-7a26-970a14604a96.huangshang.site, network: ws, ws-opts: {path: /0SCvfqSaeeB74kgXZ, headers: {Host: 8dbc269c-38ed-0d38-7a26-970a14604a96.huangshang.site}}}
+  - {name: 🇺🇸 美国_18, server: 183.240.179.88, port: 11443, type: vless, uuid: df245bf8-8253-4029-90d8-ef30cfac75f1, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: 🇺🇸 美国_19, server: small-meal.oneeat.co, port: 80, type: vless, uuid: d1e44075-8c92-4698-9db0-e71d7015b757, tls: false, skip-cert-verify: true, servername: small-meal.oneeat.co, network: ws, ws-opts: {path: /, headers: {Host: small-meal.oneeat.co}}}
+  - {name: 🇺🇸 美国_20, server: handsome-device.oneeat.co, port: 80, type: vless, uuid: 2ad87f95-7a0b-4018-8497-5ecaac2f0ddf, tls: false, skip-cert-verify: true, servername: handsome-device.oneeat.co, network: ws, ws-opts: {path: "/?---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG", headers: {Host: handsome-device.oneeat.co}}}
+  - {name: 🇺🇸 美国_21, server: 172.67.160.44, port: 443, type: vless, uuid: 086c655d-0c12-47dd-9d5a-2670089201ee, tls: true, skip-cert-verify: true, servername: cb93136c-7ed8-136d-45b5-5254c891e290.huangshang.site, network: ws, ws-opts: {path: /0SCvfqSaeeB74kgXZ, headers: {Host: cb93136c-7ed8-136d-45b5-5254c891e290.huangshang.site}}}
+  - {name: 🇺🇸 美国_22, server: 147.79.20.47, port: 443, type: vless, uuid: 0de36d61-ac9e-4105-92cd-8fe97921b48b, tls: true, skip-cert-verify: true, servername: swus.zyk.biz.id, network: ws, ws-opts: {path: /, headers: {Host: swus.zyk.biz.id}}}
+  - {name: 🇺🇸 美国_23, server: sweet-combination.seotoolsforyou.co.uk, port: 80, type: vless, uuid: 05020a61-3c0c-4ead-b256-7851ff905a75, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sweet-combination.seotoolsforyou.co.uk}}}
+  - {name: 🇺🇸 美国_24, server: join-raiv2mmr-telegram.koyeb.app, port: 443, type: vless, uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr, headers: {Host: join-raiv2mmr-telegram.koyeb.app}}}
+  - {name: 🇺🇸 美国_25, server: 190.93.246.137, port: 443, type: vless, uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c, tls: true, skip-cert-verify: true, servername: abc.vpneee.top, network: ws, ws-opts: {path: /YnqGMcAt/, headers: {Host: abc.vpneee.top}}}
+  - {name: 🇺🇸 美国_26, server: ef7c2383-03bb-fec2-327b-34f6b2ace7cb.freevpnatm2025.dpdns.org, port: 443, type: vless, uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e, tls: true, alpn: [http/1.1], skip-cert-verify: true, servername: ef7c2383-03bb-fec2-327b-34f6b2ace7cb.freevpnatm2025.dpdns.org, network: ws, ws-opts: {path: /z4RnlCBxj2oeA85VyjPCYXwETL, headers: {Host: ef7c2383-03bb-fec2-327b-34f6b2ace7cb.freevpnatm2025.dpdns.org}}}
+  - {name: 🇺🇸 美国_27, server: join-raiv2mmr-telegram.koyeb.app, port: 443, type: vless, uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9, tls: true, skip-cert-verify: true, servername: JOIN-RAIV2MMR-TELEGRAM.koyeb.app, network: ws, ws-opts: {path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr, headers: {Host: join-raiv2mmr-telegram.koyeb.app}}}
+  - {name: 🇺🇸 美国_28, server: cloudflare-ip.mofashi.ltd, port: 443, type: vless, uuid: dea991b4-696f-4e9e-9761-1e1b31bb02de, tls: true, skip-cert-verify: true, servername: 2.294294.xyz, network: ws, ws-opts: {path: /snippets, headers: {Host: 2.294294.xyz}}}
+  - {name: 🇺🇸 美国_29, server: join-raiv2mmr-telegram.koyeb.app, port: 443, type: vless, uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9, tls: true, skip-cert-verify: true, servername: join-raiv2mmr-telegram.koyeb.app, network: ws, ws-opts: {path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr, headers: {Host: join-raiv2mmr-telegram.koyeb.app}}}
+  - {name: 🇺🇸 美国_30, server: 188.42.145.253, port: 2096, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, skip-cert-verify: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/Telegram@freecodes/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}}
+  - {name: 🇺🇸 美国_31, server: 188.42.145.253, port: 2096, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, skip-cert-verify: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/freecodes@节点狂魔/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}}
+  - {name: 🇺🇸 美国_32, server: net2026cd.zanddynastyofpersia.org, port: 443, type: vless, uuid: 0ec8c120-33fa-4658-9bed-3a51cb04c55c, tls: true, skip-cert-verify: true, servername: net2026cd.zanddynastyofpersia.org, network: ws, ws-opts: {path: /eJsVXFVZ6iavNx1EFxOyH861WH, headers: {Host: net2026cd.zanddynastyofpersia.org}}}
+  - {name: 🇺🇸 美国_33, server: 104.21.36.57, port: 443, type: vless, uuid: 6f6e8f09-c1b3-48fd-ab00-18f921d875ef, tls: true, skip-cert-verify: true, servername: profit.fullmargintraders.com, network: ws, ws-opts: {path: /wsv/6f6e8f09-c1b3-48fd-ab00-18f921d875ef, headers: {Host: profit.fullmargintraders.com}}}
+  - {name: 🇺🇸 美国_34, server: wwwopensignalcom-goodspeed-8xx.pages.dev., port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: true, servername: WwW.OPENSIgnaL.cOm.NaynaY09.dynv6.nET, network: ws, ws-opts: {path: //, headers: {Host: WwW.OPENSIgnaL.cOm.NaynaY09.dynv6.nET}}}
+  - {name: 🇺🇸 美国_35, server: 188.42.145.253, port: 2096, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, skip-cert-verify: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: /, headers: {Host: gaosir.unfeeling.sbs}}}
+  - {name: 🇺🇸 美国_36, server: 188.42.145.253, port: 2096, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, skip-cert-verify: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}}
+  - {name: 🇺🇸 美国_37, server: nrtcfdns.zone.id, port: 443, type: vless, uuid: dea991b4-696f-4e9e-9761-1e1b31bb02de, tls: true, skip-cert-verify: true, servername: 2.294294.xyz, network: ws, ws-opts: {path: /snippets, headers: {Host: 2.294294.xyz}}}
+  - {name: 🇺🇸 美国_38, server: 138.124.118.34, port: 443, type: trojan, password: iwangjie, sni: nodes.830901.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: /proxyip=proxyip.fxxk.dedyn.io, headers: {Host: nodes.830901.xyz}}}
+  - {name: 🇺🇸 美国_39, server: tuntro001.instconn.com, port: 443, type: trojan, password: ef269dbc-0486-451f-b94b-d0c354bc3f1c, sni: awshk.686911.xyz, skip-cert-verify: true}
+  - {name: 🇺🇸 美国_40, server: 141.94.68.216, port: 2053, type: trojan, password: iwangjie, sni: nodes.830901.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nodes.830901.xyz}}}
+  - {name: 🇺🇸 美国_41, server: 135.125.232.253, port: 2053, type: trojan, password: iwangjie, sni: nodes.830901.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nodes.830901.xyz}}}
+  - {name: 🇺🇸 美国_42, server: 83.147.254.185, port: 443, type: trojan, password: iwangjie, sni: nodes.830901.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nodes.830901.xyz}}}
+  - {name: 🇪🇸 西班牙(yudou123.top 玉豆免费节点), server: 212.192.15.176, port: 27123, type: vmess, uuid: 746c01a0-38cc-4dce-bdda-c8a6a77d0aef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 212.192.15.176}}, udp: true}
+  - {name: 🇫🇷 法国(yudou123.top 玉豆免费节点), server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 2001:bc8:32d7:302::10}}, udp: true}
+  - {name: 🇫🇷 法国(yudou123.top 玉豆免费节点) 2, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 2001:bc8:32d7:302::10}}, udp: true}
+  - {name: 🇫🇷 法国(yudou123.top 玉豆免费节点) 3, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN", headers: {Host: 2001:bc8:32d7:302::10}}, udp: true}
+  - {name: 🇺🇸 美国(yudou123.top 玉豆免费节点), server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v8.heduian.link}}, udp: true}
+  - {name: 🇺🇸 美国(yudou123.top 玉豆免费节点) 2, server: bestcdn1.868863.xyz, port: 443, type: vmess, uuid: c7389986-4a34-479a-988c-7169d57a3a92, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aejynik, headers: {Host: vv-a5-cdn.the-best-airport.top}}, udp: true}
+  - {name: 🇺🇸 美国(yudou123.top 玉豆免费节点) 3, server: bestcdn2.868863.xyz, port: 443, type: vmess, uuid: c7389986-4a34-479a-988c-7169d57a3a92, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aejynik, headers: {Host: vv-b5-cdn.the-best-airport.top}}, udp: true}
+  - {name: 🇺🇸 美国(yudou123.top 玉豆免费节点) 4, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: RFK38Cg7APneSB5cWDcpbm, udp: true}
+  - {name: 🇺🇸 美国(yudou123.top 玉豆免费节点) 5, server: sg.fasthou.icu, port: 33115, type: ss, cipher: aes-128-gcm, password: 9bb2ff9d-65f0-45e0-a639-675136533ee4, udp: true}
+  - {name: 🇺🇸 美国(yudou123.top 玉豆免费节点) 6, server: 151.242.251.133, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, udp: true}
+  - {name: 🇺🇸 美国(yudou123.top 玉豆免费节点) 7, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
+  - {name: 🇺🇸 美国(yudou123.top 玉豆免费节点) 8, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9tqhMdIrTkgQ46PvhyAtMH, udp: true}
+  - {name: 🇮🇷 _IR_伊朗, server: 91.99.150.59, port: 40000, type: vmess, uuid: 50a79e57-545f-419b-987d-6247c026272a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国, server: 54.82.229.122, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇺🇸 _IE_爱尔兰->🇺🇸_US_美国, server: 54.216.80.211, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇺🇸 _US_美国_1, server: 13.39.112.103, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇮🇷 _IR_伊朗_1, server: 91.99.150.59, port: 30000, type: vmess, uuid: 17642b7a-28cb-4a68-86c9-e3f5987fe3d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}}
   - {name: 🇮🇸 _IS_冰岛, server: 37.235.49.168, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国_3, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v29.heduian.link}}}
-  - {name: 🇨🇭 _TR_土耳其->🇨🇭_CH_瑞士, server: 193.135.174.135, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=}
-  - {name: 🇨🇳 _CN_中国_3, server: 36.156.102.84, port: 2381, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: fe2.update.microsoft.com, skip-cert-verify: true}
-  - {name: 🇬🇧 _GB_英国->🇨🇳_CN_中国, server: 51.15.17.169, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇺🇸 _US_美国->🇮🇳_IN_印度, server: 104.192.226.106, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇨🇳 _CN_中国_3, server: entrance01.qqa678.cc, port: 47084, type: vmess, uuid: 8e94ed0e-3717-4c46-aa13-6757a89b392e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇬🇧 _GB_英国, server: 51.15.17.169, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇩🇪 _DE_德国, server: 45.87.175.155, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ}
+  - {name: 未知, server: 103.186.154.147, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v8.heduian.link}}}
+  - {name: 未知_1, server: v24.heduian.link, port: 30824, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v24.heduian.link}}}
+  - {name: 🇦🇺 _AU_澳大利亚->🇲🇩_MD_摩尔多瓦, server: 3.25.225.79, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇺🇸 _DE_德国->🇺🇸_US_美国_1, server: 45.87.175.197, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ}
+  - {name: 🇩🇪 _DE_德国->🏳️_unKnow_未知, server: cpanel.erade52.ir, port: 100, type: vmess, uuid: 366d0d7e-df02-48d0-8985-ca62aec03e02, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇩🇪 _DE_德国_1, server: 45.87.175.177, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国_1, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v29.heduian.link}}}
+  - {name: 🇷🇺 _RU_俄罗斯, server: 185.231.233.112, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇮🇷 _IR_伊朗->🇳🇱_NL_荷兰, server: 151.242.251.133, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ}
+  - {name: 6元高速机场：cczzuu.top, server: 16.176.178.192, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇭🇰 香港|@stairnode, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}}
+  - {name: 🇭🇰 香港2|@stairnode, server: 103.103.245.158, port: 443, type: ss, cipher: aes-256-gcm, password: ccf426f1fe78, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: newroot2v1.dsjsapp.com, path: /zksuapgx, tls: true, mux: true, skip-cert-verify: true}}
+  - {name: 🇭🇰 香港3|@stairnode, server: naiu-hk.05vr9nyqg5.download, port: 13007, type: trojan, password: dce3c42b-f259-4b18-b5c1-a42ebef4e732, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
+  - {name: 🇭🇰 香港4|@stairnode, server: 58.152.53.214, port: 443, type: trojan, password: c53647f3153f784b3c695ffbe5fb43c0, sni: www.baidu.com, skip-cert-verify: true}
+  - {name: 🇭🇰 香港6|@stairnode, server: 203.198.123.249, port: 443, type: trojan, password: c53647f3153f784b3c695ffbe5fb43c0, sni: www.baidu.com, skip-cert-verify: true}
+  - {name: 🇯🇵 日本2|@stairnode, server: 160.16.144.208, port: 316, type: trojan, password: c53647f3153f784b3c695ffbe5fb43c0, sni: www.baidu.com, skip-cert-verify: true}
+  - {name: 🇯🇵 日本3|@stairnode, server: 160.16.144.208, port: 1331, type: trojan, password: c53647f3153f784b3c695ffbe5fb43c0, sni: www.baidu.com, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡|@stairnode, server: 160.16.144.208, port: 2283, type: trojan, password: c53647f3153f784b3c695ffbe5fb43c0, sni: www.baidu.com, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡2|@stairnode, server: 160.16.138.24, port: 5041, type: trojan, password: c53647f3153f784b3c695ffbe5fb43c0, sni: www.baidu.com, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡3|@stairnode, server: 47.245.106.193, port: 22286, type: vmess, uuid: 8646218f-a600-4b73-8721-aa5d4567819e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡4|@stairnode, server: 47.245.106.193, port: 22433, type: vmess, uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇺🇸 美国|@stairnode, server: 160.16.144.208, port: 2381, type: trojan, password: c53647f3153f784b3c695ffbe5fb43c0, sni: www.baidu.com, skip-cert-verify: true}
+  - {name: 🇺🇸 美国2|@stairnode, server: 160.16.124.55, port: 24673, type: trojan, password: c53647f3153f784b3c695ffbe5fb43c0, sni: www.baidu.com, skip-cert-verify: true}
+  - {name: 🇦🇺 澳大利亚|@stairnode, server: 3.107.184.53, port: 80, type: ss, cipher: aes-256-gcm, password: dada0801}
+  - {name: 🇻🇳 越南|@stairnode, server: 103.186.154.48, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV}
+  - {name: 🇬🇧 英国|@stairnode, server: 57.129.140.88, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: k1v5g9FefdoO}
+  - {name: 🇺🇸 美国_1 2, server: entrance04.qqa678.cc, port: 47084, type: vmess, uuid: a6560b60-5122-40d7-bcb6-650c98c88ea5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇺🇸 美国_2 2, server: entrance04.qqa678.cc, port: 47081, type: vmess, uuid: a6560b60-5122-40d7-bcb6-650c98c88ea5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇫🇷 法国_1 2, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇫🇷 法国_2 2, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 美国_3 2, server: 172.67.160.44, port: 443, type: vmess, uuid: 086c655d-0c12-47dd-9d5a-2670089201ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 7c681e58-53be-8513-d3ea-bd425436e356.huangshang.site, network: ws, ws-opts: {path: /ri9mOOVJuAimB74kgXZ, headers: {Host: 7c681e58-53be-8513-d3ea-bd425436e356.huangshang.site}}}
+  - {name: 🇺🇸 美国_4 2, server: entrance02.qqa678.cc, port: 47083, type: vmess, uuid: a6560b60-5122-40d7-bcb6-650c98c88ea5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇺🇸 美国_5 2, server: entrance01.qqa678.cc, port: 47084, type: vmess, uuid: 8e94ed0e-3717-4c46-aa13-6757a89b392e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇺🇸 美国_6 2, server: "2001:41d0:70e:c100::", port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: serkat.org, network: ws, ws-opts: {path: /linkvws, headers: {Host: serkat.org}}}
+  - {name: 🇺🇸 美国_7 2, server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: v8.heduian.link, network: ws, ws-opts: {path: /oooo, headers: {Host: v8.heduian.link}}}
+  - {name: 🇺🇸 美国_8 2, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: ocbc.com, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}}
+  - {name: 🇺🇸 美国_9 2, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9tqhMdIrTkgQ46PvhyAtMH}
+  - {name: 🇩🇪 德国_1 2, server: 45.87.175.155, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ}
+  - {name: 🇩🇪 德国_2 2, server: 45.87.175.174, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ}
+  - {name: 🇺🇸 美国_10 2, server: 151.242.251.152, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ}
+  - {name: 🇩🇪 德国_3 2, server: 45.87.175.197, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ}
+  - {name: 🇺🇸 美国_11 2, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: RFK38Cg7APneSB5cWDcpbm}
+  - {name: 🇺🇸 美国_12 2, server: arxfw2b78fi2q9hzylhn.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Nk9asglDzHzjktVzTkvhaA}
+  - {name: 🇺🇸 美国_13 2, server: medrd.vtpmng.top, port: 8443, type: vless, uuid: 8339a5e8-6141-41f1-9abc-bbf1a06ac5ae, tls: true, skip-cert-verify: true, servername: medrd.vtpmng.top, network: ws, ws-opts: {path: /, headers: {Host: medrd.vtpmng.top}}}
+  - {name: 🇺🇸 美国_14 2, server: fin7.ipstatic.info, port: 48600, type: vless, uuid: 35db9be8-2cd3-4085-9bb3-6b2472e05e7d, tls: false, skip-cert-verify: true, servername: Uewuy.divarcdn.com, network: tcp}
+  - {name: 🇺🇸 美国_15 2, server: time.is, port: 443, type: vless, uuid: d0298536-d670-4045-bbb1-ddd5ea68683e, tls: true, skip-cert-verify: true, servername: a.azadnet002.ddns-ip.net, network: ws, ws-opts: {path: /, headers: {Host: a.azadnet002.ddns-ip.net}}}
+  - {name: 🇺🇸 美国_16 2, server: all.tellmethetrue.shop, port: 443, type: vless, uuid: e4824193-4f54-453b-d037-88368e85ef0e, tls: true, alpn: [h2], skip-cert-verify: true, servername: pqh30v1.hiddendom.shop, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: /}}
+  - {name: 🇺🇸 美国_17 2, server: 172.67.160.44, port: 443, type: vless, uuid: 1ae6dcb3-8d05-4eee-b550-32904c88c312, tls: true, skip-cert-verify: true, servername: 8dbc269c-38ed-0d38-7a26-970a14604a96.huangshang.site, network: ws, ws-opts: {path: /0SCvfqSaeeB74kgXZ, headers: {Host: 8dbc269c-38ed-0d38-7a26-970a14604a96.huangshang.site}}}
+  - {name: 🇺🇸 美国_18 2, server: 183.240.179.88, port: 11443, type: vless, uuid: df245bf8-8253-4029-90d8-ef30cfac75f1, tls: false, skip-cert-verify: true, network: tcp}
+  - {name: 🇺🇸 美国_19 2, server: small-meal.oneeat.co, port: 80, type: vless, uuid: d1e44075-8c92-4698-9db0-e71d7015b757, tls: false, skip-cert-verify: true, servername: small-meal.oneeat.co, network: ws, ws-opts: {path: /, headers: {Host: small-meal.oneeat.co}}}
+  - {name: 🇺🇸 美国_20 2, server: handsome-device.oneeat.co, port: 80, type: vless, uuid: 2ad87f95-7a0b-4018-8497-5ecaac2f0ddf, tls: false, skip-cert-verify: true, servername: handsome-device.oneeat.co, network: ws, ws-opts: {path: "/?---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG", headers: {Host: handsome-device.oneeat.co}}}
+  - {name: 🇺🇸 美国_21 2, server: 172.67.160.44, port: 443, type: vless, uuid: 086c655d-0c12-47dd-9d5a-2670089201ee, tls: true, skip-cert-verify: true, servername: cb93136c-7ed8-136d-45b5-5254c891e290.huangshang.site, network: ws, ws-opts: {path: /0SCvfqSaeeB74kgXZ, headers: {Host: cb93136c-7ed8-136d-45b5-5254c891e290.huangshang.site}}}
+  - {name: 🇺🇸 美国_22 2, server: 147.79.20.47, port: 443, type: vless, uuid: 0de36d61-ac9e-4105-92cd-8fe97921b48b, tls: true, skip-cert-verify: true, servername: swus.zyk.biz.id, network: ws, ws-opts: {path: /, headers: {Host: swus.zyk.biz.id}}}
+  - {name: 🇺🇸 美国_23 2, server: sweet-combination.seotoolsforyou.co.uk, port: 80, type: vless, uuid: 05020a61-3c0c-4ead-b256-7851ff905a75, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sweet-combination.seotoolsforyou.co.uk}}}
+  - {name: 🇺🇸 美国_24 2, server: join-raiv2mmr-telegram.koyeb.app, port: 443, type: vless, uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr, headers: {Host: join-raiv2mmr-telegram.koyeb.app}}}
+  - {name: 🇺🇸 美国_25 2, server: 190.93.246.137, port: 443, type: vless, uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c, tls: true, skip-cert-verify: true, servername: abc.vpneee.top, network: ws, ws-opts: {path: /YnqGMcAt/, headers: {Host: abc.vpneee.top}}}
+  - {name: 🇺🇸 美国_26 2, server: ef7c2383-03bb-fec2-327b-34f6b2ace7cb.freevpnatm2025.dpdns.org, port: 443, type: vless, uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e, tls: true, alpn: [http/1.1], skip-cert-verify: true, servername: ef7c2383-03bb-fec2-327b-34f6b2ace7cb.freevpnatm2025.dpdns.org, network: ws, ws-opts: {path: /z4RnlCBxj2oeA85VyjPCYXwETL, headers: {Host: ef7c2383-03bb-fec2-327b-34f6b2ace7cb.freevpnatm2025.dpdns.org}}}
+  - {name: 🇺🇸 美国_27 2, server: join-raiv2mmr-telegram.koyeb.app, port: 443, type: vless, uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9, tls: true, skip-cert-verify: true, servername: JOIN-RAIV2MMR-TELEGRAM.koyeb.app, network: ws, ws-opts: {path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr, headers: {Host: join-raiv2mmr-telegram.koyeb.app}}}
+  - {name: 🇺🇸 美国_28 2, server: cloudflare-ip.mofashi.ltd, port: 443, type: vless, uuid: dea991b4-696f-4e9e-9761-1e1b31bb02de, tls: true, skip-cert-verify: true, servername: 2.294294.xyz, network: ws, ws-opts: {path: /snippets, headers: {Host: 2.294294.xyz}}}
+  - {name: 🇺🇸 美国_29 2, server: join-raiv2mmr-telegram.koyeb.app, port: 443, type: vless, uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9, tls: true, skip-cert-verify: true, servername: join-raiv2mmr-telegram.koyeb.app, network: ws, ws-opts: {path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr, headers: {Host: join-raiv2mmr-telegram.koyeb.app}}}
+  - {name: 🇺🇸 美国_30 2, server: 188.42.145.253, port: 2096, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, skip-cert-verify: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/Telegram@freecodes/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}}
+  - {name: 🇺🇸 美国_31 2, server: 188.42.145.253, port: 2096, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, skip-cert-verify: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/freecodes@节点狂魔/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}}
+  - {name: 🇺🇸 美国_32 2, server: net2026cd.zanddynastyofpersia.org, port: 443, type: vless, uuid: 0ec8c120-33fa-4658-9bed-3a51cb04c55c, tls: true, skip-cert-verify: true, servername: net2026cd.zanddynastyofpersia.org, network: ws, ws-opts: {path: /eJsVXFVZ6iavNx1EFxOyH861WH, headers: {Host: net2026cd.zanddynastyofpersia.org}}}
+  - {name: 🇺🇸 美国_33 2, server: 104.21.36.57, port: 443, type: vless, uuid: 6f6e8f09-c1b3-48fd-ab00-18f921d875ef, tls: true, skip-cert-verify: true, servername: profit.fullmargintraders.com, network: ws, ws-opts: {path: /wsv/6f6e8f09-c1b3-48fd-ab00-18f921d875ef, headers: {Host: profit.fullmargintraders.com}}}
+  - {name: 🇺🇸 美国_34 2, server: wwwopensignalcom-goodspeed-8xx.pages.dev., port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: true, servername: WwW.OPENSIgnaL.cOm.NaynaY09.dynv6.nET, network: ws, ws-opts: {path: //, headers: {Host: WwW.OPENSIgnaL.cOm.NaynaY09.dynv6.nET}}}
+  - {name: 🇺🇸 美国_35 2, server: 188.42.145.253, port: 2096, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, skip-cert-verify: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: /, headers: {Host: gaosir.unfeeling.sbs}}}
+  - {name: 🇺🇸 美国_36 2, server: 188.42.145.253, port: 2096, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, skip-cert-verify: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}}
+  - {name: 🇺🇸 美国_37 2, server: nrtcfdns.zone.id, port: 443, type: vless, uuid: dea991b4-696f-4e9e-9761-1e1b31bb02de, tls: true, skip-cert-verify: true, servername: 2.294294.xyz, network: ws, ws-opts: {path: /snippets, headers: {Host: 2.294294.xyz}}}
+  - {name: 🇺🇸 美国_38 2, server: 138.124.118.34, port: 443, type: trojan, password: iwangjie, sni: nodes.830901.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: /proxyip=proxyip.fxxk.dedyn.io, headers: {Host: nodes.830901.xyz}}}
+  - {name: 🇺🇸 美国_39 2, server: tuntro001.instconn.com, port: 443, type: trojan, password: ef269dbc-0486-451f-b94b-d0c354bc3f1c, sni: awshk.686911.xyz, skip-cert-verify: true}
+  - {name: 🇺🇸 美国_40 2, server: 141.94.68.216, port: 2053, type: trojan, password: iwangjie, sni: nodes.830901.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nodes.830901.xyz}}}
+  - {name: 🇺🇸 美国_41 2, server: 135.125.232.253, port: 2053, type: trojan, password: iwangjie, sni: nodes.830901.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nodes.830901.xyz}}}
+  - {name: 🇺🇸 美国_42 2, server: 83.147.254.185, port: 443, type: trojan, password: iwangjie, sni: nodes.830901.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nodes.830901.xyz}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 4
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 5
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 2
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 6
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 7
+      - 🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 8
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 9
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 10
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 3
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享)
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 2
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 11
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 4
       - 🇺🇸 美国_1
-      - 🇫🇷 法国_1
       - 🇺🇸 美国_2
+      - 🇫🇷 法国_1
+      - 🇫🇷 法国_2
       - 🇺🇸 美国_3
       - 🇺🇸 美国_4
       - 🇺🇸 美国_5
@@ -349,23 +203,19 @@ proxy-groups:
       - 🇺🇸 美国_7
       - 🇺🇸 美国_8
       - 🇺🇸 美国_9
-      - 🇨🇦 加拿大
+      - 🇩🇪 德国_1
+      - 🇩🇪 德国_2
       - 🇺🇸 美国_10
-      - 🇫🇷 法国_2
+      - 🇩🇪 德国_3
       - 🇺🇸 美国_11
       - 🇺🇸 美国_12
       - 🇺🇸 美国_13
       - 🇺🇸 美国_14
       - 🇺🇸 美国_15
       - 🇺🇸 美国_16
-      - 🇯🇵 日本_1
-      - 🇬🇧 英国_1
       - 🇺🇸 美国_17
-      - 🇩🇪 德国_1
       - 🇺🇸 美国_18
-      - 🇯🇵 日本_2
       - 🇺🇸 美国_19
-      - 🇫🇷 法国_3
       - 🇺🇸 美国_20
       - 🇺🇸 美国_21
       - 🇺🇸 美国_22
@@ -379,7 +229,6 @@ proxy-groups:
       - 🇺🇸 美国_30
       - 🇺🇸 美国_31
       - 🇺🇸 美国_32
-      - 🇯🇵 日本_3
       - 🇺🇸 美国_33
       - 🇺🇸 美国_34
       - 🇺🇸 美国_35
@@ -387,20 +236,62 @@ proxy-groups:
       - 🇺🇸 美国_37
       - 🇺🇸 美国_38
       - 🇺🇸 美国_39
-      - 🇫🇷 法国_4
-      - 🇦🇺 澳洲
       - 🇺🇸 美国_40
       - 🇺🇸 美国_41
       - 🇺🇸 美国_42
-      - 🇺🇸 美国_43
-      - 🇬🇧 英国_2
-      - 🇺🇸 美国_44
-      - 🇺🇸 美国_45
-      - 🇬🇧 英国_3
-      - 🇩🇪 德国_2
+      - 🇪🇸 西班牙(yudou123.top 玉豆免费节点)
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点)
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点) 2
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点) 3
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点)
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 2
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 3
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 4
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 5
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 6
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 7
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 8
+      - 🇮🇷 _IR_伊朗
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _IE_爱尔兰->🇺🇸_US_美国
+      - 🇺🇸 _US_美国_1
+      - 🇮🇷 _IR_伊朗_1
+      - 🇮🇸 _IS_冰岛
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度
+      - 🇨🇳 _CN_中国_3
+      - 🇬🇧 _GB_英国
+      - 🇩🇪 _DE_德国
+      - 未知
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 未知_1
+      - 🇦🇺 _AU_澳大利亚->🇲🇩_MD_摩尔多瓦
+      - 🇺🇸 _DE_德国->🇺🇸_US_美国_1
+      - 🇩🇪 _DE_德国->🏳️_unKnow_未知
+      - 🇩🇪 _DE_德国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇷🇺 _RU_俄罗斯
+      - 🇮🇷 _IR_伊朗->🇳🇱_NL_荷兰
+      - 6元高速机场：cczzuu.top
+      - 🇭🇰 香港|@stairnode
+      - 🇭🇰 香港2|@stairnode
+      - 🇭🇰 香港3|@stairnode
+      - 🇭🇰 香港4|@stairnode
+      - 🇭🇰 香港6|@stairnode
+      - 🇯🇵 日本2|@stairnode
+      - 🇯🇵 日本3|@stairnode
+      - 🇸🇬 新加坡|@stairnode
+      - 🇸🇬 新加坡2|@stairnode
+      - 🇸🇬 新加坡3|@stairnode
+      - 🇸🇬 新加坡4|@stairnode
+      - 🇺🇸 美国|@stairnode
+      - 🇺🇸 美国2|@stairnode
+      - 🇦🇺 澳大利亚|@stairnode
+      - 🇻🇳 越南|@stairnode
+      - 🇬🇧 英国|@stairnode
       - 🇺🇸 美国_1 2
-      - 🇫🇷 法国_1 2
       - 🇺🇸 美国_2 2
+      - 🇫🇷 法国_1 2
+      - 🇫🇷 法国_2 2
       - 🇺🇸 美国_3 2
       - 🇺🇸 美国_4 2
       - 🇺🇸 美国_5 2
@@ -408,23 +299,19 @@ proxy-groups:
       - 🇺🇸 美国_7 2
       - 🇺🇸 美国_8 2
       - 🇺🇸 美国_9 2
-      - 🇨🇦 加拿大 2
+      - 🇩🇪 德国_1 2
+      - 🇩🇪 德国_2 2
       - 🇺🇸 美国_10 2
-      - 🇫🇷 法国_2 2
+      - 🇩🇪 德国_3 2
       - 🇺🇸 美国_11 2
       - 🇺🇸 美国_12 2
       - 🇺🇸 美国_13 2
       - 🇺🇸 美国_14 2
       - 🇺🇸 美国_15 2
       - 🇺🇸 美国_16 2
-      - 🇯🇵 日本_1 2
-      - 🇬🇧 英国_1 2
       - 🇺🇸 美国_17 2
-      - 🇩🇪 德国_1 2
       - 🇺🇸 美国_18 2
-      - 🇯🇵 日本_2 2
       - 🇺🇸 美国_19 2
-      - 🇫🇷 法国_3 2
       - 🇺🇸 美国_20 2
       - 🇺🇸 美国_21 2
       - 🇺🇸 美国_22 2
@@ -438,7 +325,6 @@ proxy-groups:
       - 🇺🇸 美国_30 2
       - 🇺🇸 美国_31 2
       - 🇺🇸 美国_32 2
-      - 🇯🇵 日本_3 2
       - 🇺🇸 美国_33 2
       - 🇺🇸 美国_34 2
       - 🇺🇸 美国_35 2
@@ -446,235 +332,37 @@ proxy-groups:
       - 🇺🇸 美国_37 2
       - 🇺🇸 美国_38 2
       - 🇺🇸 美国_39 2
-      - 🇫🇷 法国_4 2
-      - 🇦🇺 澳洲 2
       - 🇺🇸 美国_40 2
       - 🇺🇸 美国_41 2
       - 🇺🇸 美国_42 2
-      - 🇺🇸 美国_43 2
-      - 🇬🇧 英国_2 2
-      - 🇺🇸 美国_44 2
-      - 🇺🇸 美国_45 2
-      - 🇬🇧 英国_3 2
-      - 🇩🇪 德国_2 2
-      - 🇸🇬 新加坡_1
-      - IE_1|⬇️5.3MB/s
-      - AT_1|⬇️1.7MB/s_1
-      - DE_8|⬇️6.3MB/s_1
-      - FI_1|⬇️4.9MB/s
-      - US_165|⬇️4.6MB/s_1
-      - TR_3|⬇️3.1MB/s
-      - 🇷🇺 俄罗斯_1
-      - 🇮🇪 爱尔兰_1
-      - 🇫🇷 法国_1 3
-      - 🇹🇷 土耳其_1
-      - 🇬🇧 英国_1 3
-      - 🇺🇸 美国_1 3
-      - 🇺🇸 美国_2 3
-      - jp_1
-      - 🇷🇺 RU
-      - 🇯🇵 日本_1 3
-      - 🇮🇷 伊朗_1
-      - 美國_1
-      - AT_1|⬇️1.7MB/s_2
-      - jp_2
-      - DE_8|⬇️6.3MB/s_2
-      - 奧地利_1
-      - 奧地利_2
-      - 美國_2
-      - 德國_1
-      - 法國_1
-      - 美國_3
-      - 美國_4
-      - 🇫🇷 法国_2 3
-      - 美國_5
-      - US_165|⬇️4.6MB/s_2
-      - 美國_6
-      - 法國_2
-      - 🇫🇷 法国_3 3
-      - 俄羅斯_1
-      - KR_1
-      - KR_2
-      - 🇰🇷 南韓_1
-      - 美國_7
-      - 🇷🇺 俄罗斯_2
-      - 俄羅斯_2
-      - 阿拉伯聯合大公國
-      - 🇸🇬 新加坡_2
-      - 法國_3
-      - 🇬🇧 英国_2 3
-      - 英國_1
-      - 🇮🇪 爱尔兰_2
-      - KR_3
-      - 摩爾多瓦_1
-      - 🇰🇷 南韓_2
-      - 🇺🇸 美国_3 3
-      - 美國_8
-      - 🇹🇷 土耳其_2
-      - 芬蘭_1
-      - 俄羅斯_3
-      - 俄羅斯_4
-      - 摩爾多瓦_2
-      - 🇹🇷 土耳其_3
-      - 美國_9
-      - 美國_10
-      - 🇨🇳 中国_1
-      - 🇨🇳 中国_2
-      - 英國_2
-      - 德國_2
-      - 🇮🇷 伊朗_2
-      - 🇮🇷 伊朗_3
-      - 中國_1
-      - 🇰🇷 南韓_3
-      - 中國_2
-      - 阿聯酋
-      - 奧地利_3
-      - 奧地利_4
-      - 德國_3
-      - 德國_4
-      - 德國_5
-      - 德國_6
-      - 🇷🇺 俄罗斯_3
-      - 俄羅斯_5
-      - 俄羅斯_6
-      - 俄羅斯_7
-      - 俄羅斯_8
-      - 俄羅斯_9
-      - 俄羅斯_10
-      - 俄羅斯_11
-      - 🇫🇷 法国_4 3
-      - 法國_4
-      - 法國_5
-      - 法國_6
-      - 🇫🇮 芬兰
-      - 芬蘭_2
-      - 芬蘭_3
-      - 芬蘭_4
-      - 芬蘭_5
-      - 芬蘭_6
-      - 🇰🇷 韓國_1
-      - 🇰🇷 韓國_2
-      - 🇰🇷 韓國_3
-      - 🇰🇷 韓國_4
-      - 🇰🇷 韓國_5
-      - 荷蘭_1
-      - 荷蘭_2
-      - 🇱🇹 立陶宛
-      - 美國_11
-      - 美國_12
-      - 美國_13
-      - 美國_14
-      - 美國_15
-      - 美國_16
-      - 美國_17
-      - 美國_18
-      - 美國_19
-      - 美國_20
-      - 美國_21
-      - 美國_22
-      - 美國_23
-      - 美國_24
-      - 美國_25
-      - 美國_26
-      - 美國_27
-      - 摩爾多瓦_3
-      - 摩爾多瓦_4
-      - 摩爾多瓦_5
-      - 摩爾多瓦_6
-      - 🇰🇷 南韓_4
-      - 🇰🇷 南韓_5
-      - 🇯🇵 日本_2 3
-      - 🇯🇵 日本_3 3
-      - 烏克蘭_1
-      - 烏克蘭_2
-      - 🇮🇷 伊朗_4
-      - 🇮🇷 伊朗_5
-      - 🇮🇷 伊朗_6
-      - 🇮🇷 伊朗_7
-      - 英國_3
-      - 英國_4
-      - 🇺🇸 美国_4 3
-      - 🇺🇸 美国_5 3
-      - 🇺🇸 美国_6 3
-      - 🇺🇸 美国_7 3
-      - 🇺🇸 美国_8 3
-      - 🇺🇸 美国_9 3
-      - 🇺🇸 美国_10 3
-      - 🇲🇴 澳门_1
-      - 🇲🇴 澳门_2
-      - 🇲🇴 澳门_3
-      - 🇲🇴 澳门_4
-      - 🇲🇴 澳门_5
-      - 🇲🇴 澳门_6
-      - 🇺🇸 美国_11 3
-      - 🇭🇰 香港_1
-      - 🇺🇸 美国_12 3
-      - 美國_28
-      - 🇺🇸 美国_13 3
-      - 美國_29
-      - 中國_3
-      - 🇨🇳 中国_3
-      - 美國_30
-      - 美國_31
-      - 美國_32
-      - 美國_33
-      - 美國_34
-      - 🇯🇵 日本_4
-      - 🇭🇰 香港_2
-      - 🇺🇸 美国_14 3
-      - 6元高速机场：cczzuu.top
-      - 🇭🇰 香港|@stairnode
-      - 🇭🇰 香港2|@stairnode
-      - 🇭🇰 香港3|@stairnode
-      - 🇭🇰 香港4|@stairnode
-      - 🇭🇰 香港6|@stairnode
-      - 🇯🇵 日本2|@stairnode
-      - 🇯🇵 日本|@stairnode
-      - 🇯🇵 日本3|@stairnode
-      - 🇰🇷 韩国|@stairnode
-      - 🇸🇬 新加坡|@stairnode
-      - 🇸🇬 新加坡2|@stairnode
-      - 🇸🇬 新加坡3|@stairnode
-      - 🇺🇸 美国|@stairnode
-      - 🇺🇸 美国2|@stairnode
-      - 🇻🇳 越南|@stairnode
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享)
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 2
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 3
-      - 🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享)
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 4
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 5
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 6
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 7
-      - 🇭🇰 HK香港(mibei77.com 米贝节点分享)
-      - 🇱🇺 卢森堡(mibei77.com 米贝节点分享)
-      - 🇱🇺 卢森堡(mibei77.com 米贝节点分享) 2
-      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 2
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 8
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇲🇩 _MD_摩尔多瓦
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
-      - 🇷🇺 _RU_俄罗斯
-      - 🇳🇱 _NL_荷兰
-      - 🇸🇰 _SK_斯洛伐克->🏳️_unKnow_未知
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
-      - 🇮🇸 _IS_冰岛
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
-      - 🇨🇭 _TR_土耳其->🇨🇭_CH_瑞士
-      - 🇨🇳 _CN_中国_3
-      - 🇬🇧 _GB_英国->🇨🇳_CN_中国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 4
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 5
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 2
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 6
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 7
+      - 🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 8
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 9
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 10
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 3
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享)
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 2
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 11
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 4
       - 🇺🇸 美国_1
-      - 🇫🇷 法国_1
       - 🇺🇸 美国_2
+      - 🇫🇷 法国_1
+      - 🇫🇷 法国_2
       - 🇺🇸 美国_3
       - 🇺🇸 美国_4
       - 🇺🇸 美国_5
@@ -682,23 +370,19 @@ proxy-groups:
       - 🇺🇸 美国_7
       - 🇺🇸 美国_8
       - 🇺🇸 美国_9
-      - 🇨🇦 加拿大
+      - 🇩🇪 德国_1
+      - 🇩🇪 德国_2
       - 🇺🇸 美国_10
-      - 🇫🇷 法国_2
+      - 🇩🇪 德国_3
       - 🇺🇸 美国_11
       - 🇺🇸 美国_12
       - 🇺🇸 美国_13
       - 🇺🇸 美国_14
       - 🇺🇸 美国_15
       - 🇺🇸 美国_16
-      - 🇯🇵 日本_1
-      - 🇬🇧 英国_1
       - 🇺🇸 美国_17
-      - 🇩🇪 德国_1
       - 🇺🇸 美国_18
-      - 🇯🇵 日本_2
       - 🇺🇸 美国_19
-      - 🇫🇷 法国_3
       - 🇺🇸 美国_20
       - 🇺🇸 美国_21
       - 🇺🇸 美国_22
@@ -712,7 +396,6 @@ proxy-groups:
       - 🇺🇸 美国_30
       - 🇺🇸 美国_31
       - 🇺🇸 美国_32
-      - 🇯🇵 日本_3
       - 🇺🇸 美国_33
       - 🇺🇸 美国_34
       - 🇺🇸 美国_35
@@ -720,20 +403,62 @@ proxy-groups:
       - 🇺🇸 美国_37
       - 🇺🇸 美国_38
       - 🇺🇸 美国_39
-      - 🇫🇷 法国_4
-      - 🇦🇺 澳洲
       - 🇺🇸 美国_40
       - 🇺🇸 美国_41
       - 🇺🇸 美国_42
-      - 🇺🇸 美国_43
-      - 🇬🇧 英国_2
-      - 🇺🇸 美国_44
-      - 🇺🇸 美国_45
-      - 🇬🇧 英国_3
-      - 🇩🇪 德国_2
+      - 🇪🇸 西班牙(yudou123.top 玉豆免费节点)
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点)
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点) 2
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点) 3
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点)
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 2
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 3
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 4
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 5
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 6
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 7
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 8
+      - 🇮🇷 _IR_伊朗
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _IE_爱尔兰->🇺🇸_US_美国
+      - 🇺🇸 _US_美国_1
+      - 🇮🇷 _IR_伊朗_1
+      - 🇮🇸 _IS_冰岛
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度
+      - 🇨🇳 _CN_中国_3
+      - 🇬🇧 _GB_英国
+      - 🇩🇪 _DE_德国
+      - 未知
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 未知_1
+      - 🇦🇺 _AU_澳大利亚->🇲🇩_MD_摩尔多瓦
+      - 🇺🇸 _DE_德国->🇺🇸_US_美国_1
+      - 🇩🇪 _DE_德国->🏳️_unKnow_未知
+      - 🇩🇪 _DE_德国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇷🇺 _RU_俄罗斯
+      - 🇮🇷 _IR_伊朗->🇳🇱_NL_荷兰
+      - 6元高速机场：cczzuu.top
+      - 🇭🇰 香港|@stairnode
+      - 🇭🇰 香港2|@stairnode
+      - 🇭🇰 香港3|@stairnode
+      - 🇭🇰 香港4|@stairnode
+      - 🇭🇰 香港6|@stairnode
+      - 🇯🇵 日本2|@stairnode
+      - 🇯🇵 日本3|@stairnode
+      - 🇸🇬 新加坡|@stairnode
+      - 🇸🇬 新加坡2|@stairnode
+      - 🇸🇬 新加坡3|@stairnode
+      - 🇸🇬 新加坡4|@stairnode
+      - 🇺🇸 美国|@stairnode
+      - 🇺🇸 美国2|@stairnode
+      - 🇦🇺 澳大利亚|@stairnode
+      - 🇻🇳 越南|@stairnode
+      - 🇬🇧 英国|@stairnode
       - 🇺🇸 美国_1 2
-      - 🇫🇷 法国_1 2
       - 🇺🇸 美国_2 2
+      - 🇫🇷 法国_1 2
+      - 🇫🇷 法国_2 2
       - 🇺🇸 美国_3 2
       - 🇺🇸 美国_4 2
       - 🇺🇸 美国_5 2
@@ -741,23 +466,19 @@ proxy-groups:
       - 🇺🇸 美国_7 2
       - 🇺🇸 美国_8 2
       - 🇺🇸 美国_9 2
-      - 🇨🇦 加拿大 2
+      - 🇩🇪 德国_1 2
+      - 🇩🇪 德国_2 2
       - 🇺🇸 美国_10 2
-      - 🇫🇷 法国_2 2
+      - 🇩🇪 德国_3 2
       - 🇺🇸 美国_11 2
       - 🇺🇸 美国_12 2
       - 🇺🇸 美国_13 2
       - 🇺🇸 美国_14 2
       - 🇺🇸 美国_15 2
       - 🇺🇸 美国_16 2
-      - 🇯🇵 日本_1 2
-      - 🇬🇧 英国_1 2
       - 🇺🇸 美国_17 2
-      - 🇩🇪 德国_1 2
       - 🇺🇸 美国_18 2
-      - 🇯🇵 日本_2 2
       - 🇺🇸 美国_19 2
-      - 🇫🇷 法国_3 2
       - 🇺🇸 美国_20 2
       - 🇺🇸 美国_21 2
       - 🇺🇸 美国_22 2
@@ -771,7 +492,6 @@ proxy-groups:
       - 🇺🇸 美国_30 2
       - 🇺🇸 美国_31 2
       - 🇺🇸 美国_32 2
-      - 🇯🇵 日本_3 2
       - 🇺🇸 美国_33 2
       - 🇺🇸 美国_34 2
       - 🇺🇸 美国_35 2
@@ -779,236 +499,38 @@ proxy-groups:
       - 🇺🇸 美国_37 2
       - 🇺🇸 美国_38 2
       - 🇺🇸 美国_39 2
-      - 🇫🇷 法国_4 2
-      - 🇦🇺 澳洲 2
       - 🇺🇸 美国_40 2
       - 🇺🇸 美国_41 2
       - 🇺🇸 美国_42 2
-      - 🇺🇸 美国_43 2
-      - 🇬🇧 英国_2 2
-      - 🇺🇸 美国_44 2
-      - 🇺🇸 美国_45 2
-      - 🇬🇧 英国_3 2
-      - 🇩🇪 德国_2 2
-      - 🇸🇬 新加坡_1
-      - IE_1|⬇️5.3MB/s
-      - AT_1|⬇️1.7MB/s_1
-      - DE_8|⬇️6.3MB/s_1
-      - FI_1|⬇️4.9MB/s
-      - US_165|⬇️4.6MB/s_1
-      - TR_3|⬇️3.1MB/s
-      - 🇷🇺 俄罗斯_1
-      - 🇮🇪 爱尔兰_1
-      - 🇫🇷 法国_1 3
-      - 🇹🇷 土耳其_1
-      - 🇬🇧 英国_1 3
-      - 🇺🇸 美国_1 3
-      - 🇺🇸 美国_2 3
-      - jp_1
-      - 🇷🇺 RU
-      - 🇯🇵 日本_1 3
-      - 🇮🇷 伊朗_1
-      - 美國_1
-      - AT_1|⬇️1.7MB/s_2
-      - jp_2
-      - DE_8|⬇️6.3MB/s_2
-      - 奧地利_1
-      - 奧地利_2
-      - 美國_2
-      - 德國_1
-      - 法國_1
-      - 美國_3
-      - 美國_4
-      - 🇫🇷 法国_2 3
-      - 美國_5
-      - US_165|⬇️4.6MB/s_2
-      - 美國_6
-      - 法國_2
-      - 🇫🇷 法国_3 3
-      - 俄羅斯_1
-      - KR_1
-      - KR_2
-      - 🇰🇷 南韓_1
-      - 美國_7
-      - 🇷🇺 俄罗斯_2
-      - 俄羅斯_2
-      - 阿拉伯聯合大公國
-      - 🇸🇬 新加坡_2
-      - 法國_3
-      - 🇬🇧 英国_2 3
-      - 英國_1
-      - 🇮🇪 爱尔兰_2
-      - KR_3
-      - 摩爾多瓦_1
-      - 🇰🇷 南韓_2
-      - 🇺🇸 美国_3 3
-      - 美國_8
-      - 🇹🇷 土耳其_2
-      - 芬蘭_1
-      - 俄羅斯_3
-      - 俄羅斯_4
-      - 摩爾多瓦_2
-      - 🇹🇷 土耳其_3
-      - 美國_9
-      - 美國_10
-      - 🇨🇳 中国_1
-      - 🇨🇳 中国_2
-      - 英國_2
-      - 德國_2
-      - 🇮🇷 伊朗_2
-      - 🇮🇷 伊朗_3
-      - 中國_1
-      - 🇰🇷 南韓_3
-      - 中國_2
-      - 阿聯酋
-      - 奧地利_3
-      - 奧地利_4
-      - 德國_3
-      - 德國_4
-      - 德國_5
-      - 德國_6
-      - 🇷🇺 俄罗斯_3
-      - 俄羅斯_5
-      - 俄羅斯_6
-      - 俄羅斯_7
-      - 俄羅斯_8
-      - 俄羅斯_9
-      - 俄羅斯_10
-      - 俄羅斯_11
-      - 🇫🇷 法国_4 3
-      - 法國_4
-      - 法國_5
-      - 法國_6
-      - 🇫🇮 芬兰
-      - 芬蘭_2
-      - 芬蘭_3
-      - 芬蘭_4
-      - 芬蘭_5
-      - 芬蘭_6
-      - 🇰🇷 韓國_1
-      - 🇰🇷 韓國_2
-      - 🇰🇷 韓國_3
-      - 🇰🇷 韓國_4
-      - 🇰🇷 韓國_5
-      - 荷蘭_1
-      - 荷蘭_2
-      - 🇱🇹 立陶宛
-      - 美國_11
-      - 美國_12
-      - 美國_13
-      - 美國_14
-      - 美國_15
-      - 美國_16
-      - 美國_17
-      - 美國_18
-      - 美國_19
-      - 美國_20
-      - 美國_21
-      - 美國_22
-      - 美國_23
-      - 美國_24
-      - 美國_25
-      - 美國_26
-      - 美國_27
-      - 摩爾多瓦_3
-      - 摩爾多瓦_4
-      - 摩爾多瓦_5
-      - 摩爾多瓦_6
-      - 🇰🇷 南韓_4
-      - 🇰🇷 南韓_5
-      - 🇯🇵 日本_2 3
-      - 🇯🇵 日本_3 3
-      - 烏克蘭_1
-      - 烏克蘭_2
-      - 🇮🇷 伊朗_4
-      - 🇮🇷 伊朗_5
-      - 🇮🇷 伊朗_6
-      - 🇮🇷 伊朗_7
-      - 英國_3
-      - 英國_4
-      - 🇺🇸 美国_4 3
-      - 🇺🇸 美国_5 3
-      - 🇺🇸 美国_6 3
-      - 🇺🇸 美国_7 3
-      - 🇺🇸 美国_8 3
-      - 🇺🇸 美国_9 3
-      - 🇺🇸 美国_10 3
-      - 🇲🇴 澳门_1
-      - 🇲🇴 澳门_2
-      - 🇲🇴 澳门_3
-      - 🇲🇴 澳门_4
-      - 🇲🇴 澳门_5
-      - 🇲🇴 澳门_6
-      - 🇺🇸 美国_11 3
-      - 🇭🇰 香港_1
-      - 🇺🇸 美国_12 3
-      - 美國_28
-      - 🇺🇸 美国_13 3
-      - 美國_29
-      - 中國_3
-      - 🇨🇳 中国_3
-      - 美國_30
-      - 美國_31
-      - 美國_32
-      - 美國_33
-      - 美國_34
-      - 🇯🇵 日本_4
-      - 🇭🇰 香港_2
-      - 🇺🇸 美国_14 3
-      - 6元高速机场：cczzuu.top
-      - 🇭🇰 香港|@stairnode
-      - 🇭🇰 香港2|@stairnode
-      - 🇭🇰 香港3|@stairnode
-      - 🇭🇰 香港4|@stairnode
-      - 🇭🇰 香港6|@stairnode
-      - 🇯🇵 日本2|@stairnode
-      - 🇯🇵 日本|@stairnode
-      - 🇯🇵 日本3|@stairnode
-      - 🇰🇷 韩国|@stairnode
-      - 🇸🇬 新加坡|@stairnode
-      - 🇸🇬 新加坡2|@stairnode
-      - 🇸🇬 新加坡3|@stairnode
-      - 🇺🇸 美国|@stairnode
-      - 🇺🇸 美国2|@stairnode
-      - 🇻🇳 越南|@stairnode
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享)
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 2
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 3
-      - 🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享)
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 4
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 5
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 6
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 7
-      - 🇭🇰 HK香港(mibei77.com 米贝节点分享)
-      - 🇱🇺 卢森堡(mibei77.com 米贝节点分享)
-      - 🇱🇺 卢森堡(mibei77.com 米贝节点分享) 2
-      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 2
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 8
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇲🇩 _MD_摩尔多瓦
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
-      - 🇷🇺 _RU_俄罗斯
-      - 🇳🇱 _NL_荷兰
-      - 🇸🇰 _SK_斯洛伐克->🏳️_unKnow_未知
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
-      - 🇮🇸 _IS_冰岛
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
-      - 🇨🇭 _TR_土耳其->🇨🇭_CH_瑞士
-      - 🇨🇳 _CN_中国_3
-      - 🇬🇧 _GB_英国->🇨🇳_CN_中国
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 4
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 5
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 2
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 6
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 7
+      - 🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 8
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 9
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 10
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 3
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享)
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 2
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 11
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 4
       - 🇺🇸 美国_1
-      - 🇫🇷 法国_1
       - 🇺🇸 美国_2
+      - 🇫🇷 法国_1
+      - 🇫🇷 法国_2
       - 🇺🇸 美国_3
       - 🇺🇸 美国_4
       - 🇺🇸 美国_5
@@ -1016,23 +538,19 @@ proxy-groups:
       - 🇺🇸 美国_7
       - 🇺🇸 美国_8
       - 🇺🇸 美国_9
-      - 🇨🇦 加拿大
+      - 🇩🇪 德国_1
+      - 🇩🇪 德国_2
       - 🇺🇸 美国_10
-      - 🇫🇷 法国_2
+      - 🇩🇪 德国_3
       - 🇺🇸 美国_11
       - 🇺🇸 美国_12
       - 🇺🇸 美国_13
       - 🇺🇸 美国_14
       - 🇺🇸 美国_15
       - 🇺🇸 美国_16
-      - 🇯🇵 日本_1
-      - 🇬🇧 英国_1
       - 🇺🇸 美国_17
-      - 🇩🇪 德国_1
       - 🇺🇸 美国_18
-      - 🇯🇵 日本_2
       - 🇺🇸 美国_19
-      - 🇫🇷 法国_3
       - 🇺🇸 美国_20
       - 🇺🇸 美国_21
       - 🇺🇸 美国_22
@@ -1046,7 +564,6 @@ proxy-groups:
       - 🇺🇸 美国_30
       - 🇺🇸 美国_31
       - 🇺🇸 美国_32
-      - 🇯🇵 日本_3
       - 🇺🇸 美国_33
       - 🇺🇸 美国_34
       - 🇺🇸 美国_35
@@ -1054,20 +571,62 @@ proxy-groups:
       - 🇺🇸 美国_37
       - 🇺🇸 美国_38
       - 🇺🇸 美国_39
-      - 🇫🇷 法国_4
-      - 🇦🇺 澳洲
       - 🇺🇸 美国_40
       - 🇺🇸 美国_41
       - 🇺🇸 美国_42
-      - 🇺🇸 美国_43
-      - 🇬🇧 英国_2
-      - 🇺🇸 美国_44
-      - 🇺🇸 美国_45
-      - 🇬🇧 英国_3
-      - 🇩🇪 德国_2
+      - 🇪🇸 西班牙(yudou123.top 玉豆免费节点)
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点)
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点) 2
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点) 3
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点)
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 2
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 3
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 4
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 5
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 6
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 7
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 8
+      - 🇮🇷 _IR_伊朗
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _IE_爱尔兰->🇺🇸_US_美国
+      - 🇺🇸 _US_美国_1
+      - 🇮🇷 _IR_伊朗_1
+      - 🇮🇸 _IS_冰岛
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度
+      - 🇨🇳 _CN_中国_3
+      - 🇬🇧 _GB_英国
+      - 🇩🇪 _DE_德国
+      - 未知
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 未知_1
+      - 🇦🇺 _AU_澳大利亚->🇲🇩_MD_摩尔多瓦
+      - 🇺🇸 _DE_德国->🇺🇸_US_美国_1
+      - 🇩🇪 _DE_德国->🏳️_unKnow_未知
+      - 🇩🇪 _DE_德国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇷🇺 _RU_俄罗斯
+      - 🇮🇷 _IR_伊朗->🇳🇱_NL_荷兰
+      - 6元高速机场：cczzuu.top
+      - 🇭🇰 香港|@stairnode
+      - 🇭🇰 香港2|@stairnode
+      - 🇭🇰 香港3|@stairnode
+      - 🇭🇰 香港4|@stairnode
+      - 🇭🇰 香港6|@stairnode
+      - 🇯🇵 日本2|@stairnode
+      - 🇯🇵 日本3|@stairnode
+      - 🇸🇬 新加坡|@stairnode
+      - 🇸🇬 新加坡2|@stairnode
+      - 🇸🇬 新加坡3|@stairnode
+      - 🇸🇬 新加坡4|@stairnode
+      - 🇺🇸 美国|@stairnode
+      - 🇺🇸 美国2|@stairnode
+      - 🇦🇺 澳大利亚|@stairnode
+      - 🇻🇳 越南|@stairnode
+      - 🇬🇧 英国|@stairnode
       - 🇺🇸 美国_1 2
-      - 🇫🇷 法国_1 2
       - 🇺🇸 美国_2 2
+      - 🇫🇷 法国_1 2
+      - 🇫🇷 法国_2 2
       - 🇺🇸 美国_3 2
       - 🇺🇸 美国_4 2
       - 🇺🇸 美国_5 2
@@ -1075,23 +634,19 @@ proxy-groups:
       - 🇺🇸 美国_7 2
       - 🇺🇸 美国_8 2
       - 🇺🇸 美国_9 2
-      - 🇨🇦 加拿大 2
+      - 🇩🇪 德国_1 2
+      - 🇩🇪 德国_2 2
       - 🇺🇸 美国_10 2
-      - 🇫🇷 法国_2 2
+      - 🇩🇪 德国_3 2
       - 🇺🇸 美国_11 2
       - 🇺🇸 美国_12 2
       - 🇺🇸 美国_13 2
       - 🇺🇸 美国_14 2
       - 🇺🇸 美国_15 2
       - 🇺🇸 美国_16 2
-      - 🇯🇵 日本_1 2
-      - 🇬🇧 英国_1 2
       - 🇺🇸 美国_17 2
-      - 🇩🇪 德国_1 2
       - 🇺🇸 美国_18 2
-      - 🇯🇵 日本_2 2
       - 🇺🇸 美国_19 2
-      - 🇫🇷 法国_3 2
       - 🇺🇸 美国_20 2
       - 🇺🇸 美国_21 2
       - 🇺🇸 美国_22 2
@@ -1105,7 +660,6 @@ proxy-groups:
       - 🇺🇸 美国_30 2
       - 🇺🇸 美国_31 2
       - 🇺🇸 美国_32 2
-      - 🇯🇵 日本_3 2
       - 🇺🇸 美国_33 2
       - 🇺🇸 美国_34 2
       - 🇺🇸 美国_35 2
@@ -1113,227 +667,9 @@ proxy-groups:
       - 🇺🇸 美国_37 2
       - 🇺🇸 美国_38 2
       - 🇺🇸 美国_39 2
-      - 🇫🇷 法国_4 2
-      - 🇦🇺 澳洲 2
       - 🇺🇸 美国_40 2
       - 🇺🇸 美国_41 2
       - 🇺🇸 美国_42 2
-      - 🇺🇸 美国_43 2
-      - 🇬🇧 英国_2 2
-      - 🇺🇸 美国_44 2
-      - 🇺🇸 美国_45 2
-      - 🇬🇧 英国_3 2
-      - 🇩🇪 德国_2 2
-      - 🇸🇬 新加坡_1
-      - IE_1|⬇️5.3MB/s
-      - AT_1|⬇️1.7MB/s_1
-      - DE_8|⬇️6.3MB/s_1
-      - FI_1|⬇️4.9MB/s
-      - US_165|⬇️4.6MB/s_1
-      - TR_3|⬇️3.1MB/s
-      - 🇷🇺 俄罗斯_1
-      - 🇮🇪 爱尔兰_1
-      - 🇫🇷 法国_1 3
-      - 🇹🇷 土耳其_1
-      - 🇬🇧 英国_1 3
-      - 🇺🇸 美国_1 3
-      - 🇺🇸 美国_2 3
-      - jp_1
-      - 🇷🇺 RU
-      - 🇯🇵 日本_1 3
-      - 🇮🇷 伊朗_1
-      - 美國_1
-      - AT_1|⬇️1.7MB/s_2
-      - jp_2
-      - DE_8|⬇️6.3MB/s_2
-      - 奧地利_1
-      - 奧地利_2
-      - 美國_2
-      - 德國_1
-      - 法國_1
-      - 美國_3
-      - 美國_4
-      - 🇫🇷 法国_2 3
-      - 美國_5
-      - US_165|⬇️4.6MB/s_2
-      - 美國_6
-      - 法國_2
-      - 🇫🇷 法国_3 3
-      - 俄羅斯_1
-      - KR_1
-      - KR_2
-      - 🇰🇷 南韓_1
-      - 美國_7
-      - 🇷🇺 俄罗斯_2
-      - 俄羅斯_2
-      - 阿拉伯聯合大公國
-      - 🇸🇬 新加坡_2
-      - 法國_3
-      - 🇬🇧 英国_2 3
-      - 英國_1
-      - 🇮🇪 爱尔兰_2
-      - KR_3
-      - 摩爾多瓦_1
-      - 🇰🇷 南韓_2
-      - 🇺🇸 美国_3 3
-      - 美國_8
-      - 🇹🇷 土耳其_2
-      - 芬蘭_1
-      - 俄羅斯_3
-      - 俄羅斯_4
-      - 摩爾多瓦_2
-      - 🇹🇷 土耳其_3
-      - 美國_9
-      - 美國_10
-      - 🇨🇳 中国_1
-      - 🇨🇳 中国_2
-      - 英國_2
-      - 德國_2
-      - 🇮🇷 伊朗_2
-      - 🇮🇷 伊朗_3
-      - 中國_1
-      - 🇰🇷 南韓_3
-      - 中國_2
-      - 阿聯酋
-      - 奧地利_3
-      - 奧地利_4
-      - 德國_3
-      - 德國_4
-      - 德國_5
-      - 德國_6
-      - 🇷🇺 俄罗斯_3
-      - 俄羅斯_5
-      - 俄羅斯_6
-      - 俄羅斯_7
-      - 俄羅斯_8
-      - 俄羅斯_9
-      - 俄羅斯_10
-      - 俄羅斯_11
-      - 🇫🇷 法国_4 3
-      - 法國_4
-      - 法國_5
-      - 法國_6
-      - 🇫🇮 芬兰
-      - 芬蘭_2
-      - 芬蘭_3
-      - 芬蘭_4
-      - 芬蘭_5
-      - 芬蘭_6
-      - 🇰🇷 韓國_1
-      - 🇰🇷 韓國_2
-      - 🇰🇷 韓國_3
-      - 🇰🇷 韓國_4
-      - 🇰🇷 韓國_5
-      - 荷蘭_1
-      - 荷蘭_2
-      - 🇱🇹 立陶宛
-      - 美國_11
-      - 美國_12
-      - 美國_13
-      - 美國_14
-      - 美國_15
-      - 美國_16
-      - 美國_17
-      - 美國_18
-      - 美國_19
-      - 美國_20
-      - 美國_21
-      - 美國_22
-      - 美國_23
-      - 美國_24
-      - 美國_25
-      - 美國_26
-      - 美國_27
-      - 摩爾多瓦_3
-      - 摩爾多瓦_4
-      - 摩爾多瓦_5
-      - 摩爾多瓦_6
-      - 🇰🇷 南韓_4
-      - 🇰🇷 南韓_5
-      - 🇯🇵 日本_2 3
-      - 🇯🇵 日本_3 3
-      - 烏克蘭_1
-      - 烏克蘭_2
-      - 🇮🇷 伊朗_4
-      - 🇮🇷 伊朗_5
-      - 🇮🇷 伊朗_6
-      - 🇮🇷 伊朗_7
-      - 英國_3
-      - 英國_4
-      - 🇺🇸 美国_4 3
-      - 🇺🇸 美国_5 3
-      - 🇺🇸 美国_6 3
-      - 🇺🇸 美国_7 3
-      - 🇺🇸 美国_8 3
-      - 🇺🇸 美国_9 3
-      - 🇺🇸 美国_10 3
-      - 🇲🇴 澳门_1
-      - 🇲🇴 澳门_2
-      - 🇲🇴 澳门_3
-      - 🇲🇴 澳门_4
-      - 🇲🇴 澳门_5
-      - 🇲🇴 澳门_6
-      - 🇺🇸 美国_11 3
-      - 🇭🇰 香港_1
-      - 🇺🇸 美国_12 3
-      - 美國_28
-      - 🇺🇸 美国_13 3
-      - 美國_29
-      - 中國_3
-      - 🇨🇳 中国_3
-      - 美國_30
-      - 美國_31
-      - 美國_32
-      - 美國_33
-      - 美國_34
-      - 🇯🇵 日本_4
-      - 🇭🇰 香港_2
-      - 🇺🇸 美国_14 3
-      - 6元高速机场：cczzuu.top
-      - 🇭🇰 香港|@stairnode
-      - 🇭🇰 香港2|@stairnode
-      - 🇭🇰 香港3|@stairnode
-      - 🇭🇰 香港4|@stairnode
-      - 🇭🇰 香港6|@stairnode
-      - 🇯🇵 日本2|@stairnode
-      - 🇯🇵 日本|@stairnode
-      - 🇯🇵 日本3|@stairnode
-      - 🇰🇷 韩国|@stairnode
-      - 🇸🇬 新加坡|@stairnode
-      - 🇸🇬 新加坡2|@stairnode
-      - 🇸🇬 新加坡3|@stairnode
-      - 🇺🇸 美国|@stairnode
-      - 🇺🇸 美国2|@stairnode
-      - 🇻🇳 越南|@stairnode
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享)
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 2
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 3
-      - 🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享)
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 4
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 5
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 6
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 7
-      - 🇭🇰 HK香港(mibei77.com 米贝节点分享)
-      - 🇱🇺 卢森堡(mibei77.com 米贝节点分享)
-      - 🇱🇺 卢森堡(mibei77.com 米贝节点分享) 2
-      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 2
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 8
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇲🇩 _MD_摩尔多瓦
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
-      - 🇷🇺 _RU_俄罗斯
-      - 🇳🇱 _NL_荷兰
-      - 🇸🇰 _SK_斯洛伐克->🏳️_unKnow_未知
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
-      - 🇮🇸 _IS_冰岛
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
-      - 🇨🇭 _TR_土耳其->🇨🇭_CH_瑞士
-      - 🇨🇳 _CN_中国_3
-      - 🇬🇧 _GB_英国->🇨🇳_CN_中国
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -1352,9 +688,29 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 4
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 5
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 2
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 6
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 7
+      - 🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 8
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 9
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 10
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 3
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享)
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 2
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 11
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 4
       - 🇺🇸 美国_1
-      - 🇫🇷 法国_1
       - 🇺🇸 美国_2
+      - 🇫🇷 法国_1
+      - 🇫🇷 法国_2
       - 🇺🇸 美国_3
       - 🇺🇸 美国_4
       - 🇺🇸 美国_5
@@ -1362,23 +718,19 @@ proxy-groups:
       - 🇺🇸 美国_7
       - 🇺🇸 美国_8
       - 🇺🇸 美国_9
-      - 🇨🇦 加拿大
+      - 🇩🇪 德国_1
+      - 🇩🇪 德国_2
       - 🇺🇸 美国_10
-      - 🇫🇷 法国_2
+      - 🇩🇪 德国_3
       - 🇺🇸 美国_11
       - 🇺🇸 美国_12
       - 🇺🇸 美国_13
       - 🇺🇸 美国_14
       - 🇺🇸 美国_15
       - 🇺🇸 美国_16
-      - 🇯🇵 日本_1
-      - 🇬🇧 英国_1
       - 🇺🇸 美国_17
-      - 🇩🇪 德国_1
       - 🇺🇸 美国_18
-      - 🇯🇵 日本_2
       - 🇺🇸 美国_19
-      - 🇫🇷 法国_3
       - 🇺🇸 美国_20
       - 🇺🇸 美国_21
       - 🇺🇸 美国_22
@@ -1392,7 +744,6 @@ proxy-groups:
       - 🇺🇸 美国_30
       - 🇺🇸 美国_31
       - 🇺🇸 美国_32
-      - 🇯🇵 日本_3
       - 🇺🇸 美国_33
       - 🇺🇸 美国_34
       - 🇺🇸 美国_35
@@ -1400,20 +751,62 @@ proxy-groups:
       - 🇺🇸 美国_37
       - 🇺🇸 美国_38
       - 🇺🇸 美国_39
-      - 🇫🇷 法国_4
-      - 🇦🇺 澳洲
       - 🇺🇸 美国_40
       - 🇺🇸 美国_41
       - 🇺🇸 美国_42
-      - 🇺🇸 美国_43
-      - 🇬🇧 英国_2
-      - 🇺🇸 美国_44
-      - 🇺🇸 美国_45
-      - 🇬🇧 英国_3
-      - 🇩🇪 德国_2
+      - 🇪🇸 西班牙(yudou123.top 玉豆免费节点)
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点)
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点) 2
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点) 3
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点)
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 2
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 3
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 4
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 5
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 6
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 7
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 8
+      - 🇮🇷 _IR_伊朗
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _IE_爱尔兰->🇺🇸_US_美国
+      - 🇺🇸 _US_美国_1
+      - 🇮🇷 _IR_伊朗_1
+      - 🇮🇸 _IS_冰岛
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度
+      - 🇨🇳 _CN_中国_3
+      - 🇬🇧 _GB_英国
+      - 🇩🇪 _DE_德国
+      - 未知
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 未知_1
+      - 🇦🇺 _AU_澳大利亚->🇲🇩_MD_摩尔多瓦
+      - 🇺🇸 _DE_德国->🇺🇸_US_美国_1
+      - 🇩🇪 _DE_德国->🏳️_unKnow_未知
+      - 🇩🇪 _DE_德国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇷🇺 _RU_俄罗斯
+      - 🇮🇷 _IR_伊朗->🇳🇱_NL_荷兰
+      - 6元高速机场：cczzuu.top
+      - 🇭🇰 香港|@stairnode
+      - 🇭🇰 香港2|@stairnode
+      - 🇭🇰 香港3|@stairnode
+      - 🇭🇰 香港4|@stairnode
+      - 🇭🇰 香港6|@stairnode
+      - 🇯🇵 日本2|@stairnode
+      - 🇯🇵 日本3|@stairnode
+      - 🇸🇬 新加坡|@stairnode
+      - 🇸🇬 新加坡2|@stairnode
+      - 🇸🇬 新加坡3|@stairnode
+      - 🇸🇬 新加坡4|@stairnode
+      - 🇺🇸 美国|@stairnode
+      - 🇺🇸 美国2|@stairnode
+      - 🇦🇺 澳大利亚|@stairnode
+      - 🇻🇳 越南|@stairnode
+      - 🇬🇧 英国|@stairnode
       - 🇺🇸 美国_1 2
-      - 🇫🇷 法国_1 2
       - 🇺🇸 美国_2 2
+      - 🇫🇷 法国_1 2
+      - 🇫🇷 法国_2 2
       - 🇺🇸 美国_3 2
       - 🇺🇸 美国_4 2
       - 🇺🇸 美国_5 2
@@ -1421,23 +814,19 @@ proxy-groups:
       - 🇺🇸 美国_7 2
       - 🇺🇸 美国_8 2
       - 🇺🇸 美国_9 2
-      - 🇨🇦 加拿大 2
+      - 🇩🇪 德国_1 2
+      - 🇩🇪 德国_2 2
       - 🇺🇸 美国_10 2
-      - 🇫🇷 法国_2 2
+      - 🇩🇪 德国_3 2
       - 🇺🇸 美国_11 2
       - 🇺🇸 美国_12 2
       - 🇺🇸 美国_13 2
       - 🇺🇸 美国_14 2
       - 🇺🇸 美国_15 2
       - 🇺🇸 美国_16 2
-      - 🇯🇵 日本_1 2
-      - 🇬🇧 英国_1 2
       - 🇺🇸 美国_17 2
-      - 🇩🇪 德国_1 2
       - 🇺🇸 美国_18 2
-      - 🇯🇵 日本_2 2
       - 🇺🇸 美国_19 2
-      - 🇫🇷 法国_3 2
       - 🇺🇸 美国_20 2
       - 🇺🇸 美国_21 2
       - 🇺🇸 美国_22 2
@@ -1451,7 +840,6 @@ proxy-groups:
       - 🇺🇸 美国_30 2
       - 🇺🇸 美国_31 2
       - 🇺🇸 美国_32 2
-      - 🇯🇵 日本_3 2
       - 🇺🇸 美国_33 2
       - 🇺🇸 美国_34 2
       - 🇺🇸 美国_35 2
@@ -1459,249 +847,51 @@ proxy-groups:
       - 🇺🇸 美国_37 2
       - 🇺🇸 美国_38 2
       - 🇺🇸 美国_39 2
-      - 🇫🇷 法国_4 2
-      - 🇦🇺 澳洲 2
       - 🇺🇸 美国_40 2
       - 🇺🇸 美国_41 2
       - 🇺🇸 美国_42 2
-      - 🇺🇸 美国_43 2
-      - 🇬🇧 英国_2 2
-      - 🇺🇸 美国_44 2
-      - 🇺🇸 美国_45 2
-      - 🇬🇧 英国_3 2
-      - 🇩🇪 德国_2 2
-      - 🇸🇬 新加坡_1
-      - IE_1|⬇️5.3MB/s
-      - AT_1|⬇️1.7MB/s_1
-      - DE_8|⬇️6.3MB/s_1
-      - FI_1|⬇️4.9MB/s
-      - US_165|⬇️4.6MB/s_1
-      - TR_3|⬇️3.1MB/s
-      - 🇷🇺 俄罗斯_1
-      - 🇮🇪 爱尔兰_1
-      - 🇫🇷 法国_1 3
-      - 🇹🇷 土耳其_1
-      - 🇬🇧 英国_1 3
-      - 🇺🇸 美国_1 3
-      - 🇺🇸 美国_2 3
-      - jp_1
-      - 🇷🇺 RU
-      - 🇯🇵 日本_1 3
-      - 🇮🇷 伊朗_1
-      - 美國_1
-      - AT_1|⬇️1.7MB/s_2
-      - jp_2
-      - DE_8|⬇️6.3MB/s_2
-      - 奧地利_1
-      - 奧地利_2
-      - 美國_2
-      - 德國_1
-      - 法國_1
-      - 美國_3
-      - 美國_4
-      - 🇫🇷 法国_2 3
-      - 美國_5
-      - US_165|⬇️4.6MB/s_2
-      - 美國_6
-      - 法國_2
-      - 🇫🇷 法国_3 3
-      - 俄羅斯_1
-      - KR_1
-      - KR_2
-      - 🇰🇷 南韓_1
-      - 美國_7
-      - 🇷🇺 俄罗斯_2
-      - 俄羅斯_2
-      - 阿拉伯聯合大公國
-      - 🇸🇬 新加坡_2
-      - 法國_3
-      - 🇬🇧 英国_2 3
-      - 英國_1
-      - 🇮🇪 爱尔兰_2
-      - KR_3
-      - 摩爾多瓦_1
-      - 🇰🇷 南韓_2
-      - 🇺🇸 美国_3 3
-      - 美國_8
-      - 🇹🇷 土耳其_2
-      - 芬蘭_1
-      - 俄羅斯_3
-      - 俄羅斯_4
-      - 摩爾多瓦_2
-      - 🇹🇷 土耳其_3
-      - 美國_9
-      - 美國_10
-      - 🇨🇳 中国_1
-      - 🇨🇳 中国_2
-      - 英國_2
-      - 德國_2
-      - 🇮🇷 伊朗_2
-      - 🇮🇷 伊朗_3
-      - 中國_1
-      - 🇰🇷 南韓_3
-      - 中國_2
-      - 阿聯酋
-      - 奧地利_3
-      - 奧地利_4
-      - 德國_3
-      - 德國_4
-      - 德國_5
-      - 德國_6
-      - 🇷🇺 俄罗斯_3
-      - 俄羅斯_5
-      - 俄羅斯_6
-      - 俄羅斯_7
-      - 俄羅斯_8
-      - 俄羅斯_9
-      - 俄羅斯_10
-      - 俄羅斯_11
-      - 🇫🇷 法国_4 3
-      - 法國_4
-      - 法國_5
-      - 法國_6
-      - 🇫🇮 芬兰
-      - 芬蘭_2
-      - 芬蘭_3
-      - 芬蘭_4
-      - 芬蘭_5
-      - 芬蘭_6
-      - 🇰🇷 韓國_1
-      - 🇰🇷 韓國_2
-      - 🇰🇷 韓國_3
-      - 🇰🇷 韓國_4
-      - 🇰🇷 韓國_5
-      - 荷蘭_1
-      - 荷蘭_2
-      - 🇱🇹 立陶宛
-      - 美國_11
-      - 美國_12
-      - 美國_13
-      - 美國_14
-      - 美國_15
-      - 美國_16
-      - 美國_17
-      - 美國_18
-      - 美國_19
-      - 美國_20
-      - 美國_21
-      - 美國_22
-      - 美國_23
-      - 美國_24
-      - 美國_25
-      - 美國_26
-      - 美國_27
-      - 摩爾多瓦_3
-      - 摩爾多瓦_4
-      - 摩爾多瓦_5
-      - 摩爾多瓦_6
-      - 🇰🇷 南韓_4
-      - 🇰🇷 南韓_5
-      - 🇯🇵 日本_2 3
-      - 🇯🇵 日本_3 3
-      - 烏克蘭_1
-      - 烏克蘭_2
-      - 🇮🇷 伊朗_4
-      - 🇮🇷 伊朗_5
-      - 🇮🇷 伊朗_6
-      - 🇮🇷 伊朗_7
-      - 英國_3
-      - 英國_4
-      - 🇺🇸 美国_4 3
-      - 🇺🇸 美国_5 3
-      - 🇺🇸 美国_6 3
-      - 🇺🇸 美国_7 3
-      - 🇺🇸 美国_8 3
-      - 🇺🇸 美国_9 3
-      - 🇺🇸 美国_10 3
-      - 🇲🇴 澳门_1
-      - 🇲🇴 澳门_2
-      - 🇲🇴 澳门_3
-      - 🇲🇴 澳门_4
-      - 🇲🇴 澳门_5
-      - 🇲🇴 澳门_6
-      - 🇺🇸 美国_11 3
-      - 🇭🇰 香港_1
-      - 🇺🇸 美国_12 3
-      - 美國_28
-      - 🇺🇸 美国_13 3
-      - 美國_29
-      - 中國_3
-      - 🇨🇳 中国_3
-      - 美國_30
-      - 美國_31
-      - 美國_32
-      - 美國_33
-      - 美國_34
-      - 🇯🇵 日本_4
-      - 🇭🇰 香港_2
-      - 🇺🇸 美国_14 3
-      - 6元高速机场：cczzuu.top
-      - 🇭🇰 香港|@stairnode
-      - 🇭🇰 香港2|@stairnode
-      - 🇭🇰 香港3|@stairnode
-      - 🇭🇰 香港4|@stairnode
-      - 🇭🇰 香港6|@stairnode
-      - 🇯🇵 日本2|@stairnode
-      - 🇯🇵 日本|@stairnode
-      - 🇯🇵 日本3|@stairnode
-      - 🇰🇷 韩国|@stairnode
-      - 🇸🇬 新加坡|@stairnode
-      - 🇸🇬 新加坡2|@stairnode
-      - 🇸🇬 新加坡3|@stairnode
-      - 🇺🇸 美国|@stairnode
-      - 🇺🇸 美国2|@stairnode
-      - 🇻🇳 越南|@stairnode
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享)
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 2
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 3
-      - 🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享)
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 4
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 5
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 6
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 7
-      - 🇭🇰 HK香港(mibei77.com 米贝节点分享)
-      - 🇱🇺 卢森堡(mibei77.com 米贝节点分享)
-      - 🇱🇺 卢森堡(mibei77.com 米贝节点分享) 2
-      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 2
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 8
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇲🇩 _MD_摩尔多瓦
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
-      - 🇷🇺 _RU_俄罗斯
-      - 🇳🇱 _NL_荷兰
-      - 🇸🇰 _SK_斯洛伐克->🏳️_unKnow_未知
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
-      - 🇮🇸 _IS_冰岛
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
-      - 🇨🇭 _TR_土耳其->🇨🇭_CH_瑞士
-      - 🇨🇳 _CN_中国_3
-      - 🇬🇧 _GB_英国->🇨🇳_CN_中国
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港_1
-      - 🇭🇰 香港_2
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享)
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 2
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 3
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 4
       - 🇭🇰 香港|@stairnode
       - 🇭🇰 香港2|@stairnode
       - 🇭🇰 香港3|@stairnode
       - 🇭🇰 香港4|@stairnode
       - 🇭🇰 香港6|@stairnode
-      - 🇭🇰 HK香港(mibei77.com 米贝节点分享)
-      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 4
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 5
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 2
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 6
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 7
+      - 🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 8
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 9
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 10
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 3
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享)
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 2
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 11
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 4
       - 🇺🇸 美国_1
-      - 🇫🇷 法国_1
       - 🇺🇸 美国_2
+      - 🇫🇷 法国_1
+      - 🇫🇷 法国_2
       - 🇺🇸 美国_3
       - 🇺🇸 美国_4
       - 🇺🇸 美国_5
@@ -1709,23 +899,19 @@ proxy-groups:
       - 🇺🇸 美国_7
       - 🇺🇸 美国_8
       - 🇺🇸 美国_9
-      - 🇨🇦 加拿大
+      - 🇩🇪 德国_1
+      - 🇩🇪 德国_2
       - 🇺🇸 美国_10
-      - 🇫🇷 法国_2
+      - 🇩🇪 德国_3
       - 🇺🇸 美国_11
       - 🇺🇸 美国_12
       - 🇺🇸 美国_13
       - 🇺🇸 美国_14
       - 🇺🇸 美国_15
       - 🇺🇸 美国_16
-      - 🇯🇵 日本_1
-      - 🇬🇧 英国_1
       - 🇺🇸 美国_17
-      - 🇩🇪 德国_1
       - 🇺🇸 美国_18
-      - 🇯🇵 日本_2
       - 🇺🇸 美国_19
-      - 🇫🇷 法国_3
       - 🇺🇸 美国_20
       - 🇺🇸 美国_21
       - 🇺🇸 美国_22
@@ -1739,7 +925,6 @@ proxy-groups:
       - 🇺🇸 美国_30
       - 🇺🇸 美国_31
       - 🇺🇸 美国_32
-      - 🇯🇵 日本_3
       - 🇺🇸 美国_33
       - 🇺🇸 美国_34
       - 🇺🇸 美国_35
@@ -1747,20 +932,62 @@ proxy-groups:
       - 🇺🇸 美国_37
       - 🇺🇸 美国_38
       - 🇺🇸 美国_39
-      - 🇫🇷 法国_4
-      - 🇦🇺 澳洲
       - 🇺🇸 美国_40
       - 🇺🇸 美国_41
       - 🇺🇸 美国_42
-      - 🇺🇸 美国_43
-      - 🇬🇧 英国_2
-      - 🇺🇸 美国_44
-      - 🇺🇸 美国_45
-      - 🇬🇧 英国_3
-      - 🇩🇪 德国_2
+      - 🇪🇸 西班牙(yudou123.top 玉豆免费节点)
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点)
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点) 2
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点) 3
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点)
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 2
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 3
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 4
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 5
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 6
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 7
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 8
+      - 🇮🇷 _IR_伊朗
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _IE_爱尔兰->🇺🇸_US_美国
+      - 🇺🇸 _US_美国_1
+      - 🇮🇷 _IR_伊朗_1
+      - 🇮🇸 _IS_冰岛
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度
+      - 🇨🇳 _CN_中国_3
+      - 🇬🇧 _GB_英国
+      - 🇩🇪 _DE_德国
+      - 未知
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 未知_1
+      - 🇦🇺 _AU_澳大利亚->🇲🇩_MD_摩尔多瓦
+      - 🇺🇸 _DE_德国->🇺🇸_US_美国_1
+      - 🇩🇪 _DE_德国->🏳️_unKnow_未知
+      - 🇩🇪 _DE_德国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇷🇺 _RU_俄罗斯
+      - 🇮🇷 _IR_伊朗->🇳🇱_NL_荷兰
+      - 6元高速机场：cczzuu.top
+      - 🇭🇰 香港|@stairnode
+      - 🇭🇰 香港2|@stairnode
+      - 🇭🇰 香港3|@stairnode
+      - 🇭🇰 香港4|@stairnode
+      - 🇭🇰 香港6|@stairnode
+      - 🇯🇵 日本2|@stairnode
+      - 🇯🇵 日本3|@stairnode
+      - 🇸🇬 新加坡|@stairnode
+      - 🇸🇬 新加坡2|@stairnode
+      - 🇸🇬 新加坡3|@stairnode
+      - 🇸🇬 新加坡4|@stairnode
+      - 🇺🇸 美国|@stairnode
+      - 🇺🇸 美国2|@stairnode
+      - 🇦🇺 澳大利亚|@stairnode
+      - 🇻🇳 越南|@stairnode
+      - 🇬🇧 英国|@stairnode
       - 🇺🇸 美国_1 2
-      - 🇫🇷 法国_1 2
       - 🇺🇸 美国_2 2
+      - 🇫🇷 法国_1 2
+      - 🇫🇷 法国_2 2
       - 🇺🇸 美国_3 2
       - 🇺🇸 美国_4 2
       - 🇺🇸 美国_5 2
@@ -1768,23 +995,19 @@ proxy-groups:
       - 🇺🇸 美国_7 2
       - 🇺🇸 美国_8 2
       - 🇺🇸 美国_9 2
-      - 🇨🇦 加拿大 2
+      - 🇩🇪 德国_1 2
+      - 🇩🇪 德国_2 2
       - 🇺🇸 美国_10 2
-      - 🇫🇷 法国_2 2
+      - 🇩🇪 德国_3 2
       - 🇺🇸 美国_11 2
       - 🇺🇸 美国_12 2
       - 🇺🇸 美国_13 2
       - 🇺🇸 美国_14 2
       - 🇺🇸 美国_15 2
       - 🇺🇸 美国_16 2
-      - 🇯🇵 日本_1 2
-      - 🇬🇧 英国_1 2
       - 🇺🇸 美国_17 2
-      - 🇩🇪 德国_1 2
       - 🇺🇸 美国_18 2
-      - 🇯🇵 日本_2 2
       - 🇺🇸 美国_19 2
-      - 🇫🇷 法国_3 2
       - 🇺🇸 美国_20 2
       - 🇺🇸 美国_21 2
       - 🇺🇸 美国_22 2
@@ -1798,7 +1021,6 @@ proxy-groups:
       - 🇺🇸 美国_30 2
       - 🇺🇸 美国_31 2
       - 🇺🇸 美国_32 2
-      - 🇯🇵 日本_3 2
       - 🇺🇸 美国_33 2
       - 🇺🇸 美国_34 2
       - 🇺🇸 美国_35 2
@@ -1806,235 +1028,37 @@ proxy-groups:
       - 🇺🇸 美国_37 2
       - 🇺🇸 美国_38 2
       - 🇺🇸 美国_39 2
-      - 🇫🇷 法国_4 2
-      - 🇦🇺 澳洲 2
       - 🇺🇸 美国_40 2
       - 🇺🇸 美国_41 2
       - 🇺🇸 美国_42 2
-      - 🇺🇸 美国_43 2
-      - 🇬🇧 英国_2 2
-      - 🇺🇸 美国_44 2
-      - 🇺🇸 美国_45 2
-      - 🇬🇧 英国_3 2
-      - 🇩🇪 德国_2 2
-      - 🇸🇬 新加坡_1
-      - IE_1|⬇️5.3MB/s
-      - AT_1|⬇️1.7MB/s_1
-      - DE_8|⬇️6.3MB/s_1
-      - FI_1|⬇️4.9MB/s
-      - US_165|⬇️4.6MB/s_1
-      - TR_3|⬇️3.1MB/s
-      - 🇷🇺 俄罗斯_1
-      - 🇮🇪 爱尔兰_1
-      - 🇫🇷 法国_1 3
-      - 🇹🇷 土耳其_1
-      - 🇬🇧 英国_1 3
-      - 🇺🇸 美国_1 3
-      - 🇺🇸 美国_2 3
-      - jp_1
-      - 🇷🇺 RU
-      - 🇯🇵 日本_1 3
-      - 🇮🇷 伊朗_1
-      - 美國_1
-      - AT_1|⬇️1.7MB/s_2
-      - jp_2
-      - DE_8|⬇️6.3MB/s_2
-      - 奧地利_1
-      - 奧地利_2
-      - 美國_2
-      - 德國_1
-      - 法國_1
-      - 美國_3
-      - 美國_4
-      - 🇫🇷 法国_2 3
-      - 美國_5
-      - US_165|⬇️4.6MB/s_2
-      - 美國_6
-      - 法國_2
-      - 🇫🇷 法国_3 3
-      - 俄羅斯_1
-      - KR_1
-      - KR_2
-      - 🇰🇷 南韓_1
-      - 美國_7
-      - 🇷🇺 俄罗斯_2
-      - 俄羅斯_2
-      - 阿拉伯聯合大公國
-      - 🇸🇬 新加坡_2
-      - 法國_3
-      - 🇬🇧 英国_2 3
-      - 英國_1
-      - 🇮🇪 爱尔兰_2
-      - KR_3
-      - 摩爾多瓦_1
-      - 🇰🇷 南韓_2
-      - 🇺🇸 美国_3 3
-      - 美國_8
-      - 🇹🇷 土耳其_2
-      - 芬蘭_1
-      - 俄羅斯_3
-      - 俄羅斯_4
-      - 摩爾多瓦_2
-      - 🇹🇷 土耳其_3
-      - 美國_9
-      - 美國_10
-      - 🇨🇳 中国_1
-      - 🇨🇳 中国_2
-      - 英國_2
-      - 德國_2
-      - 🇮🇷 伊朗_2
-      - 🇮🇷 伊朗_3
-      - 中國_1
-      - 🇰🇷 南韓_3
-      - 中國_2
-      - 阿聯酋
-      - 奧地利_3
-      - 奧地利_4
-      - 德國_3
-      - 德國_4
-      - 德國_5
-      - 德國_6
-      - 🇷🇺 俄罗斯_3
-      - 俄羅斯_5
-      - 俄羅斯_6
-      - 俄羅斯_7
-      - 俄羅斯_8
-      - 俄羅斯_9
-      - 俄羅斯_10
-      - 俄羅斯_11
-      - 🇫🇷 法国_4 3
-      - 法國_4
-      - 法國_5
-      - 法國_6
-      - 🇫🇮 芬兰
-      - 芬蘭_2
-      - 芬蘭_3
-      - 芬蘭_4
-      - 芬蘭_5
-      - 芬蘭_6
-      - 🇰🇷 韓國_1
-      - 🇰🇷 韓國_2
-      - 🇰🇷 韓國_3
-      - 🇰🇷 韓國_4
-      - 🇰🇷 韓國_5
-      - 荷蘭_1
-      - 荷蘭_2
-      - 🇱🇹 立陶宛
-      - 美國_11
-      - 美國_12
-      - 美國_13
-      - 美國_14
-      - 美國_15
-      - 美國_16
-      - 美國_17
-      - 美國_18
-      - 美國_19
-      - 美國_20
-      - 美國_21
-      - 美國_22
-      - 美國_23
-      - 美國_24
-      - 美國_25
-      - 美國_26
-      - 美國_27
-      - 摩爾多瓦_3
-      - 摩爾多瓦_4
-      - 摩爾多瓦_5
-      - 摩爾多瓦_6
-      - 🇰🇷 南韓_4
-      - 🇰🇷 南韓_5
-      - 🇯🇵 日本_2 3
-      - 🇯🇵 日本_3 3
-      - 烏克蘭_1
-      - 烏克蘭_2
-      - 🇮🇷 伊朗_4
-      - 🇮🇷 伊朗_5
-      - 🇮🇷 伊朗_6
-      - 🇮🇷 伊朗_7
-      - 英國_3
-      - 英國_4
-      - 🇺🇸 美国_4 3
-      - 🇺🇸 美国_5 3
-      - 🇺🇸 美国_6 3
-      - 🇺🇸 美国_7 3
-      - 🇺🇸 美国_8 3
-      - 🇺🇸 美国_9 3
-      - 🇺🇸 美国_10 3
-      - 🇲🇴 澳门_1
-      - 🇲🇴 澳门_2
-      - 🇲🇴 澳门_3
-      - 🇲🇴 澳门_4
-      - 🇲🇴 澳门_5
-      - 🇲🇴 澳门_6
-      - 🇺🇸 美国_11 3
-      - 🇭🇰 香港_1
-      - 🇺🇸 美国_12 3
-      - 美國_28
-      - 🇺🇸 美国_13 3
-      - 美國_29
-      - 中國_3
-      - 🇨🇳 中国_3
-      - 美國_30
-      - 美國_31
-      - 美國_32
-      - 美國_33
-      - 美國_34
-      - 🇯🇵 日本_4
-      - 🇭🇰 香港_2
-      - 🇺🇸 美国_14 3
-      - 6元高速机场：cczzuu.top
-      - 🇭🇰 香港|@stairnode
-      - 🇭🇰 香港2|@stairnode
-      - 🇭🇰 香港3|@stairnode
-      - 🇭🇰 香港4|@stairnode
-      - 🇭🇰 香港6|@stairnode
-      - 🇯🇵 日本2|@stairnode
-      - 🇯🇵 日本|@stairnode
-      - 🇯🇵 日本3|@stairnode
-      - 🇰🇷 韩国|@stairnode
-      - 🇸🇬 新加坡|@stairnode
-      - 🇸🇬 新加坡2|@stairnode
-      - 🇸🇬 新加坡3|@stairnode
-      - 🇺🇸 美国|@stairnode
-      - 🇺🇸 美国2|@stairnode
-      - 🇻🇳 越南|@stairnode
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享)
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 2
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 3
-      - 🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享)
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 4
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 5
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 6
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 7
-      - 🇭🇰 HK香港(mibei77.com 米贝节点分享)
-      - 🇱🇺 卢森堡(mibei77.com 米贝节点分享)
-      - 🇱🇺 卢森堡(mibei77.com 米贝节点分享) 2
-      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 2
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 8
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇲🇩 _MD_摩尔多瓦
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
-      - 🇷🇺 _RU_俄罗斯
-      - 🇳🇱 _NL_荷兰
-      - 🇸🇰 _SK_斯洛伐克->🏳️_unKnow_未知
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
-      - 🇮🇸 _IS_冰岛
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
-      - 🇨🇭 _TR_土耳其->🇨🇭_CH_瑞士
-      - 🇨🇳 _CN_中国_3
-      - 🇬🇧 _GB_英国->🇨🇳_CN_中国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 4
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 5
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 2
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 6
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 7
+      - 🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 8
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 9
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 10
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 3
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享)
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 2
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 11
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 4
       - 🇺🇸 美国_1
-      - 🇫🇷 法国_1
       - 🇺🇸 美国_2
+      - 🇫🇷 法国_1
+      - 🇫🇷 法国_2
       - 🇺🇸 美国_3
       - 🇺🇸 美国_4
       - 🇺🇸 美国_5
@@ -2042,23 +1066,19 @@ proxy-groups:
       - 🇺🇸 美国_7
       - 🇺🇸 美国_8
       - 🇺🇸 美国_9
-      - 🇨🇦 加拿大
+      - 🇩🇪 德国_1
+      - 🇩🇪 德国_2
       - 🇺🇸 美国_10
-      - 🇫🇷 法国_2
+      - 🇩🇪 德国_3
       - 🇺🇸 美国_11
       - 🇺🇸 美国_12
       - 🇺🇸 美国_13
       - 🇺🇸 美国_14
       - 🇺🇸 美国_15
       - 🇺🇸 美国_16
-      - 🇯🇵 日本_1
-      - 🇬🇧 英国_1
       - 🇺🇸 美国_17
-      - 🇩🇪 德国_1
       - 🇺🇸 美国_18
-      - 🇯🇵 日本_2
       - 🇺🇸 美国_19
-      - 🇫🇷 法国_3
       - 🇺🇸 美国_20
       - 🇺🇸 美国_21
       - 🇺🇸 美国_22
@@ -2072,7 +1092,6 @@ proxy-groups:
       - 🇺🇸 美国_30
       - 🇺🇸 美国_31
       - 🇺🇸 美国_32
-      - 🇯🇵 日本_3
       - 🇺🇸 美国_33
       - 🇺🇸 美国_34
       - 🇺🇸 美国_35
@@ -2080,20 +1099,62 @@ proxy-groups:
       - 🇺🇸 美国_37
       - 🇺🇸 美国_38
       - 🇺🇸 美国_39
-      - 🇫🇷 法国_4
-      - 🇦🇺 澳洲
       - 🇺🇸 美国_40
       - 🇺🇸 美国_41
       - 🇺🇸 美国_42
-      - 🇺🇸 美国_43
-      - 🇬🇧 英国_2
-      - 🇺🇸 美国_44
-      - 🇺🇸 美国_45
-      - 🇬🇧 英国_3
-      - 🇩🇪 德国_2
+      - 🇪🇸 西班牙(yudou123.top 玉豆免费节点)
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点)
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点) 2
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点) 3
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点)
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 2
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 3
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 4
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 5
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 6
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 7
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 8
+      - 🇮🇷 _IR_伊朗
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _IE_爱尔兰->🇺🇸_US_美国
+      - 🇺🇸 _US_美国_1
+      - 🇮🇷 _IR_伊朗_1
+      - 🇮🇸 _IS_冰岛
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度
+      - 🇨🇳 _CN_中国_3
+      - 🇬🇧 _GB_英国
+      - 🇩🇪 _DE_德国
+      - 未知
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 未知_1
+      - 🇦🇺 _AU_澳大利亚->🇲🇩_MD_摩尔多瓦
+      - 🇺🇸 _DE_德国->🇺🇸_US_美国_1
+      - 🇩🇪 _DE_德国->🏳️_unKnow_未知
+      - 🇩🇪 _DE_德国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇷🇺 _RU_俄罗斯
+      - 🇮🇷 _IR_伊朗->🇳🇱_NL_荷兰
+      - 6元高速机场：cczzuu.top
+      - 🇭🇰 香港|@stairnode
+      - 🇭🇰 香港2|@stairnode
+      - 🇭🇰 香港3|@stairnode
+      - 🇭🇰 香港4|@stairnode
+      - 🇭🇰 香港6|@stairnode
+      - 🇯🇵 日本2|@stairnode
+      - 🇯🇵 日本3|@stairnode
+      - 🇸🇬 新加坡|@stairnode
+      - 🇸🇬 新加坡2|@stairnode
+      - 🇸🇬 新加坡3|@stairnode
+      - 🇸🇬 新加坡4|@stairnode
+      - 🇺🇸 美国|@stairnode
+      - 🇺🇸 美国2|@stairnode
+      - 🇦🇺 澳大利亚|@stairnode
+      - 🇻🇳 越南|@stairnode
+      - 🇬🇧 英国|@stairnode
       - 🇺🇸 美国_1 2
-      - 🇫🇷 法国_1 2
       - 🇺🇸 美国_2 2
+      - 🇫🇷 法国_1 2
+      - 🇫🇷 法国_2 2
       - 🇺🇸 美国_3 2
       - 🇺🇸 美国_4 2
       - 🇺🇸 美国_5 2
@@ -2101,23 +1162,19 @@ proxy-groups:
       - 🇺🇸 美国_7 2
       - 🇺🇸 美国_8 2
       - 🇺🇸 美国_9 2
-      - 🇨🇦 加拿大 2
+      - 🇩🇪 德国_1 2
+      - 🇩🇪 德国_2 2
       - 🇺🇸 美国_10 2
-      - 🇫🇷 法国_2 2
+      - 🇩🇪 德国_3 2
       - 🇺🇸 美国_11 2
       - 🇺🇸 美国_12 2
       - 🇺🇸 美国_13 2
       - 🇺🇸 美国_14 2
       - 🇺🇸 美国_15 2
       - 🇺🇸 美国_16 2
-      - 🇯🇵 日本_1 2
-      - 🇬🇧 英国_1 2
       - 🇺🇸 美国_17 2
-      - 🇩🇪 德国_1 2
       - 🇺🇸 美国_18 2
-      - 🇯🇵 日本_2 2
       - 🇺🇸 美国_19 2
-      - 🇫🇷 法国_3 2
       - 🇺🇸 美国_20 2
       - 🇺🇸 美国_21 2
       - 🇺🇸 美国_22 2
@@ -2131,7 +1188,6 @@ proxy-groups:
       - 🇺🇸 美国_30 2
       - 🇺🇸 美国_31 2
       - 🇺🇸 美国_32 2
-      - 🇯🇵 日本_3 2
       - 🇺🇸 美国_33 2
       - 🇺🇸 美国_34 2
       - 🇺🇸 美国_35 2
@@ -2139,236 +1195,38 @@ proxy-groups:
       - 🇺🇸 美国_37 2
       - 🇺🇸 美国_38 2
       - 🇺🇸 美国_39 2
-      - 🇫🇷 法国_4 2
-      - 🇦🇺 澳洲 2
       - 🇺🇸 美国_40 2
       - 🇺🇸 美国_41 2
       - 🇺🇸 美国_42 2
-      - 🇺🇸 美国_43 2
-      - 🇬🇧 英国_2 2
-      - 🇺🇸 美国_44 2
-      - 🇺🇸 美国_45 2
-      - 🇬🇧 英国_3 2
-      - 🇩🇪 德国_2 2
-      - 🇸🇬 新加坡_1
-      - IE_1|⬇️5.3MB/s
-      - AT_1|⬇️1.7MB/s_1
-      - DE_8|⬇️6.3MB/s_1
-      - FI_1|⬇️4.9MB/s
-      - US_165|⬇️4.6MB/s_1
-      - TR_3|⬇️3.1MB/s
-      - 🇷🇺 俄罗斯_1
-      - 🇮🇪 爱尔兰_1
-      - 🇫🇷 法国_1 3
-      - 🇹🇷 土耳其_1
-      - 🇬🇧 英国_1 3
-      - 🇺🇸 美国_1 3
-      - 🇺🇸 美国_2 3
-      - jp_1
-      - 🇷🇺 RU
-      - 🇯🇵 日本_1 3
-      - 🇮🇷 伊朗_1
-      - 美國_1
-      - AT_1|⬇️1.7MB/s_2
-      - jp_2
-      - DE_8|⬇️6.3MB/s_2
-      - 奧地利_1
-      - 奧地利_2
-      - 美國_2
-      - 德國_1
-      - 法國_1
-      - 美國_3
-      - 美國_4
-      - 🇫🇷 法国_2 3
-      - 美國_5
-      - US_165|⬇️4.6MB/s_2
-      - 美國_6
-      - 法國_2
-      - 🇫🇷 法国_3 3
-      - 俄羅斯_1
-      - KR_1
-      - KR_2
-      - 🇰🇷 南韓_1
-      - 美國_7
-      - 🇷🇺 俄罗斯_2
-      - 俄羅斯_2
-      - 阿拉伯聯合大公國
-      - 🇸🇬 新加坡_2
-      - 法國_3
-      - 🇬🇧 英国_2 3
-      - 英國_1
-      - 🇮🇪 爱尔兰_2
-      - KR_3
-      - 摩爾多瓦_1
-      - 🇰🇷 南韓_2
-      - 🇺🇸 美国_3 3
-      - 美國_8
-      - 🇹🇷 土耳其_2
-      - 芬蘭_1
-      - 俄羅斯_3
-      - 俄羅斯_4
-      - 摩爾多瓦_2
-      - 🇹🇷 土耳其_3
-      - 美國_9
-      - 美國_10
-      - 🇨🇳 中国_1
-      - 🇨🇳 中国_2
-      - 英國_2
-      - 德國_2
-      - 🇮🇷 伊朗_2
-      - 🇮🇷 伊朗_3
-      - 中國_1
-      - 🇰🇷 南韓_3
-      - 中國_2
-      - 阿聯酋
-      - 奧地利_3
-      - 奧地利_4
-      - 德國_3
-      - 德國_4
-      - 德國_5
-      - 德國_6
-      - 🇷🇺 俄罗斯_3
-      - 俄羅斯_5
-      - 俄羅斯_6
-      - 俄羅斯_7
-      - 俄羅斯_8
-      - 俄羅斯_9
-      - 俄羅斯_10
-      - 俄羅斯_11
-      - 🇫🇷 法国_4 3
-      - 法國_4
-      - 法國_5
-      - 法國_6
-      - 🇫🇮 芬兰
-      - 芬蘭_2
-      - 芬蘭_3
-      - 芬蘭_4
-      - 芬蘭_5
-      - 芬蘭_6
-      - 🇰🇷 韓國_1
-      - 🇰🇷 韓國_2
-      - 🇰🇷 韓國_3
-      - 🇰🇷 韓國_4
-      - 🇰🇷 韓國_5
-      - 荷蘭_1
-      - 荷蘭_2
-      - 🇱🇹 立陶宛
-      - 美國_11
-      - 美國_12
-      - 美國_13
-      - 美國_14
-      - 美國_15
-      - 美國_16
-      - 美國_17
-      - 美國_18
-      - 美國_19
-      - 美國_20
-      - 美國_21
-      - 美國_22
-      - 美國_23
-      - 美國_24
-      - 美國_25
-      - 美國_26
-      - 美國_27
-      - 摩爾多瓦_3
-      - 摩爾多瓦_4
-      - 摩爾多瓦_5
-      - 摩爾多瓦_6
-      - 🇰🇷 南韓_4
-      - 🇰🇷 南韓_5
-      - 🇯🇵 日本_2 3
-      - 🇯🇵 日本_3 3
-      - 烏克蘭_1
-      - 烏克蘭_2
-      - 🇮🇷 伊朗_4
-      - 🇮🇷 伊朗_5
-      - 🇮🇷 伊朗_6
-      - 🇮🇷 伊朗_7
-      - 英國_3
-      - 英國_4
-      - 🇺🇸 美国_4 3
-      - 🇺🇸 美国_5 3
-      - 🇺🇸 美国_6 3
-      - 🇺🇸 美国_7 3
-      - 🇺🇸 美国_8 3
-      - 🇺🇸 美国_9 3
-      - 🇺🇸 美国_10 3
-      - 🇲🇴 澳门_1
-      - 🇲🇴 澳门_2
-      - 🇲🇴 澳门_3
-      - 🇲🇴 澳门_4
-      - 🇲🇴 澳门_5
-      - 🇲🇴 澳门_6
-      - 🇺🇸 美国_11 3
-      - 🇭🇰 香港_1
-      - 🇺🇸 美国_12 3
-      - 美國_28
-      - 🇺🇸 美国_13 3
-      - 美國_29
-      - 中國_3
-      - 🇨🇳 中国_3
-      - 美國_30
-      - 美國_31
-      - 美國_32
-      - 美國_33
-      - 美國_34
-      - 🇯🇵 日本_4
-      - 🇭🇰 香港_2
-      - 🇺🇸 美国_14 3
-      - 6元高速机场：cczzuu.top
-      - 🇭🇰 香港|@stairnode
-      - 🇭🇰 香港2|@stairnode
-      - 🇭🇰 香港3|@stairnode
-      - 🇭🇰 香港4|@stairnode
-      - 🇭🇰 香港6|@stairnode
-      - 🇯🇵 日本2|@stairnode
-      - 🇯🇵 日本|@stairnode
-      - 🇯🇵 日本3|@stairnode
-      - 🇰🇷 韩国|@stairnode
-      - 🇸🇬 新加坡|@stairnode
-      - 🇸🇬 新加坡2|@stairnode
-      - 🇸🇬 新加坡3|@stairnode
-      - 🇺🇸 美国|@stairnode
-      - 🇺🇸 美国2|@stairnode
-      - 🇻🇳 越南|@stairnode
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享)
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 2
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 3
-      - 🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享)
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 4
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 5
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 6
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 7
-      - 🇭🇰 HK香港(mibei77.com 米贝节点分享)
-      - 🇱🇺 卢森堡(mibei77.com 米贝节点分享)
-      - 🇱🇺 卢森堡(mibei77.com 米贝节点分享) 2
-      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 2
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 8
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇲🇩 _MD_摩尔多瓦
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
-      - 🇷🇺 _RU_俄罗斯
-      - 🇳🇱 _NL_荷兰
-      - 🇸🇰 _SK_斯洛伐克->🏳️_unKnow_未知
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
-      - 🇮🇸 _IS_冰岛
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
-      - 🇨🇭 _TR_土耳其->🇨🇭_CH_瑞士
-      - 🇨🇳 _CN_中国_3
-      - 🇬🇧 _GB_英国->🇨🇳_CN_中国
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 4
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 5
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 2
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 6
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 7
+      - 🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 8
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 9
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 10
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 3
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享)
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 2
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 11
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 4
       - 🇺🇸 美国_1
-      - 🇫🇷 法国_1
       - 🇺🇸 美国_2
+      - 🇫🇷 法国_1
+      - 🇫🇷 法国_2
       - 🇺🇸 美国_3
       - 🇺🇸 美国_4
       - 🇺🇸 美国_5
@@ -2376,23 +1234,19 @@ proxy-groups:
       - 🇺🇸 美国_7
       - 🇺🇸 美国_8
       - 🇺🇸 美国_9
-      - 🇨🇦 加拿大
+      - 🇩🇪 德国_1
+      - 🇩🇪 德国_2
       - 🇺🇸 美国_10
-      - 🇫🇷 法国_2
+      - 🇩🇪 德国_3
       - 🇺🇸 美国_11
       - 🇺🇸 美国_12
       - 🇺🇸 美国_13
       - 🇺🇸 美国_14
       - 🇺🇸 美国_15
       - 🇺🇸 美国_16
-      - 🇯🇵 日本_1
-      - 🇬🇧 英国_1
       - 🇺🇸 美国_17
-      - 🇩🇪 德国_1
       - 🇺🇸 美国_18
-      - 🇯🇵 日本_2
       - 🇺🇸 美国_19
-      - 🇫🇷 法国_3
       - 🇺🇸 美国_20
       - 🇺🇸 美国_21
       - 🇺🇸 美国_22
@@ -2406,7 +1260,6 @@ proxy-groups:
       - 🇺🇸 美国_30
       - 🇺🇸 美国_31
       - 🇺🇸 美国_32
-      - 🇯🇵 日本_3
       - 🇺🇸 美国_33
       - 🇺🇸 美国_34
       - 🇺🇸 美国_35
@@ -2414,20 +1267,62 @@ proxy-groups:
       - 🇺🇸 美国_37
       - 🇺🇸 美国_38
       - 🇺🇸 美国_39
-      - 🇫🇷 法国_4
-      - 🇦🇺 澳洲
       - 🇺🇸 美国_40
       - 🇺🇸 美国_41
       - 🇺🇸 美国_42
-      - 🇺🇸 美国_43
-      - 🇬🇧 英国_2
-      - 🇺🇸 美国_44
-      - 🇺🇸 美国_45
-      - 🇬🇧 英国_3
-      - 🇩🇪 德国_2
+      - 🇪🇸 西班牙(yudou123.top 玉豆免费节点)
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点)
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点) 2
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点) 3
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点)
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 2
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 3
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 4
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 5
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 6
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 7
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 8
+      - 🇮🇷 _IR_伊朗
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _IE_爱尔兰->🇺🇸_US_美国
+      - 🇺🇸 _US_美国_1
+      - 🇮🇷 _IR_伊朗_1
+      - 🇮🇸 _IS_冰岛
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度
+      - 🇨🇳 _CN_中国_3
+      - 🇬🇧 _GB_英国
+      - 🇩🇪 _DE_德国
+      - 未知
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 未知_1
+      - 🇦🇺 _AU_澳大利亚->🇲🇩_MD_摩尔多瓦
+      - 🇺🇸 _DE_德国->🇺🇸_US_美国_1
+      - 🇩🇪 _DE_德国->🏳️_unKnow_未知
+      - 🇩🇪 _DE_德国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇷🇺 _RU_俄罗斯
+      - 🇮🇷 _IR_伊朗->🇳🇱_NL_荷兰
+      - 6元高速机场：cczzuu.top
+      - 🇭🇰 香港|@stairnode
+      - 🇭🇰 香港2|@stairnode
+      - 🇭🇰 香港3|@stairnode
+      - 🇭🇰 香港4|@stairnode
+      - 🇭🇰 香港6|@stairnode
+      - 🇯🇵 日本2|@stairnode
+      - 🇯🇵 日本3|@stairnode
+      - 🇸🇬 新加坡|@stairnode
+      - 🇸🇬 新加坡2|@stairnode
+      - 🇸🇬 新加坡3|@stairnode
+      - 🇸🇬 新加坡4|@stairnode
+      - 🇺🇸 美国|@stairnode
+      - 🇺🇸 美国2|@stairnode
+      - 🇦🇺 澳大利亚|@stairnode
+      - 🇻🇳 越南|@stairnode
+      - 🇬🇧 英国|@stairnode
       - 🇺🇸 美国_1 2
-      - 🇫🇷 法国_1 2
       - 🇺🇸 美国_2 2
+      - 🇫🇷 法国_1 2
+      - 🇫🇷 法国_2 2
       - 🇺🇸 美国_3 2
       - 🇺🇸 美国_4 2
       - 🇺🇸 美国_5 2
@@ -2435,23 +1330,19 @@ proxy-groups:
       - 🇺🇸 美国_7 2
       - 🇺🇸 美国_8 2
       - 🇺🇸 美国_9 2
-      - 🇨🇦 加拿大 2
+      - 🇩🇪 德国_1 2
+      - 🇩🇪 德国_2 2
       - 🇺🇸 美国_10 2
-      - 🇫🇷 法国_2 2
+      - 🇩🇪 德国_3 2
       - 🇺🇸 美国_11 2
       - 🇺🇸 美国_12 2
       - 🇺🇸 美国_13 2
       - 🇺🇸 美国_14 2
       - 🇺🇸 美国_15 2
       - 🇺🇸 美国_16 2
-      - 🇯🇵 日本_1 2
-      - 🇬🇧 英国_1 2
       - 🇺🇸 美国_17 2
-      - 🇩🇪 德国_1 2
       - 🇺🇸 美国_18 2
-      - 🇯🇵 日本_2 2
       - 🇺🇸 美国_19 2
-      - 🇫🇷 法国_3 2
       - 🇺🇸 美国_20 2
       - 🇺🇸 美国_21 2
       - 🇺🇸 美国_22 2
@@ -2465,7 +1356,6 @@ proxy-groups:
       - 🇺🇸 美国_30 2
       - 🇺🇸 美国_31 2
       - 🇺🇸 美国_32 2
-      - 🇯🇵 日本_3 2
       - 🇺🇸 美国_33 2
       - 🇺🇸 美国_34 2
       - 🇺🇸 美国_35 2
@@ -2473,227 +1363,9 @@ proxy-groups:
       - 🇺🇸 美国_37 2
       - 🇺🇸 美国_38 2
       - 🇺🇸 美国_39 2
-      - 🇫🇷 法国_4 2
-      - 🇦🇺 澳洲 2
       - 🇺🇸 美国_40 2
       - 🇺🇸 美国_41 2
       - 🇺🇸 美国_42 2
-      - 🇺🇸 美国_43 2
-      - 🇬🇧 英国_2 2
-      - 🇺🇸 美国_44 2
-      - 🇺🇸 美国_45 2
-      - 🇬🇧 英国_3 2
-      - 🇩🇪 德国_2 2
-      - 🇸🇬 新加坡_1
-      - IE_1|⬇️5.3MB/s
-      - AT_1|⬇️1.7MB/s_1
-      - DE_8|⬇️6.3MB/s_1
-      - FI_1|⬇️4.9MB/s
-      - US_165|⬇️4.6MB/s_1
-      - TR_3|⬇️3.1MB/s
-      - 🇷🇺 俄罗斯_1
-      - 🇮🇪 爱尔兰_1
-      - 🇫🇷 法国_1 3
-      - 🇹🇷 土耳其_1
-      - 🇬🇧 英国_1 3
-      - 🇺🇸 美国_1 3
-      - 🇺🇸 美国_2 3
-      - jp_1
-      - 🇷🇺 RU
-      - 🇯🇵 日本_1 3
-      - 🇮🇷 伊朗_1
-      - 美國_1
-      - AT_1|⬇️1.7MB/s_2
-      - jp_2
-      - DE_8|⬇️6.3MB/s_2
-      - 奧地利_1
-      - 奧地利_2
-      - 美國_2
-      - 德國_1
-      - 法國_1
-      - 美國_3
-      - 美國_4
-      - 🇫🇷 法国_2 3
-      - 美國_5
-      - US_165|⬇️4.6MB/s_2
-      - 美國_6
-      - 法國_2
-      - 🇫🇷 法国_3 3
-      - 俄羅斯_1
-      - KR_1
-      - KR_2
-      - 🇰🇷 南韓_1
-      - 美國_7
-      - 🇷🇺 俄罗斯_2
-      - 俄羅斯_2
-      - 阿拉伯聯合大公國
-      - 🇸🇬 新加坡_2
-      - 法國_3
-      - 🇬🇧 英国_2 3
-      - 英國_1
-      - 🇮🇪 爱尔兰_2
-      - KR_3
-      - 摩爾多瓦_1
-      - 🇰🇷 南韓_2
-      - 🇺🇸 美国_3 3
-      - 美國_8
-      - 🇹🇷 土耳其_2
-      - 芬蘭_1
-      - 俄羅斯_3
-      - 俄羅斯_4
-      - 摩爾多瓦_2
-      - 🇹🇷 土耳其_3
-      - 美國_9
-      - 美國_10
-      - 🇨🇳 中国_1
-      - 🇨🇳 中国_2
-      - 英國_2
-      - 德國_2
-      - 🇮🇷 伊朗_2
-      - 🇮🇷 伊朗_3
-      - 中國_1
-      - 🇰🇷 南韓_3
-      - 中國_2
-      - 阿聯酋
-      - 奧地利_3
-      - 奧地利_4
-      - 德國_3
-      - 德國_4
-      - 德國_5
-      - 德國_6
-      - 🇷🇺 俄罗斯_3
-      - 俄羅斯_5
-      - 俄羅斯_6
-      - 俄羅斯_7
-      - 俄羅斯_8
-      - 俄羅斯_9
-      - 俄羅斯_10
-      - 俄羅斯_11
-      - 🇫🇷 法国_4 3
-      - 法國_4
-      - 法國_5
-      - 法國_6
-      - 🇫🇮 芬兰
-      - 芬蘭_2
-      - 芬蘭_3
-      - 芬蘭_4
-      - 芬蘭_5
-      - 芬蘭_6
-      - 🇰🇷 韓國_1
-      - 🇰🇷 韓國_2
-      - 🇰🇷 韓國_3
-      - 🇰🇷 韓國_4
-      - 🇰🇷 韓國_5
-      - 荷蘭_1
-      - 荷蘭_2
-      - 🇱🇹 立陶宛
-      - 美國_11
-      - 美國_12
-      - 美國_13
-      - 美國_14
-      - 美國_15
-      - 美國_16
-      - 美國_17
-      - 美國_18
-      - 美國_19
-      - 美國_20
-      - 美國_21
-      - 美國_22
-      - 美國_23
-      - 美國_24
-      - 美國_25
-      - 美國_26
-      - 美國_27
-      - 摩爾多瓦_3
-      - 摩爾多瓦_4
-      - 摩爾多瓦_5
-      - 摩爾多瓦_6
-      - 🇰🇷 南韓_4
-      - 🇰🇷 南韓_5
-      - 🇯🇵 日本_2 3
-      - 🇯🇵 日本_3 3
-      - 烏克蘭_1
-      - 烏克蘭_2
-      - 🇮🇷 伊朗_4
-      - 🇮🇷 伊朗_5
-      - 🇮🇷 伊朗_6
-      - 🇮🇷 伊朗_7
-      - 英國_3
-      - 英國_4
-      - 🇺🇸 美国_4 3
-      - 🇺🇸 美国_5 3
-      - 🇺🇸 美国_6 3
-      - 🇺🇸 美国_7 3
-      - 🇺🇸 美国_8 3
-      - 🇺🇸 美国_9 3
-      - 🇺🇸 美国_10 3
-      - 🇲🇴 澳门_1
-      - 🇲🇴 澳门_2
-      - 🇲🇴 澳门_3
-      - 🇲🇴 澳门_4
-      - 🇲🇴 澳门_5
-      - 🇲🇴 澳门_6
-      - 🇺🇸 美国_11 3
-      - 🇭🇰 香港_1
-      - 🇺🇸 美国_12 3
-      - 美國_28
-      - 🇺🇸 美国_13 3
-      - 美國_29
-      - 中國_3
-      - 🇨🇳 中国_3
-      - 美國_30
-      - 美國_31
-      - 美國_32
-      - 美國_33
-      - 美國_34
-      - 🇯🇵 日本_4
-      - 🇭🇰 香港_2
-      - 🇺🇸 美国_14 3
-      - 6元高速机场：cczzuu.top
-      - 🇭🇰 香港|@stairnode
-      - 🇭🇰 香港2|@stairnode
-      - 🇭🇰 香港3|@stairnode
-      - 🇭🇰 香港4|@stairnode
-      - 🇭🇰 香港6|@stairnode
-      - 🇯🇵 日本2|@stairnode
-      - 🇯🇵 日本|@stairnode
-      - 🇯🇵 日本3|@stairnode
-      - 🇰🇷 韩国|@stairnode
-      - 🇸🇬 新加坡|@stairnode
-      - 🇸🇬 新加坡2|@stairnode
-      - 🇸🇬 新加坡3|@stairnode
-      - 🇺🇸 美国|@stairnode
-      - 🇺🇸 美国2|@stairnode
-      - 🇻🇳 越南|@stairnode
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享)
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 2
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 3
-      - 🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享)
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 4
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 5
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 6
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 7
-      - 🇭🇰 HK香港(mibei77.com 米贝节点分享)
-      - 🇱🇺 卢森堡(mibei77.com 米贝节点分享)
-      - 🇱🇺 卢森堡(mibei77.com 米贝节点分享) 2
-      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 2
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 8
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇲🇩 _MD_摩尔多瓦
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
-      - 🇷🇺 _RU_俄罗斯
-      - 🇳🇱 _NL_荷兰
-      - 🇸🇰 _SK_斯洛伐克->🏳️_unKnow_未知
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
-      - 🇮🇸 _IS_冰岛
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
-      - 🇨🇭 _TR_土耳其->🇨🇭_CH_瑞士
-      - 🇨🇳 _CN_中国_3
-      - 🇬🇧 _GB_英国->🇨🇳_CN_中国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2709,9 +1381,29 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 4
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 5
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 2
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 6
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 7
+      - 🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 8
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 9
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 10
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 3
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享)
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 2
+      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 11
+      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 4
       - 🇺🇸 美国_1
-      - 🇫🇷 法国_1
       - 🇺🇸 美国_2
+      - 🇫🇷 法国_1
+      - 🇫🇷 法国_2
       - 🇺🇸 美国_3
       - 🇺🇸 美国_4
       - 🇺🇸 美国_5
@@ -2719,23 +1411,19 @@ proxy-groups:
       - 🇺🇸 美国_7
       - 🇺🇸 美国_8
       - 🇺🇸 美国_9
-      - 🇨🇦 加拿大
+      - 🇩🇪 德国_1
+      - 🇩🇪 德国_2
       - 🇺🇸 美国_10
-      - 🇫🇷 法国_2
+      - 🇩🇪 德国_3
       - 🇺🇸 美国_11
       - 🇺🇸 美国_12
       - 🇺🇸 美国_13
       - 🇺🇸 美国_14
       - 🇺🇸 美国_15
       - 🇺🇸 美国_16
-      - 🇯🇵 日本_1
-      - 🇬🇧 英国_1
       - 🇺🇸 美国_17
-      - 🇩🇪 德国_1
       - 🇺🇸 美国_18
-      - 🇯🇵 日本_2
       - 🇺🇸 美国_19
-      - 🇫🇷 法国_3
       - 🇺🇸 美国_20
       - 🇺🇸 美国_21
       - 🇺🇸 美国_22
@@ -2749,7 +1437,6 @@ proxy-groups:
       - 🇺🇸 美国_30
       - 🇺🇸 美国_31
       - 🇺🇸 美国_32
-      - 🇯🇵 日本_3
       - 🇺🇸 美国_33
       - 🇺🇸 美国_34
       - 🇺🇸 美国_35
@@ -2757,20 +1444,62 @@ proxy-groups:
       - 🇺🇸 美国_37
       - 🇺🇸 美国_38
       - 🇺🇸 美国_39
-      - 🇫🇷 法国_4
-      - 🇦🇺 澳洲
       - 🇺🇸 美国_40
       - 🇺🇸 美国_41
       - 🇺🇸 美国_42
-      - 🇺🇸 美国_43
-      - 🇬🇧 英国_2
-      - 🇺🇸 美国_44
-      - 🇺🇸 美国_45
-      - 🇬🇧 英国_3
-      - 🇩🇪 德国_2
+      - 🇪🇸 西班牙(yudou123.top 玉豆免费节点)
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点)
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点) 2
+      - 🇫🇷 法国(yudou123.top 玉豆免费节点) 3
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点)
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 2
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 3
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 4
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 5
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 6
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 7
+      - 🇺🇸 美国(yudou123.top 玉豆免费节点) 8
+      - 🇮🇷 _IR_伊朗
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _IE_爱尔兰->🇺🇸_US_美国
+      - 🇺🇸 _US_美国_1
+      - 🇮🇷 _IR_伊朗_1
+      - 🇮🇸 _IS_冰岛
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度
+      - 🇨🇳 _CN_中国_3
+      - 🇬🇧 _GB_英国
+      - 🇩🇪 _DE_德国
+      - 未知
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 未知_1
+      - 🇦🇺 _AU_澳大利亚->🇲🇩_MD_摩尔多瓦
+      - 🇺🇸 _DE_德国->🇺🇸_US_美国_1
+      - 🇩🇪 _DE_德国->🏳️_unKnow_未知
+      - 🇩🇪 _DE_德国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇷🇺 _RU_俄罗斯
+      - 🇮🇷 _IR_伊朗->🇳🇱_NL_荷兰
+      - 6元高速机场：cczzuu.top
+      - 🇭🇰 香港|@stairnode
+      - 🇭🇰 香港2|@stairnode
+      - 🇭🇰 香港3|@stairnode
+      - 🇭🇰 香港4|@stairnode
+      - 🇭🇰 香港6|@stairnode
+      - 🇯🇵 日本2|@stairnode
+      - 🇯🇵 日本3|@stairnode
+      - 🇸🇬 新加坡|@stairnode
+      - 🇸🇬 新加坡2|@stairnode
+      - 🇸🇬 新加坡3|@stairnode
+      - 🇸🇬 新加坡4|@stairnode
+      - 🇺🇸 美国|@stairnode
+      - 🇺🇸 美国2|@stairnode
+      - 🇦🇺 澳大利亚|@stairnode
+      - 🇻🇳 越南|@stairnode
+      - 🇬🇧 英国|@stairnode
       - 🇺🇸 美国_1 2
-      - 🇫🇷 法国_1 2
       - 🇺🇸 美国_2 2
+      - 🇫🇷 法国_1 2
+      - 🇫🇷 法国_2 2
       - 🇺🇸 美国_3 2
       - 🇺🇸 美国_4 2
       - 🇺🇸 美国_5 2
@@ -2778,23 +1507,19 @@ proxy-groups:
       - 🇺🇸 美国_7 2
       - 🇺🇸 美国_8 2
       - 🇺🇸 美国_9 2
-      - 🇨🇦 加拿大 2
+      - 🇩🇪 德国_1 2
+      - 🇩🇪 德国_2 2
       - 🇺🇸 美国_10 2
-      - 🇫🇷 法国_2 2
+      - 🇩🇪 德国_3 2
       - 🇺🇸 美国_11 2
       - 🇺🇸 美国_12 2
       - 🇺🇸 美国_13 2
       - 🇺🇸 美国_14 2
       - 🇺🇸 美国_15 2
       - 🇺🇸 美国_16 2
-      - 🇯🇵 日本_1 2
-      - 🇬🇧 英国_1 2
       - 🇺🇸 美国_17 2
-      - 🇩🇪 德国_1 2
       - 🇺🇸 美国_18 2
-      - 🇯🇵 日本_2 2
       - 🇺🇸 美国_19 2
-      - 🇫🇷 法国_3 2
       - 🇺🇸 美国_20 2
       - 🇺🇸 美国_21 2
       - 🇺🇸 美国_22 2
@@ -2808,7 +1533,6 @@ proxy-groups:
       - 🇺🇸 美国_30 2
       - 🇺🇸 美国_31 2
       - 🇺🇸 美国_32 2
-      - 🇯🇵 日本_3 2
       - 🇺🇸 美国_33 2
       - 🇺🇸 美国_34 2
       - 🇺🇸 美国_35 2
@@ -2816,227 +1540,9 @@ proxy-groups:
       - 🇺🇸 美国_37 2
       - 🇺🇸 美国_38 2
       - 🇺🇸 美国_39 2
-      - 🇫🇷 法国_4 2
-      - 🇦🇺 澳洲 2
       - 🇺🇸 美国_40 2
       - 🇺🇸 美国_41 2
       - 🇺🇸 美国_42 2
-      - 🇺🇸 美国_43 2
-      - 🇬🇧 英国_2 2
-      - 🇺🇸 美国_44 2
-      - 🇺🇸 美国_45 2
-      - 🇬🇧 英国_3 2
-      - 🇩🇪 德国_2 2
-      - 🇸🇬 新加坡_1
-      - IE_1|⬇️5.3MB/s
-      - AT_1|⬇️1.7MB/s_1
-      - DE_8|⬇️6.3MB/s_1
-      - FI_1|⬇️4.9MB/s
-      - US_165|⬇️4.6MB/s_1
-      - TR_3|⬇️3.1MB/s
-      - 🇷🇺 俄罗斯_1
-      - 🇮🇪 爱尔兰_1
-      - 🇫🇷 法国_1 3
-      - 🇹🇷 土耳其_1
-      - 🇬🇧 英国_1 3
-      - 🇺🇸 美国_1 3
-      - 🇺🇸 美国_2 3
-      - jp_1
-      - 🇷🇺 RU
-      - 🇯🇵 日本_1 3
-      - 🇮🇷 伊朗_1
-      - 美國_1
-      - AT_1|⬇️1.7MB/s_2
-      - jp_2
-      - DE_8|⬇️6.3MB/s_2
-      - 奧地利_1
-      - 奧地利_2
-      - 美國_2
-      - 德國_1
-      - 法國_1
-      - 美國_3
-      - 美國_4
-      - 🇫🇷 法国_2 3
-      - 美國_5
-      - US_165|⬇️4.6MB/s_2
-      - 美國_6
-      - 法國_2
-      - 🇫🇷 法国_3 3
-      - 俄羅斯_1
-      - KR_1
-      - KR_2
-      - 🇰🇷 南韓_1
-      - 美國_7
-      - 🇷🇺 俄罗斯_2
-      - 俄羅斯_2
-      - 阿拉伯聯合大公國
-      - 🇸🇬 新加坡_2
-      - 法國_3
-      - 🇬🇧 英国_2 3
-      - 英國_1
-      - 🇮🇪 爱尔兰_2
-      - KR_3
-      - 摩爾多瓦_1
-      - 🇰🇷 南韓_2
-      - 🇺🇸 美国_3 3
-      - 美國_8
-      - 🇹🇷 土耳其_2
-      - 芬蘭_1
-      - 俄羅斯_3
-      - 俄羅斯_4
-      - 摩爾多瓦_2
-      - 🇹🇷 土耳其_3
-      - 美國_9
-      - 美國_10
-      - 🇨🇳 中国_1
-      - 🇨🇳 中国_2
-      - 英國_2
-      - 德國_2
-      - 🇮🇷 伊朗_2
-      - 🇮🇷 伊朗_3
-      - 中國_1
-      - 🇰🇷 南韓_3
-      - 中國_2
-      - 阿聯酋
-      - 奧地利_3
-      - 奧地利_4
-      - 德國_3
-      - 德國_4
-      - 德國_5
-      - 德國_6
-      - 🇷🇺 俄罗斯_3
-      - 俄羅斯_5
-      - 俄羅斯_6
-      - 俄羅斯_7
-      - 俄羅斯_8
-      - 俄羅斯_9
-      - 俄羅斯_10
-      - 俄羅斯_11
-      - 🇫🇷 法国_4 3
-      - 法國_4
-      - 法國_5
-      - 法國_6
-      - 🇫🇮 芬兰
-      - 芬蘭_2
-      - 芬蘭_3
-      - 芬蘭_4
-      - 芬蘭_5
-      - 芬蘭_6
-      - 🇰🇷 韓國_1
-      - 🇰🇷 韓國_2
-      - 🇰🇷 韓國_3
-      - 🇰🇷 韓國_4
-      - 🇰🇷 韓國_5
-      - 荷蘭_1
-      - 荷蘭_2
-      - 🇱🇹 立陶宛
-      - 美國_11
-      - 美國_12
-      - 美國_13
-      - 美國_14
-      - 美國_15
-      - 美國_16
-      - 美國_17
-      - 美國_18
-      - 美國_19
-      - 美國_20
-      - 美國_21
-      - 美國_22
-      - 美國_23
-      - 美國_24
-      - 美國_25
-      - 美國_26
-      - 美國_27
-      - 摩爾多瓦_3
-      - 摩爾多瓦_4
-      - 摩爾多瓦_5
-      - 摩爾多瓦_6
-      - 🇰🇷 南韓_4
-      - 🇰🇷 南韓_5
-      - 🇯🇵 日本_2 3
-      - 🇯🇵 日本_3 3
-      - 烏克蘭_1
-      - 烏克蘭_2
-      - 🇮🇷 伊朗_4
-      - 🇮🇷 伊朗_5
-      - 🇮🇷 伊朗_6
-      - 🇮🇷 伊朗_7
-      - 英國_3
-      - 英國_4
-      - 🇺🇸 美国_4 3
-      - 🇺🇸 美国_5 3
-      - 🇺🇸 美国_6 3
-      - 🇺🇸 美国_7 3
-      - 🇺🇸 美国_8 3
-      - 🇺🇸 美国_9 3
-      - 🇺🇸 美国_10 3
-      - 🇲🇴 澳门_1
-      - 🇲🇴 澳门_2
-      - 🇲🇴 澳门_3
-      - 🇲🇴 澳门_4
-      - 🇲🇴 澳门_5
-      - 🇲🇴 澳门_6
-      - 🇺🇸 美国_11 3
-      - 🇭🇰 香港_1
-      - 🇺🇸 美国_12 3
-      - 美國_28
-      - 🇺🇸 美国_13 3
-      - 美國_29
-      - 中國_3
-      - 🇨🇳 中国_3
-      - 美國_30
-      - 美國_31
-      - 美國_32
-      - 美國_33
-      - 美國_34
-      - 🇯🇵 日本_4
-      - 🇭🇰 香港_2
-      - 🇺🇸 美国_14 3
-      - 6元高速机场：cczzuu.top
-      - 🇭🇰 香港|@stairnode
-      - 🇭🇰 香港2|@stairnode
-      - 🇭🇰 香港3|@stairnode
-      - 🇭🇰 香港4|@stairnode
-      - 🇭🇰 香港6|@stairnode
-      - 🇯🇵 日本2|@stairnode
-      - 🇯🇵 日本|@stairnode
-      - 🇯🇵 日本3|@stairnode
-      - 🇰🇷 韩国|@stairnode
-      - 🇸🇬 新加坡|@stairnode
-      - 🇸🇬 新加坡2|@stairnode
-      - 🇸🇬 新加坡3|@stairnode
-      - 🇺🇸 美国|@stairnode
-      - 🇺🇸 美国2|@stairnode
-      - 🇻🇳 越南|@stairnode
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享)
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 2
-      - 🇫🇷 FR法国(mibei77.com 米贝节点分享) 3
-      - 🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享)
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 4
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 5
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 6
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 7
-      - 🇭🇰 HK香港(mibei77.com 米贝节点分享)
-      - 🇱🇺 卢森堡(mibei77.com 米贝节点分享)
-      - 🇱🇺 卢森堡(mibei77.com 米贝节点分享) 2
-      - 🇭🇰 HK香港(mibei77.com 米贝节点分享) 2
-      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 8
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇲🇩 _MD_摩尔多瓦
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
-      - 🇷🇺 _RU_俄罗斯
-      - 🇳🇱 _NL_荷兰
-      - 🇸🇰 _SK_斯洛伐克->🏳️_unKnow_未知
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
-      - 🇮🇸 _IS_冰岛
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
-      - 🇨🇭 _TR_土耳其->🇨🇭_CH_瑞士
-      - 🇨🇳 _CN_中国_3
-      - 🇬🇧 _GB_英国->🇨🇳_CN_中国
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
