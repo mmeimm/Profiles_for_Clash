@@ -15,22 +15,24 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 8元老牌专线机场：cczzuu.top, server: 3.9.17.198, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
-  - {name: 🇭🇰 香港|@stairnode, server: v9.heduian.link, port: 30809, client-fingerprint: chrome, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}}
-  - {name: 🇭🇰 香港2|@stairnode, server: 103.103.245.158, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: ccf426f1fe78, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: newroot2v1.dsjsapp.com, path: /zksuapgx, tls: true, mux: true, skip-cert-verify: false}}
-  - {name: 🇭🇰 香港3|@stairnode, server: 58.152.110.25, port: 443, client-fingerprint: chrome, type: trojan, password: 1b57001bd214304027025a740b6cf1ac, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇭🇰 香港4|@stairnode, server: 36.150.215.247, port: 1251, client-fingerprint: chrome, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
-  - {name: 🇭🇰 香港5|@stairnode, server: 58.152.53.186, port: 443, client-fingerprint: chrome, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
-  - {name: 🇭🇰 香港6|@stairnode, server: 175.29.22.101, port: 28034, client-fingerprint: chrome, type: vmess, uuid: d2540325-9ad6-33d7-be86-259b5bba4ef8, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本|@stairnode, server: 36.150.215.248, port: 881, client-fingerprint: chrome, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
-  - {name: 🇯🇵 日本2|@stairnode, server: 117.172.176.22, port: 1334, client-fingerprint: chrome, type: trojan, password: 1b57001bd214304027025a740b6cf1ac, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇯🇵 日本3|@stairnode, server: 117.172.176.22, port: 4095, client-fingerprint: chrome, type: trojan, password: 1b57001bd214304027025a740b6cf1ac, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡|@stairnode, server: 117.172.176.22, port: 2283, client-fingerprint: chrome, type: trojan, password: 1b57001bd214304027025a740b6cf1ac, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡2|@stairnode, server: 117.172.176.22, port: 2173, client-fingerprint: chrome, type: trojan, password: 1b57001bd214304027025a740b6cf1ac, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡3|@stairnode, server: 36.150.215.248, port: 8041, client-fingerprint: chrome, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
-  - {name: 🇺🇸 美国|@stairnode, server: 153.121.44.99, port: 5097, client-fingerprint: chrome, type: trojan, password: 1b57001bd214304027025a740b6cf1ac, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇺🇸 美国2|@stairnode, server: 117.172.176.22, port: 4173, client-fingerprint: chrome, type: trojan, password: e4e262d453466988575c397a30562337, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇺🇸 美国3|@stairnode, server: 36.151.251.38, port: 38799, client-fingerprint: chrome, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 8元老牌专线机场：cczzuu.top, server: 3.9.17.198, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇭🇰 香港|@stairnode, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}}
+  - {name: 🇭🇰 香港2|@stairnode, server: 103.103.245.158, port: 443, type: ss, cipher: aes-256-gcm, password: ccf426f1fe78, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: newroot2v1.dsjsapp.com, path: /zksuapgx, tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 🇭🇰 香港3|@stairnode, server: 58.152.110.9, port: 443, type: trojan, password: 2274c52572e721086f8bd8f88984643c, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇭🇰 香港4|@stairnode, server: 203.198.122.97, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇭🇰 香港5|@stairnode, server: 219.77.239.35, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇭🇰 香港6|@stairnode, server: 118.253.166.237, port: 49213, type: trojan, password: 50a99183-2543-40bd-98a2-12bbc6ecf882, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇭🇰 香港7|@stairnode, server: oshk02.mynode.me, port: 2000, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 31832-qOf3ahM8.download.microsoft.com}}
+  - {name: 🇯🇵 日本|@stairnode, server: 36.150.215.246, port: 2145, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇯🇵 日本2|@stairnode, server: 160.16.204.136, port: 1334, type: trojan, password: 2274c52572e721086f8bd8f88984643c, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 日本3|@stairnode, server: 160.16.214.6, port: 4095, type: trojan, password: 2274c52572e721086f8bd8f88984643c, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 日本4|@stairnode, server: 175.29.22.101, port: 28016, type: vmess, uuid: d2540325-9ad6-33d7-be86-259b5bba4ef8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡|@stairnode, server: 160.16.106.144, port: 2760, type: trojan, password: 2274c52572e721086f8bd8f88984643c, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡2|@stairnode, server: 160.16.106.144, port: 127, type: trojan, password: 2274c52572e721086f8bd8f88984643c, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡3|@stairnode, server: 116.49.237.130, port: 2753, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇺🇸 美国|@stairnode, server: 160.16.68.250, port: 2890, type: trojan, password: 2274c52572e721086f8bd8f88984643c, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇺🇸 美国2|@stairnode, server: 117.172.176.25, port: 4054, type: trojan, password: 2274c52572e721086f8bd8f88984643c, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇺🇸 美国3|@stairnode, server: 36.150.215.243, port: 19220, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -44,9 +46,11 @@ proxy-groups:
       - 🇭🇰 香港4|@stairnode
       - 🇭🇰 香港5|@stairnode
       - 🇭🇰 香港6|@stairnode
+      - 🇭🇰 香港7|@stairnode
       - 🇯🇵 日本|@stairnode
       - 🇯🇵 日本2|@stairnode
       - 🇯🇵 日本3|@stairnode
+      - 🇯🇵 日本4|@stairnode
       - 🇸🇬 新加坡|@stairnode
       - 🇸🇬 新加坡2|@stairnode
       - 🇸🇬 新加坡3|@stairnode
@@ -66,9 +70,11 @@ proxy-groups:
       - 🇭🇰 香港4|@stairnode
       - 🇭🇰 香港5|@stairnode
       - 🇭🇰 香港6|@stairnode
+      - 🇭🇰 香港7|@stairnode
       - 🇯🇵 日本|@stairnode
       - 🇯🇵 日本2|@stairnode
       - 🇯🇵 日本3|@stairnode
+      - 🇯🇵 日本4|@stairnode
       - 🇸🇬 新加坡|@stairnode
       - 🇸🇬 新加坡2|@stairnode
       - 🇸🇬 新加坡3|@stairnode
@@ -88,9 +94,11 @@ proxy-groups:
       - 🇭🇰 香港4|@stairnode
       - 🇭🇰 香港5|@stairnode
       - 🇭🇰 香港6|@stairnode
+      - 🇭🇰 香港7|@stairnode
       - 🇯🇵 日本|@stairnode
       - 🇯🇵 日本2|@stairnode
       - 🇯🇵 日本3|@stairnode
+      - 🇯🇵 日本4|@stairnode
       - 🇸🇬 新加坡|@stairnode
       - 🇸🇬 新加坡2|@stairnode
       - 🇸🇬 新加坡3|@stairnode
@@ -109,9 +117,11 @@ proxy-groups:
       - 🇭🇰 香港4|@stairnode
       - 🇭🇰 香港5|@stairnode
       - 🇭🇰 香港6|@stairnode
+      - 🇭🇰 香港7|@stairnode
       - 🇯🇵 日本|@stairnode
       - 🇯🇵 日本2|@stairnode
       - 🇯🇵 日本3|@stairnode
+      - 🇯🇵 日本4|@stairnode
       - 🇸🇬 新加坡|@stairnode
       - 🇸🇬 新加坡2|@stairnode
       - 🇸🇬 新加坡3|@stairnode
@@ -130,9 +140,11 @@ proxy-groups:
       - 🇭🇰 香港4|@stairnode
       - 🇭🇰 香港5|@stairnode
       - 🇭🇰 香港6|@stairnode
+      - 🇭🇰 香港7|@stairnode
       - 🇯🇵 日本|@stairnode
       - 🇯🇵 日本2|@stairnode
       - 🇯🇵 日本3|@stairnode
+      - 🇯🇵 日本4|@stairnode
       - 🇸🇬 新加坡|@stairnode
       - 🇸🇬 新加坡2|@stairnode
       - 🇸🇬 新加坡3|@stairnode
@@ -151,9 +163,11 @@ proxy-groups:
       - 🇭🇰 香港4|@stairnode
       - 🇭🇰 香港5|@stairnode
       - 🇭🇰 香港6|@stairnode
+      - 🇭🇰 香港7|@stairnode
       - 🇯🇵 日本|@stairnode
       - 🇯🇵 日本2|@stairnode
       - 🇯🇵 日本3|@stairnode
+      - 🇯🇵 日本4|@stairnode
       - 🇸🇬 新加坡|@stairnode
       - 🇸🇬 新加坡2|@stairnode
       - 🇸🇬 新加坡3|@stairnode
@@ -173,9 +187,11 @@ proxy-groups:
       - 🇭🇰 香港4|@stairnode
       - 🇭🇰 香港5|@stairnode
       - 🇭🇰 香港6|@stairnode
+      - 🇭🇰 香港7|@stairnode
       - 🇯🇵 日本|@stairnode
       - 🇯🇵 日本2|@stairnode
       - 🇯🇵 日本3|@stairnode
+      - 🇯🇵 日本4|@stairnode
       - 🇸🇬 新加坡|@stairnode
       - 🇸🇬 新加坡2|@stairnode
       - 🇸🇬 新加坡3|@stairnode
@@ -211,9 +227,11 @@ proxy-groups:
       - 🇭🇰 香港4|@stairnode
       - 🇭🇰 香港5|@stairnode
       - 🇭🇰 香港6|@stairnode
+      - 🇭🇰 香港7|@stairnode
       - 🇯🇵 日本|@stairnode
       - 🇯🇵 日本2|@stairnode
       - 🇯🇵 日本3|@stairnode
+      - 🇯🇵 日本4|@stairnode
       - 🇸🇬 新加坡|@stairnode
       - 🇸🇬 新加坡2|@stairnode
       - 🇸🇬 新加坡3|@stairnode
