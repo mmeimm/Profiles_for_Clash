@@ -58,56 +58,219 @@ tun:
 
 
 proxies:
+  - type: vless
+    name: 🇰🇷_KR_韩国
+    server: 183.104.223.227
+    port: 50001
+    uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
+    network: ws
+    servername: bp.suoni.nyc.mn
+    tls: true
+    ws-opts:
+      path: /proxyip=ProxyIP.SG.CMLiussss.net
+      headers:
+        Host: bp.suoni.nyc.mn
+    client-fingerprint: random
+  - type: vless
+    name: 🇰🇷_KR_韩国_1
+    server: 125.139.76.203
+    port: 50001
+    uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
+    network: ws
+    servername: bp.suoni.nyc.mn
+    tls: true
+    ws-opts:
+      path: /proxyip=ProxyIP.SG.CMLiussss.net
+      headers:
+        Host: bp.suoni.nyc.mn
+    client-fingerprint: random
+  - type: hysteria2
+    name: 🇨🇳_CN_中国
+    server: c6de975c-t6ngg0-t7hu58-1q1la.hk1.hyhuawei.com
+    port: 443
+    ports: 30000-60000
+    password: 25b46954-9a33-11ee-8b86-f23c91cfbbc9
+    sni: c6de975c-t6ngg0-t7hu58-1q1la.hk1.hyhuawei.com
+  - type: hysteria2
+    name: 🇨🇳_CN_中国_1
+    server: d9e1b055-t6r5s0-tds6bp-1hzyr.hk2.hyhuawei.com
+    port: 443
+    ports: 30000-60000
+    password: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
+    sni: d9e1b055-t6r5s0-tds6bp-1hzyr.hk2.hyhuawei.com
+  - type: hysteria
+    name: 🇫🇷_FR_法国
+    server: 62.210.10.186
+    port: 50011
+    auth-str: dongtaiwang.com
+    protocol: udp
+    sni: apple.com
+    up: 11 Mbps
+    down: 55 Mbps
+    skip-cert-verify: true
+    alpn:
+      - h3
   - type: vmess
-    name: 🇭🇰HK-8.210.134.183-0232
-    server: 8.210.134.183
-    port: 3721
-    uuid: e72f5c6b-220f-40b3-a115-2d81473458cf
-    alterId: 0
+    name: 🇭🇰 HK_107
+    server: 954e8f8f-sv4n40-svs488-n09f.hk3.p5pv.com
+    port: 80
+    uuid: 89b0ea8c-806b-11ed-94ba-f23c913c8d2b
+    alterId: 2
     network: ws
     cipher: auto
+    servername: broadcastlv.chat.bilibili.com
     ws-opts:
       path: /
-  - type: ss
-    name: 🇨🇳_CN_中国
-    server: 103.149.182.158
-    port: 8388
-    cipher: chacha20-ietf
-    password: asd123456
-  - type: trojan
-    name: 🇯🇵_JP_日本
-    server: 52.199.129.13
-    port: 2752
-    password: BxceQaOe
-    network: tcp
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 32
+    server: 7b1dbdd1-t6ngg0-t917sa-12ach.hk3.p5pv.com
+    port: 80
+    uuid: fc5ba91a-acd7-11ef-97e0-f23c9164ca5d
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: 7b1dbdd1-t6ngg0-t917sa-12ach.hk3.p5pv.com
+    ws-opts:
+      path: /
+      headers:
+        Host: 7b1dbdd1-t6ngg0-t917sa-12ach.hk3.p5pv.com
+  - type: hysteria2
+    name: 🇨🇳_CN_中国_2
+    server: 46b443f1-t55r40-tb224g-1h0r9.hk2.hyhuawei.com
+    port: 443
+    ports: 30000-60000
+    password: 9bfd0dde-957e-11ec-a8bf-f23c91cfbbc9
+    sni: 46b443f1-t55r40-tb224g-1h0r9.hk2.hyhuawei.com
+  - type: hysteria2
+    name: 🇨🇳_CN_中国_3
+    server: 9cae6b2b-t6ngg0-tc9wl2-py5w.hk1.hyhuawei.com
+    port: 443
+    ports: 30000-60000
+    password: ae5338ae-9a70-58c9-3d47-7d54a5675715
+    sni: 9cae6b2b-t6ngg0-tc9wl2-py5w.hk1.hyhuawei.com
+  - type: hysteria2
+    name: 🇨🇳_CN_中国_4
+    server: 8a4b02e1-t6pb40-t7kvg3-1mij.hk2.hyhuawei.com
+    port: 443
+    ports: 30000-60000
+    password: c2c634e8-ab9e-11ef-97e0-f23c9164ca5d
+    sni: 8a4b02e1-t6pb40-t7kvg3-1mij.hk2.hyhuawei.com
   - type: vless
     name: 🇺🇸_US_美国
-    server: 68.64.176.135
-    port: 443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: 🇺🇸_US_美国_1
-    server: 51.195.43.174
+    server: www.ntu.edu.sg
     port: 8443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    uuid: 572a0d47-567c-4085-a2de-69cc41365a27
     network: ws
-    servername: kuangbao.xiejiang.dpdns.org
+    servername: rncf.wwxgxn.cfd
     tls: true
     ws-opts:
-      path: /?ed=2560
+      path: /sayuri?ed=2560
       headers:
-        Host: kuangbao.xiejiang.dpdns.org
+        Host: rncf.wwxgxn.cfd
+    client-fingerprint: chrome
+    alpn:
+      - h2
+  - type: vmess
+    name: 【机场推荐：https://a0a.xyz/】43
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    network: tcp
+    cipher: auto
+  - type: hysteria2
+    name: 🇨🇳_CN_中国_5
+    server: e1e21f55-t6pb40-tfvcxz-1nq4g.hk2.hyhuawei.com
+    port: 443
+    ports: 30000-60000
+    password: 80aa5178-f936-11ed-8ce6-f23c91369f2d
+    sni: e1e21f55-t6pb40-tfvcxz-1nq4g.hk2.hyhuawei.com
+  - type: hysteria2
+    name: 🇨🇳_CN_中国_6
+    server: 76f6e3ac-t6pb40-tcq5zn-19qpt.hk1.hyhuawei.com
+    port: 443
+    ports: 30000-60000
+    password: 4b9ca118-7fab-11eb-bd3a-f23c9164ca5d
+    sni: 76f6e3ac-t6pb40-tcq5zn-19qpt.hk1.hyhuawei.com
+  - type: hysteria2
+    name: 🇨🇳_CN_中国_7
+    server: 21a3b260-t6pb40-t9byd7-1jfvb.hk1.hyhuawei.com
+    port: 443
+    ports: 30000-60000
+    password: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
+    sni: 21a3b260-t6pb40-t9byd7-1jfvb.hk1.hyhuawei.com
+  - type: hysteria2
+    name: 🇨🇳_CN_中国_8
+    server: 419049c1-t6r5s0-t99b5n-1hhyy.hk1.hyhuawei.com
+    port: 443
+    ports: 30000-60000
+    password: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
+    sni: 419049c1-t6r5s0-t99b5n-1hhyy.hk1.hyhuawei.com
+  - type: hysteria2
+    name: 🇨🇳_CN_中国_9
+    server: 74cba7ec-t57ls0-t6nlrg-ach1.hk1.hyhuawei.com
+    port: 443
+    ports: 30000-60000
+    password: b9c9905c-1627-11ec-a0fc-f23c913c8d2b
+    sni: 74cba7ec-t57ls0-t6nlrg-ach1.hk1.hyhuawei.com
+  - type: vmess
+    name: 🇭🇰 HK_106
+    server: a442168a-sv4n40-t7hu58-1q1la.hk3.p5pv.com
+    port: 80
+    uuid: 25b46954-9a33-11ee-8b86-f23c91cfbbc9
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: hysteria2
+    name: 🇨🇳_CN_中国_10
+    server: eb68dc18-t6ngg0-tn57fp-5ifr.hk1.hyhuawei.com
+    port: 443
+    ports: 30000-60000
+    password: ecfab6c8-df5b-11ed-98a7-f23c913c8d2b
+    sni: eb68dc18-t6ngg0-tn57fp-5ifr.hk1.hyhuawei.com
   - type: vless
     name: 🇩🇪_DE_德国
+    server: 2.pandaserver654.ir
+    port: 3696
+    uuid: 4df10efe-824a-4579-ab85-50f088f456d4
+    network: tcp
+    servername: www.stackoverflow.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: Jsvqk8hSyL-JT5-sasABrFsbQmafOp-wMy85Y8Xm1T0
+      short-id: 33552dae47b33e54
+      spider-x: /example
+    client-fingerprint: firefox
+  - type: vless
+    name: 🇺🇸_US_美国_1
+    server: 172.233.108.62
+    port: 7443
+    uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
+    network: ws
+    servername: ak.suoni.nyc.mn
+    tls: true
+    ws-opts:
+      path: /proxyip=sjc.o00o.ooo
+      headers:
+        Host: ak.suoni.nyc.mn
+    client-fingerprint: random
+  - type: hysteria2
+    name: 🇨🇳_CN_中国_11
+    server: bbf52516-t57ls0-td1l1t-1s824.hk1.hyhuawei.com
+    port: 443
+    ports: 30000-60000
+    password: 6d4abac0-86e6-11ef-83cc-f23c913c8d2b
+    sni: bbf52516-t57ls0-td1l1t-1s824.hk1.hyhuawei.com
+  - type: vless
+    name: 🇺🇸_US_美国_2
     server: easygovpnkeys16.com
     port: 6093
     uuid: e5603527-ac9b-4f69-906e-34bea11c5835
@@ -121,271 +284,133 @@ proxies:
     client-fingerprint: chrome
     flow: xtls-rprx-vision
   - type: hysteria2
-    name: 🇨🇳_CN_中国_1
-    server: tw.518181.xyz
-    port: 55518
-    password: 3e3201b3-8d9a-4007-a7db-fcf00833e947
-    skip-cert-verify: true
-    sni: ovo.1234567890spcloud.com
-  - type: vless
-    name: 🏳️_unKnow_未知
-    server: at.ultima.foundation
-    port: 22231
-    uuid: 2dfa740c-8069-4993-8b96-c3e5dc540593
-    network: tcp
-    servername: at.ultima.foundation
-    tls: true
-    encryption: none
-    reality-opts:
-      public-key: gtur4bFCYQzGf7M6B40RpdBHl6g1epPNhJCMqKPoVng
-      short-id: a9725715bf4c62ff
-    client-fingerprint: edge
-    flow: xtls-rprx-vision
-  - type: vless
-    name: 🇩🇪_DE_德国_1
-    server: broodmother.fonixapp.org
-    port: 49722
-    uuid: 1c1023ac-3d16-494d-be09-65a248f49cd7
-    network: tcp
-    servername: yelp.com
-    tls: true
-    encryption: none
-    reality-opts:
-      public-key: eRuDPGgOwmAbFaNZtqzEfgflU4Jaj2MJNYwAQPkp32s
-      short-id: 23f89c
-      spider-x: /
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - type: vless
-    name: 🏳️_unKnow_未知_1
-    server: de-cdn.ultima.foundation
+    name: 🇨🇳_CN_中国_12
+    server: 70eb6f17-t6pb40-t83bw1-1f596.hk2.hyhuawei.com
     port: 443
-    uuid: 2dfa740c-8069-4993-8b96-c3e5dc540593
-    network: tcp
-    servername: web.max.ru
-    tls: true
-    reality-opts:
-      public-key: FcZ6-LZS5HHqAJ8YwFV_Gu_WxrMuylqxYjBu-1CLVRI
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - type: vmess
-    name: 🇭🇰HK-1.36.223.11-0701
-    server: 4020d7a1-sv0xs0-swkmdk-1imi4.hk3.p5pv.com
-    port: 80
-    uuid: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
-    alterId: 2
-    network: ws
-    cipher: auto
-    servername: broadcastlv.chat.bilibili.com
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - type: hysteria2
-    name: 🇹🇭_TH_泰国
-    server: th.518181.xyz
-    port: 55518
-    password: 3e3201b3-8d9a-4007-a7db-fcf00833e947
-    skip-cert-verify: true
-    sni: ovo.1234567890spcloud.com
-  - type: vless
-    name: 🇺🇸_US_美国_2
-    server: 51.195.102.180
-    port: 8443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: 🏳️_unKnow_未知_2
-    server: nl5.ultima.foundation
-    port: 22231
-    uuid: 2dfa740c-8069-4993-8b96-c3e5dc540593
-    network: tcp
-    servername: nl.ultima.foundation
-    tls: true
-    encryption: none
-    reality-opts:
-      public-key: gtur4bFCYQzGf7M6B40RpdBHl6g1epPNhJCMqKPoVng
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-  - type: vless
-    name: 🇩🇪_DE_德国_2
-    server: 37.120.191.120
-    port: 54044
-    uuid: 6ec8234b-7192-4603-ac12-2b4bbc9c1113
-    network: tcp
-    servername: smallpdf.com
-    tls: true
-    encryption: none
-    reality-opts:
-      public-key: fNizRKQ3b7EsnXk0-aX1XyXM-kdNq6aoYWsOMRxG6Ug
-      short-id: 1f86
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - type: vmess
-    name: 🇭🇰HK-1.36.218.178-5027
-    server: 5c4dc91c-sv2sg0-tbnucr-1thfv.hk3.p5pv.com
-    port: 80
-    uuid: 0a4d1c88-fb3a-11ef-8c3f-f23c913c8d2b
-    alterId: 2
-    network: ws
-    cipher: auto
-    servername: 5c4dc91c-sv2sg0-tbnucr-1thfv.hk3.p5pv.com
-    ws-opts:
-      path: /
-      headers:
-        Host: 5c4dc91c-sv2sg0-tbnucr-1thfv.hk3.p5pv.com
+    ports: 30000-60000
+    password: e3975a05-b89e-11ec-a50d-f23c91cfbbc9
+    sni: 70eb6f17-t6pb40-t83bw1-1f596.hk2.hyhuawei.com
   - type: vless
     name: 🇺🇸_US_美国_3
-    server: freeyx.cloudflare88.eu.org
-    port: 2096
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vmess
-    name: 🇭🇰 HK_176
-    server: a58b4c29-sv4n40-syfj90-1r9dt.hk3.p5pv.com
-    port: 80
-    uuid: de003c72-0157-11ef-86da-f23c91cfbbc9
-    alterId: 2
-    network: ws
-    cipher: auto
-    servername: broadcastlv.chat.bilibili.com
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - type: vless
-    name: 🇺🇸_US_美国_4
-    server: 24.199.121.233
+    server: zoom.seaseus.pp.ua
     port: 443
-    uuid: a7e04b44-855e-4fe7-8fa0-31894e928bce
-    network: tcp
-    servername: www.gstatic.com
-    tls: true
-    reality-opts:
-      public-key: RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A
-      short-id: a4844ba7
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - type: vless
-    name: 🇷🇺_RU_俄罗斯
-    server: 193.124.18.13
-    port: 443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    uuid: fba4e0e0-118c-431f-9f6a-4cfc99f39de8
     network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vmess
-    name: 🇭🇰 HK_130
-    server: b8ffcda3-sv2sg0-sv37gm-81nv.hk3.p5pv.com
-    port: 80
-    uuid: 47e91fb6-25b8-df52-bc18-3cdc8548192f
-    alterId: 2
-    network: ws
-    cipher: auto
-    servername: broadcastlv.chat.bilibili.com
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-  - type: vless
-    name: 🇷🇺_RU_俄罗斯_1
-    server: istanbul.fonixapp.org
-    port: 25059
-    uuid: 88ba0958-d6e8-4c7b-9a80-e5180c520989
-    network: tcp
-    servername: yelp.com
+    servername: zoom.seaseus.pp.ua
     tls: true
     encryption: none
-    reality-opts:
-      public-key: f8rRV7gssAlL-e8teb5xR9q1vRwRJ3pvORgscKSgPAM
-      short-id: 1ec404fc
-      spider-x: /
+    ws-opts:
+      path: /seaseus
+      headers:
+        Host: zoom.seaseus.pp.ua
     client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - type: vless
-    name: 🇺🇸_US_美国_5
-    server: 142.93.17.125
+    alpn:
+      - h3
+      - h2
+      - http/1.1
+  - type: hysteria2
+    name: 🇨🇳_CN_中国_13
+    server: d5c7ffe5-t6wps0-tb592v-4lg6.hk2.hyhuawei.com
     port: 443
-    uuid: a7e04b44-855e-4fe7-8fa0-31894e928bce
-    network: tcp
-    servername: www.gstatic.com
+    password: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
+    sni: d5c7ffe5-t6wps0-tb592v-4lg6.hk2.hyhuawei.com
+  - type: ss
+    name: 🇨🇳_CN_中国_14
+    server: 103.149.183.80
+    port: 8388
+    cipher: chacha20-ietf
+    password: asd123456
+  - type: vless
+    name: 🇺🇸_US_美国_4
+    server: support.zoom.us
+    port: 2096
+    uuid: fba4e0e0-118c-431f-9f6a-4cfc99f39de8
+    network: ws
+    servername: zoom.seaseus.pp.ua
     tls: true
-    reality-opts:
-      public-key: RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A
-      short-id: a4844ba7
+    encryption: none
+    ws-opts:
+      path: /seaseus
+      headers:
+        Host: zero.seaseus.pp.ua
     client-fingerprint: chrome
-    flow: xtls-rprx-vision
+    alpn:
+      - h3
+      - h2
+      - http/1.1
+  - type: ss
+    name: 🇨🇳_CN_中国_15
+    server: 103.36.91.32
+    port: 8388
+    cipher: chacha20-ietf
+    password: asd123456
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰HK-8.210.134.183-0232
+      - 🇰🇷_KR_韩国
+      - 🇰🇷_KR_韩国_1
       - 🇨🇳_CN_中国
-      - 🇯🇵_JP_日本
-      - 🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇩🇪_DE_德国
       - 🇨🇳_CN_中国_1
-      - 🏳️_unKnow_未知
-      - 🇩🇪_DE_德国_1
-      - 🏳️_unKnow_未知_1
-      - 🇭🇰HK-1.36.223.11-0701
-      - 🇹🇭_TH_泰国
+      - 🇫🇷_FR_法国
+      - 🇭🇰 HK_107
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 32
+      - 🇨🇳_CN_中国_2
+      - 🇨🇳_CN_中国_3
+      - 🇨🇳_CN_中国_4
+      - 🇺🇸_US_美国
+      - 【机场推荐：https://a0a.xyz/】43
+      - 🇨🇳_CN_中国_5
+      - 🇨🇳_CN_中国_6
+      - 🇨🇳_CN_中国_7
+      - 🇨🇳_CN_中国_8
+      - 🇨🇳_CN_中国_9
+      - 🇭🇰 HK_106
+      - 🇨🇳_CN_中国_10
+      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国_11
       - 🇺🇸_US_美国_2
-      - 🏳️_unKnow_未知_2
-      - 🇩🇪_DE_德国_2
-      - 🇭🇰HK-1.36.218.178-5027
+      - 🇨🇳_CN_中国_12
       - 🇺🇸_US_美国_3
-      - 🇭🇰 HK_176
+      - 🇨🇳_CN_中国_13
+      - 🇨🇳_CN_中国_14
       - 🇺🇸_US_美国_4
-      - 🇷🇺_RU_俄罗斯
-      - 🇭🇰 HK_130
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇺🇸_US_美国_5
+      - 🇨🇳_CN_中国_15
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇭🇰HK-8.210.134.183-0232
+      - 🇰🇷_KR_韩国
+      - 🇰🇷_KR_韩国_1
       - 🇨🇳_CN_中国
-      - 🇯🇵_JP_日本
-      - 🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇩🇪_DE_德国
       - 🇨🇳_CN_中国_1
-      - 🏳️_unKnow_未知
-      - 🇩🇪_DE_德国_1
-      - 🏳️_unKnow_未知_1
-      - 🇭🇰HK-1.36.223.11-0701
-      - 🇹🇭_TH_泰国
+      - 🇫🇷_FR_法国
+      - 🇭🇰 HK_107
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 32
+      - 🇨🇳_CN_中国_2
+      - 🇨🇳_CN_中国_3
+      - 🇨🇳_CN_中国_4
+      - 🇺🇸_US_美国
+      - 【机场推荐：https://a0a.xyz/】43
+      - 🇨🇳_CN_中国_5
+      - 🇨🇳_CN_中国_6
+      - 🇨🇳_CN_中国_7
+      - 🇨🇳_CN_中国_8
+      - 🇨🇳_CN_中国_9
+      - 🇭🇰 HK_106
+      - 🇨🇳_CN_中国_10
+      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国_11
       - 🇺🇸_US_美国_2
-      - 🏳️_unKnow_未知_2
-      - 🇩🇪_DE_德国_2
-      - 🇭🇰HK-1.36.218.178-5027
+      - 🇨🇳_CN_中国_12
       - 🇺🇸_US_美国_3
-      - 🇭🇰 HK_176
+      - 🇨🇳_CN_中国_13
+      - 🇨🇳_CN_中国_14
       - 🇺🇸_US_美国_4
-      - 🇷🇺_RU_俄罗斯
-      - 🇭🇰 HK_130
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇺🇸_US_美国_5
+      - 🇨🇳_CN_中国_15
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
@@ -405,29 +430,35 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰HK-8.210.134.183-0232
+      - 🇰🇷_KR_韩国
+      - 🇰🇷_KR_韩国_1
       - 🇨🇳_CN_中国
-      - 🇯🇵_JP_日本
-      - 🇺🇸_US_美国
-      - 🇺🇸_US_美国_1
-      - 🇩🇪_DE_德国
       - 🇨🇳_CN_中国_1
-      - 🏳️_unKnow_未知
-      - 🇩🇪_DE_德国_1
-      - 🏳️_unKnow_未知_1
-      - 🇭🇰HK-1.36.223.11-0701
-      - 🇹🇭_TH_泰国
+      - 🇫🇷_FR_法国
+      - 🇭🇰 HK_107
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 32
+      - 🇨🇳_CN_中国_2
+      - 🇨🇳_CN_中国_3
+      - 🇨🇳_CN_中国_4
+      - 🇺🇸_US_美国
+      - 【机场推荐：https://a0a.xyz/】43
+      - 🇨🇳_CN_中国_5
+      - 🇨🇳_CN_中国_6
+      - 🇨🇳_CN_中国_7
+      - 🇨🇳_CN_中国_8
+      - 🇨🇳_CN_中国_9
+      - 🇭🇰 HK_106
+      - 🇨🇳_CN_中国_10
+      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国_11
       - 🇺🇸_US_美国_2
-      - 🏳️_unKnow_未知_2
-      - 🇩🇪_DE_德国_2
-      - 🇭🇰HK-1.36.218.178-5027
+      - 🇨🇳_CN_中国_12
       - 🇺🇸_US_美国_3
-      - 🇭🇰 HK_176
+      - 🇨🇳_CN_中国_13
+      - 🇨🇳_CN_中国_14
       - 🇺🇸_US_美国_4
-      - 🇷🇺_RU_俄罗斯
-      - 🇭🇰 HK_130
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇺🇸_US_美国_5
+      - 🇨🇳_CN_中国_15
 rule-providers:
   LocalAreaNetwork:
     type: http
