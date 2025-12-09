@@ -19,21 +19,20 @@ proxies:
   - {name: 8元老牌专线机场：cczzuu.top, server: 63.180.254.10, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇭🇰 香港|@stairnode, server: v10.hdacd.com, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 香港2|@stairnode, server: 103.103.245.158, port: 443, type: ss, cipher: aes-256-gcm, password: ccf426f1fe78, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: newroot2v1.dsjsapp.com, path: /zksuapgx, tls: true, mux: true, skip-cert-verify: false}}
-  - {name: 🇭🇰 香港3|@stairnode, server: 203.198.122.13, port: 443, type: trojan, password: 79314e99f0a473fe86efc7827942ad00, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇭🇰 香港4|@stairnode, server: 58.152.30.120, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
-  - {name: 🇭🇰 香港5|@stairnode, server: 58.152.30.175, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
-  - {name: 🇯🇵 日本|@stairnode, server: 52.193.233.149, port: 26378, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
-  - {name: 🇯🇵 日本2|@stairnode, server: 153.121.65.107, port: 3169, type: trojan, password: 79314e99f0a473fe86efc7827942ad00, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇯🇵 日本3|@stairnode, server: 153.121.65.107, port: 1331, type: trojan, password: 79314e99f0a473fe86efc7827942ad00, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡|@stairnode, server: 160.16.144.208, port: 3145, type: trojan, password: 79314e99f0a473fe86efc7827942ad00, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡2|@stairnode, server: 160.16.150.76, port: 1596, type: trojan, password: 79314e99f0a473fe86efc7827942ad00, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡3|@stairnode, server: 13.113.1.5, port: 1691, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
-  - {name: 🇺🇸 美国|@stairnode, server: 16.163.0.29, port: 4054, type: trojan, password: 79314e99f0a473fe86efc7827942ad00, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇺🇸 美国2|@stairnode, server: 160.16.57.238, port: 4054, type: trojan, password: 79314e99f0a473fe86efc7827942ad00, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇺🇸 美国3|@stairnode, server: 43.207.204.238, port: 1221, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
-  - {name: 🇺🇸 美国4|@stairnode, server: 198.181.34.22, port: 11133, type: vmess, uuid: 29b25bdf-9a83-4dde-90c7-77c51cd23724, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港6|@stairnode, server: 0e7f1016-sva740-te0v28-1mh67.hk3.p5pv.com, port: 80, type: vmess, uuid: e1c7fbbc-96b6-11ef-8563-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: 🇻🇳 越南|@stairnode, server: 103.186.154.232, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV}
+  - {name: 🇭🇰 香港3|@stairnode, server: 58.152.110.154, port: 443, type: trojan, password: 76d630f2af6619c4a5de0ef953df3c6a, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇭🇰 香港4|@stairnode, server: 219.79.186.107, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇭🇰 香港5|@stairnode, server: 58.152.25.242, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇯🇵 日本|@stairnode, server: 52.68.48.114, port: 4012, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇯🇵 日本2|@stairnode, server: 13.231.156.35, port: 1331, type: trojan, password: 76d630f2af6619c4a5de0ef953df3c6a, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 日本3|@stairnode, server: 160.16.117.182, port: 3093, type: trojan, password: 76d630f2af6619c4a5de0ef953df3c6a, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 日本4|@stairnode, server: 172.237.6.53, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: ed92259:137548}}
+  - {name: 🇸🇬 新加坡|@stairnode, server: 202.181.103.246, port: 2760, type: trojan, password: 76d630f2af6619c4a5de0ef953df3c6a, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡2|@stairnode, server: 160.16.233.76, port: 507, type: trojan, password: 76d630f2af6619c4a5de0ef953df3c6a, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡3|@stairnode, server: 3.112.225.115, port: 804, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇺🇸 美国|@stairnode, server: 160.16.136.130, port: 4054, type: trojan, password: 76d630f2af6619c4a5de0ef953df3c6a, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇺🇸 美国2|@stairnode, server: 160.16.196.59, port: 2890, type: trojan, password: 76d630f2af6619c4a5de0ef953df3c6a, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇺🇸 美国3|@stairnode, server: 13.231.156.35, port: 968, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇻🇳 越南|@stairnode, server: 103.186.155.2, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -49,14 +48,13 @@ proxy-groups:
       - 🇯🇵 日本|@stairnode
       - 🇯🇵 日本2|@stairnode
       - 🇯🇵 日本3|@stairnode
+      - 🇯🇵 日本4|@stairnode
       - 🇸🇬 新加坡|@stairnode
       - 🇸🇬 新加坡2|@stairnode
       - 🇸🇬 新加坡3|@stairnode
       - 🇺🇸 美国|@stairnode
       - 🇺🇸 美国2|@stairnode
       - 🇺🇸 美国3|@stairnode
-      - 🇺🇸 美国4|@stairnode
-      - 🇭🇰 香港6|@stairnode
       - 🇻🇳 越南|@stairnode
   - name: ♻️ 自动选择
     type: url-test
@@ -73,14 +71,13 @@ proxy-groups:
       - 🇯🇵 日本|@stairnode
       - 🇯🇵 日本2|@stairnode
       - 🇯🇵 日本3|@stairnode
+      - 🇯🇵 日本4|@stairnode
       - 🇸🇬 新加坡|@stairnode
       - 🇸🇬 新加坡2|@stairnode
       - 🇸🇬 新加坡3|@stairnode
       - 🇺🇸 美国|@stairnode
       - 🇺🇸 美国2|@stairnode
       - 🇺🇸 美国3|@stairnode
-      - 🇺🇸 美国4|@stairnode
-      - 🇭🇰 香港6|@stairnode
       - 🇻🇳 越南|@stairnode
   - name: 🌍 国外媒体
     type: select
@@ -97,14 +94,13 @@ proxy-groups:
       - 🇯🇵 日本|@stairnode
       - 🇯🇵 日本2|@stairnode
       - 🇯🇵 日本3|@stairnode
+      - 🇯🇵 日本4|@stairnode
       - 🇸🇬 新加坡|@stairnode
       - 🇸🇬 新加坡2|@stairnode
       - 🇸🇬 新加坡3|@stairnode
       - 🇺🇸 美国|@stairnode
       - 🇺🇸 美国2|@stairnode
       - 🇺🇸 美国3|@stairnode
-      - 🇺🇸 美国4|@stairnode
-      - 🇭🇰 香港6|@stairnode
       - 🇻🇳 越南|@stairnode
   - name: 📲 电报信息
     type: select
@@ -120,14 +116,13 @@ proxy-groups:
       - 🇯🇵 日本|@stairnode
       - 🇯🇵 日本2|@stairnode
       - 🇯🇵 日本3|@stairnode
+      - 🇯🇵 日本4|@stairnode
       - 🇸🇬 新加坡|@stairnode
       - 🇸🇬 新加坡2|@stairnode
       - 🇸🇬 新加坡3|@stairnode
       - 🇺🇸 美国|@stairnode
       - 🇺🇸 美国2|@stairnode
       - 🇺🇸 美国3|@stairnode
-      - 🇺🇸 美国4|@stairnode
-      - 🇭🇰 香港6|@stairnode
       - 🇻🇳 越南|@stairnode
   - name: Ⓜ️ 微软服务
     type: select
@@ -143,14 +138,13 @@ proxy-groups:
       - 🇯🇵 日本|@stairnode
       - 🇯🇵 日本2|@stairnode
       - 🇯🇵 日本3|@stairnode
+      - 🇯🇵 日本4|@stairnode
       - 🇸🇬 新加坡|@stairnode
       - 🇸🇬 新加坡2|@stairnode
       - 🇸🇬 新加坡3|@stairnode
       - 🇺🇸 美国|@stairnode
       - 🇺🇸 美国2|@stairnode
       - 🇺🇸 美国3|@stairnode
-      - 🇺🇸 美国4|@stairnode
-      - 🇭🇰 香港6|@stairnode
       - 🇻🇳 越南|@stairnode
   - name: 🍎 苹果服务
     type: select
@@ -166,14 +160,13 @@ proxy-groups:
       - 🇯🇵 日本|@stairnode
       - 🇯🇵 日本2|@stairnode
       - 🇯🇵 日本3|@stairnode
+      - 🇯🇵 日本4|@stairnode
       - 🇸🇬 新加坡|@stairnode
       - 🇸🇬 新加坡2|@stairnode
       - 🇸🇬 新加坡3|@stairnode
       - 🇺🇸 美国|@stairnode
       - 🇺🇸 美国2|@stairnode
       - 🇺🇸 美国3|@stairnode
-      - 🇺🇸 美国4|@stairnode
-      - 🇭🇰 香港6|@stairnode
       - 🇻🇳 越南|@stairnode
   - name: 📢 谷歌FCM
     type: select
@@ -190,14 +183,13 @@ proxy-groups:
       - 🇯🇵 日本|@stairnode
       - 🇯🇵 日本2|@stairnode
       - 🇯🇵 日本3|@stairnode
+      - 🇯🇵 日本4|@stairnode
       - 🇸🇬 新加坡|@stairnode
       - 🇸🇬 新加坡2|@stairnode
       - 🇸🇬 新加坡3|@stairnode
       - 🇺🇸 美国|@stairnode
       - 🇺🇸 美国2|@stairnode
       - 🇺🇸 美国3|@stairnode
-      - 🇺🇸 美国4|@stairnode
-      - 🇭🇰 香港6|@stairnode
       - 🇻🇳 越南|@stairnode
   - name: 🎯 全球直连
     type: select
@@ -230,19 +222,19 @@ proxy-groups:
       - 🇯🇵 日本|@stairnode
       - 🇯🇵 日本2|@stairnode
       - 🇯🇵 日本3|@stairnode
+      - 🇯🇵 日本4|@stairnode
       - 🇸🇬 新加坡|@stairnode
       - 🇸🇬 新加坡2|@stairnode
       - 🇸🇬 新加坡3|@stairnode
       - 🇺🇸 美国|@stairnode
       - 🇺🇸 美国2|@stairnode
       - 🇺🇸 美国3|@stairnode
-      - 🇺🇸 美国4|@stairnode
-      - 🇭🇰 香港6|@stairnode
       - 🇻🇳 越南|@stairnode
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
+  - DOMAIN-SUFFIX,internal,🎯 全球直连
   - DOMAIN-SUFFIX,lan,🎯 全球直连
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - DOMAIN-SUFFIX,localhost,🎯 全球直连
@@ -250,6 +242,7 @@ rules:
   - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
   - IP-CIDR,100.64.0.0/10,🎯 全球直连,no-resolve
   - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
+  - IP-CIDR,169.254.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
@@ -623,7 +616,6 @@ rules:
   - DOMAIN-SUFFIX,scupio.com,🛑 全球拦截
   - DOMAIN-SUFFIX,shuiguo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,shuzilm.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,similarweb.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sitemeter.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sitescout.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sitetag.us,🛑 全球拦截
@@ -1475,9 +1467,7 @@ rules:
   - DOMAIN-SUFFIX,log.mix.sina.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,mobileads.dx.cn,🍃 应用净化
   - DOMAIN-SUFFIX,newspush.sinajs.cn,🍃 应用净化
-  - DOMAIN-SUFFIX,pay.mobile.sina.cn,🍃 应用净化
   - DOMAIN-SUFFIX,sax.mobile.sina.cn,🍃 应用净化
-  - DOMAIN-SUFFIX,sax.sina.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,saxd.sina.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,sdkapp.mobile.sina.cn,🍃 应用净化
   - DOMAIN-SUFFIX,sdkapp.uve.weibo.com,🍃 应用净化
@@ -1878,7 +1868,6 @@ rules:
   - DOMAIN-SUFFIX,dol.tianyaui.cn,🍃 应用净化
   - DOMAIN-SUFFIX,dw.xcar.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,e.nexac.com,🍃 应用净化
-  - DOMAIN-SUFFIX,eq.10jqka.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,exp.17wo.cn,🍃 应用净化
   - DOMAIN-SUFFIX,game.51yund.com,🍃 应用净化
   - DOMAIN-SUFFIX,ganjituiguang.ganji.com,🍃 应用净化
@@ -1895,7 +1884,6 @@ rules:
   - DOMAIN-SUFFIX,mobileads.msn.com,🍃 应用净化
   - DOMAIN-SUFFIX,n.cosbot.cn,🍃 应用净化
   - DOMAIN-SUFFIX,newton-api.ele.me,🍃 应用净化
-  - DOMAIN-SUFFIX,ozone.10jqka.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,pdl.gionee.com,🍃 应用净化
   - DOMAIN-SUFFIX,pica-juicy.picacomic.com,🍃 应用净化
   - DOMAIN-SUFFIX,pixel.wp.com,🍃 应用净化
@@ -1908,7 +1896,6 @@ rules:
   - DOMAIN-SUFFIX,res.gwifi.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,ssp.kssws.ks-cdn.com,🍃 应用净化
   - DOMAIN-SUFFIX,sta.ganji.com,🍃 应用净化
-  - DOMAIN-SUFFIX,stat.10jqka.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,stat.it168.com,🍃 应用净化
   - DOMAIN-SUFFIX,stats.chinaz.com,🍃 应用净化
   - DOMAIN-SUFFIX,stats.developingperspective.com,🍃 应用净化
@@ -1916,7 +1903,6 @@ rules:
   - DOMAIN-SUFFIX,tracker.yhd.com,🍃 应用净化
   - DOMAIN-SUFFIX,tralog.ganji.com,🍃 应用净化
   - DOMAIN-SUFFIX,up.qingdaonews.com,🍃 应用净化
-  - DOMAIN-SUFFIX,vaserviece.10jqka.com.cn,🍃 应用净化
   - DOMAIN,alt1-mtalk.google.com,📢 谷歌FCM
   - DOMAIN,alt2-mtalk.google.com,📢 谷歌FCM
   - DOMAIN,alt3-mtalk.google.com,📢 谷歌FCM
@@ -2133,6 +2119,7 @@ rules:
   - DOMAIN,copilot-proxy.githubusercontent.com,🌍 国外媒体
   - DOMAIN,gemini.google.com,🌍 国外媒体
   - DOMAIN,generativelanguage.googleapis.com,🌍 国外媒体
+  - DOMAIN,notebooklm.google.com,🌍 国外媒体
   - DOMAIN,sydney.bing.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ai.azure.com,🌍 国外媒体
   - DOMAIN-SUFFIX,anthropic.com,🌍 国外媒体
@@ -2140,6 +2127,7 @@ rules:
   - DOMAIN-SUFFIX,bard.google.com,🌍 国外媒体
   - DOMAIN-SUFFIX,chatgpt.com,🌍 国外媒体
   - DOMAIN-SUFFIX,claude.ai,🌍 国外媒体
+  - DOMAIN-SUFFIX,claude.com,🌍 国外媒体
   - DOMAIN-SUFFIX,claudeusercontent.com,🌍 国外媒体
   - DOMAIN-SUFFIX,client-api.arkoselabs.com,🌍 国外媒体
   - DOMAIN-SUFFIX,copilot.cloud.microsoft,🌍 国外媒体
@@ -2154,6 +2142,7 @@ rules:
   - DOMAIN-SUFFIX,identrust.com,🌍 国外媒体
   - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
   - DOMAIN-SUFFIX,intercomcdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,jetbrains.ai,🌍 国外媒体
   - DOMAIN-SUFFIX,makersuite.google.com,🌍 国外媒体
   - DOMAIN-SUFFIX,meta.ai,🌍 国外媒体
   - DOMAIN-SUFFIX,mistral.ai,🌍 国外媒体
@@ -2163,6 +2152,7 @@ rules:
   - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🌍 国外媒体
   - DOMAIN-SUFFIX,perplexity.ai,🌍 国外媒体
   - DOMAIN-SUFFIX,sora.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,x.ai,🌍 国外媒体
   - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.io,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.tv,🌍 国外媒体
@@ -2725,6 +2715,7 @@ rules:
   - DOMAIN-SUFFIX,1e100.net,🚀 节点选择
   - DOMAIN-SUFFIX,2mdn.net,🚀 节点选择
   - DOMAIN-SUFFIX,app-measurement.net,🚀 节点选择
+  - DOMAIN-SUFFIX,c.gle,🚀 节点选择
   - DOMAIN-SUFFIX,g.co,🚀 节点选择
   - DOMAIN-SUFFIX,ggpht.com,🚀 节点选择
   - DOMAIN-SUFFIX,goo.gl,🚀 节点选择
@@ -2804,6 +2795,7 @@ rules:
   - DOMAIN-SUFFIX,spoprod-a.akamaihd.net,🚀 节点选择
   - DOMAIN-SUFFIX,storage.live.com,🚀 节点选择
   - DOMAIN-SUFFIX,storage.msn.com,🚀 节点选择
+  - DOMAIN-SUFFIX,microsoftpersonalcontent.com,🚀 节点选择
   - DOMAIN-KEYWORD,porn,🚀 节点选择
   - DOMAIN-SUFFIX,8teenxxx.com,🚀 节点选择
   - DOMAIN-SUFFIX,ahcdn.com,🚀 节点选择
@@ -2967,6 +2959,7 @@ rules:
   - DOMAIN-SUFFIX,aliapp.org,🎯 全球直连
   - DOMAIN-SUFFIX,alibaba.com,🎯 全球直连
   - DOMAIN-SUFFIX,alibabacloud.com,🎯 全球直连
+  - DOMAIN-SUFFIX,alibabachengdun.com,🎯 全球直连
   - DOMAIN-SUFFIX,alibabausercontent.com,🎯 全球直连
   - DOMAIN-SUFFIX,alicdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,alicloudccp.com,🎯 全球直连
@@ -2985,6 +2978,7 @@ rules:
   - DOMAIN-SUFFIX,autonavi.com,🎯 全球直连
   - DOMAIN-SUFFIX,dingtalk.com,🎯 全球直连
   - DOMAIN-SUFFIX,ele.me,🎯 全球直连
+  - DOMAIN-SUFFIX,elemecdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,hichina.com,🎯 全球直连
   - DOMAIN-SUFFIX,mmstat.com,🎯 全球直连
   - DOMAIN-SUFFIX,mxhichina.com,🎯 全球直连
@@ -2992,6 +2986,7 @@ rules:
   - DOMAIN-SUFFIX,taobao.com,🎯 全球直连
   - DOMAIN-SUFFIX,taobaocdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,tbcache.com,🎯 全球直连
+  - DOMAIN-SUFFIX,tbcdn.cn,🎯 全球直连
   - DOMAIN-SUFFIX,tbcdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,tmall.com,🎯 全球直连
   - DOMAIN-SUFFIX,tmall.hk,🎯 全球直连
@@ -3321,6 +3316,7 @@ rules:
   - DOMAIN-SUFFIX,air-matters.io,🎯 全球直连
   - DOMAIN-SUFFIX,aixifan.com,🎯 全球直连
   - DOMAIN-SUFFIX,algocasts.io,🎯 全球直连
+  - DOMAIN-SUFFIX,asklink.com,🎯 全球直连
   - DOMAIN-SUFFIX,babytree.com,🎯 全球直连
   - DOMAIN-SUFFIX,babytreeimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,baicizhan.com,🎯 全球直连
