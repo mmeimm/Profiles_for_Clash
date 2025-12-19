@@ -59,27 +59,9 @@ tun:
 
 proxies:
   - type: hysteria
-    name: 🇺🇸_US_美国
-    server: 51.159.226.1
-    port: 49003
-    auth-str: dongtaiwang.com
-    protocol: udp
-    sni: apple.com
-    up: "11"
-    down: "55"
-    skip-cert-verify: true
-    alpn:
-      - h3
-  - type: ss
-    name: 🇨🇳_CN_中国
-    server: 103.149.182.203
-    port: 8388
-    cipher: chacha20-ietf
-    password: asd123456
-  - type: hysteria
     name: 🇫🇷_FR_法国
-    server: 62.210.10.186
-    port: 50011
+    server: 62.210.196.68
+    port: 26691
     auth-str: dongtaiwang.com
     protocol: udp
     sni: apple.com
@@ -91,6 +73,18 @@ proxies:
   - type: hysteria
     name: 🇫🇷_FR_法国_1
     server: 62.210.10.186
+    port: 50011
+    auth-str: dongtaiwang.com
+    protocol: udp
+    sni: apple.com
+    up: 11 Mbps
+    down: 55 Mbps
+    skip-cert-verify: true
+    alpn:
+      - h3
+  - type: hysteria
+    name: 🇫🇷_FR_法国_2
+    server: 62.210.10.186
     port: 35511
     auth-str: dongtaiwang.com
     protocol: udp
@@ -100,181 +94,43 @@ proxies:
     skip-cert-verify: true
     alpn:
       - h3
-  - type: vless
-    name: 🇷🇺_RU_俄罗斯
-    server: 83.166.255.72
-    port: 443
-    uuid: eb162ab1-a006-4931-b1b3-8fc88a22b10e
-    network: tcp
-    servername: 01.img.avito.st
-    tls: true
-    encryption: none
-    reality-opts:
-      public-key: zkeQCEkz7LlrzwzeG26Ae_HEk3_QlgM9CbiWJx5iWh0
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - type: vmess
-    name: 🇯🇵JP²_1|4.7MB/s|4%|GPT⁺|YT|TK|NF|X|KeepSucceed
-    server: yg1.ygkkk.dpdns.org
-    port: 443
-    uuid: 7a88d322-eb4a-4a59-8c62-8c60d76abf4b
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: jporacleyg.336697.xyz
-    ws-opts:
-      path: /7a88d322-eb4a-4a59-8c62-8c60d76abf4b-vm?ed=2048
-      headers:
-        Host: jporacleyg.336697.xyz
-    tls: true
   - type: ss
-    name: 🇷🇴_RO_罗马尼亚
-    server: 86.106.84.195
-    port: 13262
+    name: 🇨🇳_CN_中国
+    server: 223.95.183.131
+    port: 25819
     cipher: aes-128-gcm
-    password: kfuzkwdg4oynv495aywc
-  - type: vless
-    name: 🇺🇸_US_美国_1
-    server: cosmin.ns.cloudflare.com
-    port: 443
-    uuid: b5605766-6abe-4f5f-85e1-0f6f447eae66
-    network: ws
-    servername: 639013098070588901.macan-amsjd.info
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /hdwvmtws
-      headers:
-        Host: 639013098070588901.macan-amsjd.info
-    client-fingerprint: chrome
-  - type: trojan
-    name: 🇪🇸_ES_西班牙
-    server: 109.234.211.66
-    port: 8443
-    password: trojan
-    network: ws
-    sni: store.timimi.dpdns.org
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: store.timimi.dpdns.org
-  - type: vless
-    name: 🇮🇷_IR_伊朗
-    server: de.u-team.ir
-    port: 5679
-    uuid: bc66129c-bb06-0dac-a7fc-3d35b38f87e5
-    network: tcp
-    servername: refersion.com
-    tls: true
-    encryption: none
-    reality-opts:
-      public-key: mKzDPCMzVSSDRLoXQzPZ9bxWacxNKNj4UjRP1vXBCBA
-      short-id: d59f3cc6a68619e8
-    client-fingerprint: firefox
-  - type: vmess
-    name: 🇷🇺 俄罗斯 03
-    server: yx1.xn--11x.org
-    port: 2052
-    uuid: 705a4b47-c2d7-4c0e-8963-e52a18a4070b
-    alterId: 0
-    network: ws
-    cipher: auto
-    servername: 2112136940.online.video.downloader.0123456789ru.xn--11x.org
-    ws-opts:
-      path: /
-      headers:
-        Host: 2112136940.online.video.downloader.0123456789ru.xn--11x.org
-  - type: vless
-    name: 🇺🇸_US_美国_2
-    server: brenna.ns.cloudflare.com
-    port: 443
-    uuid: 4a5b69b4-8f1c-48b8-a7d1-2f00ddb2e2d5
-    network: ws
-    servername: 639013098070217402.macan-amsjd.info
-    tls: true
-    ws-opts:
-      path: /zmiuyqws
-      headers:
-        Host: 639013098070217402.macan-amsjd.info
-    client-fingerprint: chrome
-  - type: vless
-    name: 🇮🇷_IR_伊朗_1
-    server: de.u-team.ir
-    port: 5678
-    uuid: bc66129c-bb06-0dac-a7fc-3d35b38f87e5
-    network: tcp
-    servername: refersion.com
-    tls: true
-    encryption: none
-    reality-opts:
-      public-key: mKzDPCMzVSSDRLoXQzPZ9bxWacxNKNj4UjRP1vXBCBA
-      short-id: d59f3cc6a68619e8
-    client-fingerprint: firefox
-  - type: vmess
-    name: 【机场推荐：https://a0a.xyz/】_5
-    server: v12.hdacd.com
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    network: tcp
-    cipher: auto
+    password: b637f2e47b7827b308ebf399008075d2
   - type: ss
-    name: 🇷🇺_RU_俄罗斯_1
-    server: 45.14.245.2
+    name: 🇮🇷_IR_伊朗
+    server: 217.60.249.112
     port: 443
     cipher: chacha20-ietf-poly1305
-    password: 17ZDORWIliQHuO6WRGHChXYMzdRtAYVP
+    password: 0eC4ZBvStOgQEzTpCYjWN5
   - type: vless
-    name: 🇺🇸_US_美国_3
-    server: norman.ns.cloudflare.com
-    port: 443
-    uuid: d2cc2dfa-42c4-4565-b22b-09676c42ef84
-    network: ws
-    servername: 639013025178527795.legacy-amsjd.info
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /jdjqbfws
-      headers:
-        Host: 639013025178527795.legacy-amsjd.info
-  - type: vless
-    name: 🇷🇺_RU_俄罗斯_2
-    server: jrghxqxyoy-518237151-direct.bahame.co
-    port: 443
-    uuid: jrghxqxyoy
+    name: 🇯🇵_JP_日本
+    server: 116.80.44.144
+    port: 27724
+    uuid: ebd8539d-e249-4a39-8f90-e8585e8cc35e
     network: tcp
-    servername: jrghxqxyoy-518237151-direct.bahame.co
-    tls: true
-    encryption: none
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    alpn:
-      - h2
-      - http/1.1
-  - type: vmess
-    name: 🇺🇸 US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory
-    server: v8.hdacd.com
-    port: 30808
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    network: tcp
-    cipher: auto
-    servername: v8.hdacd.com
-  - type: vless
-    name: 🇨🇳_CN_中国_1
-    server: 62.60.148.21
-    port: 443
-    uuid: 39e5cc2f-1294-4a42-bb58-306a8be785e1
-    network: tcp
-    servername: st.ozone.ru
+    servername: www.yahoo.co.jp
     tls: true
     encryption: none
     reality-opts:
-      public-key: BkAG_uWeUj7BCHqYjrz1JyH0TMvO_KywubV7WJN17ho
-      short-id: ee6f3e8f44b1f0b6
+      public-key: rYH4wPTVzSwtpXgI3U7YxppIP6oudD-425vT7pyhj1w
     client-fingerprint: chrome
     flow: xtls-rprx-vision
+  - type: ss
+    name: 🇬🇧_GB_英国
+    server: 82.38.31.214
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+  - type: ss
+    name: 🇨🇳_CN_中国_1
+    server: 223.95.183.131
+    port: 39398
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
   - type: vless
     name: 🇵🇱_PL_波兰
     server: 185.136.132.171
@@ -289,76 +145,170 @@ proxies:
       short-id: 2fb2106a629b
       spider-x: /
     client-fingerprint: chrome
+  - type: ss
+    name: 🇮🇷_IR_伊朗_1
+    server: 151.242.251.152
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
   - type: vmess
-    name: 英国 - Slough - DigitalOcean, LLC - 1
-    server: v36.hdacd.com
-    port: 30836
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    network: tcp
-    cipher: auto
-    servername: v36.hdacd.com
-  - type: vmess
-    name: 🇺🇸 机场推荐:dafei.de 美国 05
+    name: 🇺🇸 US²_3|0.9MB/s|52%|GPT⁺|TK|NF|X|KeepHistory
     server: v29.hdacd.com
     port: 30829
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 2
     network: tcp
     cipher: auto
+    servername: v29.hdacd.com
+  - type: ss
+    name: 🇦🇫_AF_阿富汗
+    server: 121.127.46.147
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+  - type: ss
+    name: 🇬🇧_GB_英国_1
+    server: 146.70.61.37
+    port: 8080
+    cipher: rc4-md5
+    password: 14fFPrbezE3HDZzsMOr6
+  - type: vmess
+    name: 🇺🇸 US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+    server: v8.hdacd.com
+    port: 30808
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    network: tcp
+    cipher: auto
+    servername: v8.hdacd.com
+  - type: ss
+    name: 🇹🇷_TR_土耳其
+    server: 193.135.174.135
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  - type: ss
+    name: 🇵🇹_PT_葡萄牙
+    server: 185.113.143.186
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  - type: ss
+    name: 🇨🇳_CN_中国_2
+    server: 223.95.183.131
+    port: 47116
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 🇲🇩_MD_摩尔多瓦
+    server: 176.123.5.253
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  - type: trojan
+    name: 🇬🇧_GB_英国_2
+    server: 146.70.90.195
+    port: 57452
+    password: t1k169n5zmvvwn96r9ft
+    network: tcp
+    sni: api-yandex.maps.ru
+    skip-cert-verify: true
+    tls: true
+  - type: ss
+    name: 🇫🇮_FI_芬兰
+    server: 95.111.222.113
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: SVt6ZiWzRI1Yxeig4xBZwiJOt6ceXwGa
+  - type: ss
+    name: 🇮🇹_IT_意大利
+    server: 185.213.23.63
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  - type: ss
+    name: 🇺🇸_US_美国
+    server: 173.234.29.2
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  - type: ss
+    name: 🇺🇸_US_美国_1
+    server: 38.165.231.25
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  - type: vless
+    name: 🇺🇸_US_美国_2
+    server: ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz
+    port: 443
+    uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
+    network: tcp
+    servername: i2pd.website
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
+      short-id: 55e6af1a35e64a98
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国
       - 🇫🇷_FR_法国
       - 🇫🇷_FR_法国_1
-      - 🇷🇺_RU_俄罗斯
-      - 🇯🇵JP²_1|4.7MB/s|4%|GPT⁺|YT|TK|NF|X|KeepSucceed
-      - 🇷🇴_RO_罗马尼亚
-      - 🇺🇸_US_美国_1
-      - 🇪🇸_ES_西班牙
+      - 🇫🇷_FR_法国_2
+      - 🇨🇳_CN_中国
       - 🇮🇷_IR_伊朗
-      - 🇷🇺 俄罗斯 03
-      - 🇺🇸_US_美国_2
-      - 🇮🇷_IR_伊朗_1
-      - 【机场推荐：https://a0a.xyz/】_5
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇺🇸_US_美国_3
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸 US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+      - 🇯🇵_JP_日本
+      - 🇬🇧_GB_英国
       - 🇨🇳_CN_中国_1
       - 🇵🇱_PL_波兰
-      - 英国 - Slough - DigitalOcean, LLC - 1
-      - 🇺🇸 机场推荐:dafei.de 美国 05
+      - 🇮🇷_IR_伊朗_1
+      - 🇺🇸 US²_3|0.9MB/s|52%|GPT⁺|TK|NF|X|KeepHistory
+      - 🇦🇫_AF_阿富汗
+      - 🇬🇧_GB_英国_1
+      - 🇺🇸 US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+      - 🇹🇷_TR_土耳其
+      - 🇵🇹_PT_葡萄牙
+      - 🇨🇳_CN_中国_2
+      - 🇲🇩_MD_摩尔多瓦
+      - 🇬🇧_GB_英国_2
+      - 🇫🇮_FI_芬兰
+      - 🇮🇹_IT_意大利
+      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国
       - 🇫🇷_FR_法国
       - 🇫🇷_FR_法国_1
-      - 🇷🇺_RU_俄罗斯
-      - 🇯🇵JP²_1|4.7MB/s|4%|GPT⁺|YT|TK|NF|X|KeepSucceed
-      - 🇷🇴_RO_罗马尼亚
-      - 🇺🇸_US_美国_1
-      - 🇪🇸_ES_西班牙
+      - 🇫🇷_FR_法国_2
+      - 🇨🇳_CN_中国
       - 🇮🇷_IR_伊朗
-      - 🇷🇺 俄罗斯 03
-      - 🇺🇸_US_美国_2
-      - 🇮🇷_IR_伊朗_1
-      - 【机场推荐：https://a0a.xyz/】_5
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇺🇸_US_美国_3
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸 US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+      - 🇯🇵_JP_日本
+      - 🇬🇧_GB_英国
       - 🇨🇳_CN_中国_1
       - 🇵🇱_PL_波兰
-      - 英国 - Slough - DigitalOcean, LLC - 1
-      - 🇺🇸 机场推荐:dafei.de 美国 05
+      - 🇮🇷_IR_伊朗_1
+      - 🇺🇸 US²_3|0.9MB/s|52%|GPT⁺|TK|NF|X|KeepHistory
+      - 🇦🇫_AF_阿富汗
+      - 🇬🇧_GB_英国_1
+      - 🇺🇸 US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+      - 🇹🇷_TR_土耳其
+      - 🇵🇹_PT_葡萄牙
+      - 🇨🇳_CN_中国_2
+      - 🇲🇩_MD_摩尔多瓦
+      - 🇬🇧_GB_英国_2
+      - 🇫🇮_FI_芬兰
+      - 🇮🇹_IT_意大利
+      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
@@ -378,28 +328,30 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸_US_美国
-      - 🇨🇳_CN_中国
       - 🇫🇷_FR_法国
       - 🇫🇷_FR_法国_1
-      - 🇷🇺_RU_俄罗斯
-      - 🇯🇵JP²_1|4.7MB/s|4%|GPT⁺|YT|TK|NF|X|KeepSucceed
-      - 🇷🇴_RO_罗马尼亚
-      - 🇺🇸_US_美国_1
-      - 🇪🇸_ES_西班牙
+      - 🇫🇷_FR_法国_2
+      - 🇨🇳_CN_中国
       - 🇮🇷_IR_伊朗
-      - 🇷🇺 俄罗斯 03
-      - 🇺🇸_US_美国_2
-      - 🇮🇷_IR_伊朗_1
-      - 【机场推荐：https://a0a.xyz/】_5
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇺🇸_US_美国_3
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸 US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+      - 🇯🇵_JP_日本
+      - 🇬🇧_GB_英国
       - 🇨🇳_CN_中国_1
       - 🇵🇱_PL_波兰
-      - 英国 - Slough - DigitalOcean, LLC - 1
-      - 🇺🇸 机场推荐:dafei.de 美国 05
+      - 🇮🇷_IR_伊朗_1
+      - 🇺🇸 US²_3|0.9MB/s|52%|GPT⁺|TK|NF|X|KeepHistory
+      - 🇦🇫_AF_阿富汗
+      - 🇬🇧_GB_英国_1
+      - 🇺🇸 US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+      - 🇹🇷_TR_土耳其
+      - 🇵🇹_PT_葡萄牙
+      - 🇨🇳_CN_中国_2
+      - 🇲🇩_MD_摩尔多瓦
+      - 🇬🇧_GB_英国_2
+      - 🇫🇮_FI_芬兰
+      - 🇮🇹_IT_意大利
+      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
 rule-providers:
   LocalAreaNetwork:
     type: http
